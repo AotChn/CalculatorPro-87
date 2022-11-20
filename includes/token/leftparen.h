@@ -14,7 +14,7 @@ public:
     
     //accessors
     string get_str(){return _info._str;} 
-    TOKEN_TYPES get_type(){return _info._type;}
+    int get_type(){return _info._type;}
 
 private:
     struct tk_data _info;

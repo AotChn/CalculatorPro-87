@@ -28,8 +28,9 @@ int main(int argv, char** argc) {
     cout << "\n\n"
          << endl;
     tokenizer a;
-    std::string p = "a+b+6";
-    a.pkg_type(p);
+    a.set_str("(-(x))");
+    a.tokenize();
+    a.Print();
 
     cout << "\n\n\n=====================" << endl;
     return 0;

@@ -48,7 +48,7 @@ enum LOG_FUNCTS {LOG=11,
                  EXP};
 
 static const std::vector<std::string> NUMERALS_ = {{"0"},{"1"},{"2"},{"3"},{"4"},{"5"},{"6"},{"7"},{"8"},{"9"}};
-static const std::vector<std::string> OPERATORS_ = {{"^"},{"*"},{"/"},{"+"},{"%"},{"("},{")"}};
+static const std::vector<std::string> OPERATORS_ = {{"^"},{"*"},{"/"},{"+"},{"%"},{"("},{")"},{"-"}};
 static const std::vector<std::string> ALPHAS_ = {{"a"},{"b"},{"c"},{"d"},{"e"},{"f"},{"g"},{"h"},{"i"},{"j"},{"k"},
                                      {"l"},{"m"},{"n"},{"o"},{"p"},{"q"},{"r"},{"s"},{"t"},{"u"},{"v"},
                                      {"w"},{"x"},{"y"},{"z"},{"A"},{"B"},{"C"},{"D"},{"E"},{"F"},{"G"},

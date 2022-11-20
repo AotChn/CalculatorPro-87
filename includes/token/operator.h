@@ -22,7 +22,7 @@ public:
     virtual int get_prec(){return _prec;}
     TASKS get_task(){return _task;}; 
     string get_op(){return _info._str;} 
-    TOKEN_TYPES get_type(){return _info._type;}
+    int get_type(){return _info._type;}
 
 private:
     int _prec;

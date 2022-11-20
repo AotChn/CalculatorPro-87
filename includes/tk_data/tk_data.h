@@ -9,7 +9,7 @@ using namespace std;
 struct tk_data{
 public:
     
-    tk_data(TOKEN_TYPES type = DELIMITER, string tk_str = "",int id = 0){
+    tk_data(int type = 0, string tk_str = "",int id = 0){
         _type = type;
         _str = tk_str;
     }
@@ -27,14 +27,14 @@ public:
         _str = str;
     }
 
-    TOKEN_TYPES get_type(){
+    int get_type(){
         return _type;
     }
     string get_str(){
         return _str;
     }
 
-    TOKEN_TYPES _type;
+    int _type;
     string _str;
     int _id;
 };

@@ -19,6 +19,9 @@ Operator::Operator(string op){
 }
 
 void Operator::set_prec(){
+    if(_info._str == "$"){
+        _prec = 5;
+    }
     if(_info._str == "^"){
         _prec = 4;
     }
