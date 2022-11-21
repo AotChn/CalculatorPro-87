@@ -24,13 +24,12 @@ public:
     void type_process();
     void prec_process();
     
-    void infix(Queue<Token*> prefix);
+    void set_infix(Queue<Token*> prefix);
+    void Print(){_postfix.print_pointers();}
+
+    Queue<Token*> get_postfix(){return _postfix;}
     Queue<Token*> postfix(){postfix_process(); return _postfix;}
-    Queue<Token*> postfix(Queue<Token*> prefix){
-        infix(prefix);
-        postfix_process(); 
-        return _postfix;
-    }
+    Queue<Token*> postfix(Queue<Token*> prefix);
 
     
 

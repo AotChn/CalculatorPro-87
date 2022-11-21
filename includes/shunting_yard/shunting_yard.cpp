@@ -55,8 +55,13 @@ void ShuntingYard::prec_process(){
     _op_stack.push(_p._tk);
 }
 
-void ShuntingYard::infix(Queue<Token*> prefix){
+void ShuntingYard::set_infix(Queue<Token*> prefix){
     _prefix = prefix;
 }
 
+ Queue<Token*> ShuntingYard::postfix(Queue<Token*> prefix){
+        set_infix(prefix);
+        postfix_process(); 
+        return _postfix;
+}
 //3+(9*8+4)
