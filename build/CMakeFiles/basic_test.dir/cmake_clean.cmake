@@ -27,8 +27,12 @@ file(REMOVE_RECURSE
   "CMakeFiles/basic_test.dir/includes/token/rightparen.cpp.o.d"
   "CMakeFiles/basic_test.dir/includes/token/tk_string.cpp.o"
   "CMakeFiles/basic_test.dir/includes/token/tk_string.cpp.o.d"
+  "CMakeFiles/basic_test.dir/includes/token/tok_string.cpp.o"
+  "CMakeFiles/basic_test.dir/includes/token/tok_string.cpp.o.d"
   "CMakeFiles/basic_test.dir/includes/token/token.cpp.o"
   "CMakeFiles/basic_test.dir/includes/token/token.cpp.o.d"
+  "CMakeFiles/basic_test.dir/includes/token/tokenizer.cpp.o"
+  "CMakeFiles/basic_test.dir/includes/token/tokenizer.cpp.o.d"
   "bin/basic_test"
   "bin/basic_test.pdb"
 )

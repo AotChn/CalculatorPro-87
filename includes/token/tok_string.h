@@ -22,7 +22,6 @@
 //|__________________________________________________|
 
 /* +TOKENIZER+V4 +LOGIC + + + + + + + + + + + + + + + + + + + + + + +
-
 -----OVERVIEW:
 FSM WHICH TAKES IN STRING INPUT AND THEN CONVERTS TO INFIX TOKENS 
 TO BE PROCESSED IN A SHUNTING YARD CLASS TO CONVERT TO POSTFIX-
@@ -34,7 +33,6 @@ ONCE ARRIVING AT ACCEPTING STATE WILL PKG TOKENS IN A WRAPPER (TK_DATA)
 TO BE SENT TO ACCORDING CLASS TO CREATE TOKEN-
 
 IMPLEMENTED IS AN INVALID STATE TO PROCESS INVALID INPUTS FROM USER- 
-
 SINCE STATES ARE THEIR OWN FUNCTION WE ARE ABLE TO ADD ADDITIONAL STATES
 BY DEFINING ANOTHER FUNCTION-
 
@@ -42,20 +40,22 @@ EACH STATE IS MAPPED TO A CORRESPONDING INT AND IS STORED AS A FUNCTION POINTER
 WHICH THEN WILL POINT TO A SEQUENCE OF EVENT STATES EVENTUALLY LEADING TO ACCEPTING STATE-
 
 ENCAPSULATING FUNCTION CAN BE CALLED RECURSIVELY TO HANDLE COMPOSITE FUNCTIONS-
+
 (in this process we will inject another string to tokenize in the middle of the main process)
 we are able to do this because tokens are getting pushed to the infix queue char by char 
 instead of all at once; 
 
 WE CAN ALSO SET A PRE-INFIX AND ADD ON TO IT (store answer functionality?)
-
 This is my 4th tokenizer iteration;
 + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + +*/ 
 
-enum TK_STATES {NON,NUM,OPER,LP,RP,FUNCT,ALPH,INV,ACCEPT}; //POSSIBLE STATES
+enum TK_STATES {NON,NUM,OPER,LP,RP,FUNCT,COMP,ALPH,INV,ACCEPT}; //POSSIBLE STATES
 std::map<std::string,int> pre_def_functs = {{"sin",147},{"cos",148},{"tan",149},
                                             {"arcsin",150},{"arccos",151},{"arctan",152},
                                             {"pi",153},{"log",154},{"ln",155},
-                                            {"e",156},{"$",157}};
+                                            {"e",156},{"$",157},{"B",303},{"C",304}};
+                                            
+std::map<std::string,std::string> user_funct = {{"B","5+5"},{"C","B"}};
 
 class tokenizer{
 public:
@@ -70,7 +70,7 @@ void set_infix(Queue<Token*> infix){_infix = infix;}
 Queue<Token*> tokenize(){pkg_type(_tk_string);return _infix;}
 
 //ACCESSORS
-Queue<Token*> infix(){return _infix;}
+Queue<Token*> get_infix(){return _infix;}
 std::string get_str(){return _tk_string;}
 void Print();
 
@@ -87,6 +87,7 @@ int Lp    (std::string key);
 int Rp    (std::string key);
 int Alpha (std::string key);
 int Funct (std::string key);
+int Comp  (std::string key);
 int Accept(std::string key);
 int Inv   (std::string key);
 
@@ -98,15 +99,15 @@ int(tokenizer::*LEFTP_ST)(std::string) = &tokenizer::Lp;
 int(tokenizer::*RIGHTP_ST)(std::string) = &tokenizer::Rp;
 int(tokenizer::*ALPHAB_ST)(std::string) = &tokenizer::Alpha;
 int(tokenizer::*FUNCT_ST)(std::string) = &tokenizer::Funct;
+int(tokenizer::*COMP_ST)(std::string) = &tokenizer::Comp;
 int(tokenizer::*ACCEPTED_ST)(std::string) = &tokenizer::Accept;
 int(tokenizer::*INVAL_ST)(std::string) = &tokenizer::Inv;
-
-
 
 private:
 std::map<int,int(tokenizer::*)(std::string)> state_map = {{NON,NONTYPE_ST},{NUM,NUMBER_ST},{OPER,OPERAT_ST},
                                                           {LP,LEFTP_ST},  {RP,RIGHTP_ST},{ALPH,ALPHAB_ST},
-                                                          {FUNCT,FUNCT_ST},  {INV,INVAL_ST}, {ACCEPT,ACCEPTED_ST}};
+                                                          {FUNCT,FUNCT_ST},  {INV,INVAL_ST}, {COMP,COMP_ST},
+                                                          {ACCEPT,ACCEPTED_ST}};
 
 //TK STATES IN PROCESS
 int _cur_ST; 
@@ -139,7 +140,7 @@ void tokenizer::pkg_type(std::string _str){
             //this how we call functions pointing to member functions
         }
     }
-    cout<<"{end}";
+ //   cout<<"{end}";
 }
 
 int tokenizer::Non(std::string key){
@@ -160,6 +161,7 @@ int tokenizer::Num(std::string key){
         token = token + key;
         wlk++;
         return NUM;
+        
     }
     return ACCEPT;
 }
@@ -218,20 +220,33 @@ int tokenizer::Alpha(std::string key){
 }
 
 int tokenizer::Funct(std::string key){
-   // cout<<"PASSED FUNCT->";
+ //  cout<<"PASSED FUNCT->";
     _cur_ST = FUNCT;
     if(pre_def_functs.find(token)!=pre_def_functs.end()){
+        if(pre_def_functs[token]>300){
+            return COMP;
+        }
         return ACCEPT;
-    }
+        }
     return ALPH;
 }
-
+int tokenizer::Comp (std::string key){
+    _cur_ST = COMP;
+    hold = user_funct[token];
+    pkg_token(LP);
+    tokenizer Inject(hold);
+    Inject.set_infix(_infix);
+    Inject.tokenize();
+    _infix = Inject.get_infix();
+    pkg_token(RP);
+    return ACCEPT;
+}
 int tokenizer::Accept(std::string key){
-   pkg_token(_cur_ST);
+    pkg_token(_cur_ST);
     _prev_ST = _cur_ST;
-    cout<<"[TYPE:"<<_cur_ST<<"|TOKEN :"<<token<<"]STATE ACCEPT"<<endl;
+    //cout<<"[TYPE:"<<_cur_ST<<"|TOKEN :"<<token<<"]STATE ACCEPT"<<endl;
     _cur_ST = ACCEPT;
-    return 8;
+    return ACCEPT;
 }
 
 int tokenizer::Inv(std::string key){
@@ -267,14 +282,12 @@ void tokenizer::pkg_token(int type){
 
 /* ++ + + ++ + + + + + + + + + +  + 
 THE ID SYSTEM :
-
 ALL TOKENS WILL HAVE AN ASSOCIATIVE ID WHICH WILL CORRESPOND TO THEIR FUNCTIONALITY
 THOUGH NOT PARTICUALLY IMPORTANT TO NUMERICAL IT CAN SERVE AS A WAY TO MAP OPERATIONS
 IDS ARE INT VALUES AND WE CAN CATEGORIZE FUNCTIONS BY ID I.E. 
 FUNCTIONS IN 100-150 could be functions that take in 2 arguments while functions in 
 151-200 range can take in 2 aruguments etc.
 THIS COULD ELIMINTE THE PRECEDENCE SYSTEM 
-
 and even allow us to handle same name functions with different functions
 ie '-' OPERATOR vs '-' UNARY OPERATOR
  + + + + + ++ + + + + + + ++ +  + +*/

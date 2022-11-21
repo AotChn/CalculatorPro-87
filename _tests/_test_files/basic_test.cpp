@@ -24,70 +24,70 @@
 
 //------------------------------------------------------------------------------------------
 
-using namespace std;
-bool test_RPN(bool debug = false){
-  Queue<Token *> postfix;
-  postfix.push(new Integer(3));
-  postfix.push(new Integer(5));
-  postfix.push(new Operator("*"));
-  RPN rpn(postfix);
-  cout << "3 5 *: " << rpn() << endl;
-  cout << "-------------" << endl;
-  Queue<Token *> postfix2;
-  postfix2.push(new Integer(3));
-  postfix2.push(new Function("X"));
-  postfix2.push(new Operator("*"));
-  rpn.set_input(postfix2);
-  cout << "3 x *: (x=2): " << rpn(2) << endl;
+// using namespace std;
+// bool test_RPN(bool debug = false){
+//   Queue<Token *> postfix;
+//   postfix.push(new Integer(3));
+//   postfix.push(new Integer(5));
+//   postfix.push(new Operator("*"));
+//   RPN rpn(postfix);
+//   cout << "3 5 *: " << rpn() << endl;
+//   cout << "-------------" << endl;
+//   Queue<Token *> postfix2;
+//   postfix2.push(new Integer(3));
+//   postfix2.push(new Function("X"));
+//   postfix2.push(new Operator("*"));
+//   rpn.set_input(postfix2);
+//   cout << "3 x *: (x=2): " << rpn(2) << endl;
 
 
 
-  return true;
-}
-bool test_shunting_yard(bool debug=false){
-  Queue<Token *> infix;
-  infix.push(new Integer(3));
-  infix.push(new Operator("*"));
-  infix.push(new Integer(5));
-  ShuntingYard sy(infix);
-  Queue<Token*> postfix = sy.postfix();
-  RPN rpn(postfix);
-  cout << "3 * 5: " << rpn() << endl;
-  Queue<Token *> infix2;
-  infix2.push(new Integer(3));
-  infix2.push(new Operator("*"));
-  infix2.push(new LeftParen());
-  infix2.push(new Integer(5));
-  infix2.push(new Operator("+"));
-  infix2.push(new Integer(6));
-  infix2.push(new Operator("-"));
-  infix2.push(new Function("X"));
-  infix2.push(new RightParen());
-  infix2.push(new Operator("/"));
-  infix2.push(new Integer(9));
-  sy.infix(infix2);
-  postfix = sy.postfix();
-  rpn.set_input(postfix);
-  cout << "3*(5+6-X)/9 (x=2): " << rpn(2) << endl;
+//   return true;
+// }
+// bool test_shunting_yard(bool debug=false){
+//   Queue<Token *> infix;
+//   infix.push(new Integer(3));
+//   infix.push(new Operator("*"));
+//   infix.push(new Integer(5));
+//   ShuntingYard sy(infix);
+//   Queue<Token*> postfix = sy.postfix();
+//   RPN rpn(postfix);
+//   cout << "3 * 5: " << rpn() << endl;
+//   Queue<Token *> infix2;
+//   infix2.push(new Integer(3));
+//   infix2.push(new Operator("*"));
+//   infix2.push(new LeftParen());
+//   infix2.push(new Integer(5));
+//   infix2.push(new Operator("+"));
+//   infix2.push(new Integer(6));
+//   infix2.push(new Operator("-"));
+//   infix2.push(new Function("X"));
+//   infix2.push(new RightParen());
+//   infix2.push(new Operator("/"));
+//   infix2.push(new Integer(9));
+//   sy.infix(infix2);
+//   postfix = sy.postfix();
+//   rpn.set_input(postfix);
+//   cout << "3*(5+6-X)/9 (x=2): " << rpn(2) << endl;
 
-  ShuntingYard sy2;
-  postfix = sy2.postfix(infix2);
-  for (Queue<Token *>::Iterator it = postfix.begin(); it != postfix.end(); it++){
-    cout <<setw(3)<< **it;
-  }
-  cout << endl;
+//   ShuntingYard sy2;
+//   postfix = sy2.postfix(infix2);
+//   for (Queue<Token *>::Iterator it = postfix.begin(); it != postfix.end(); it++){
+//     cout <<setw(3)<< **it;
+//   }
+//   cout << endl;
 
-  return true;
-}
-TEST(TEST_RPN, TestRPN) {
-  bool success = test_RPN();
-  EXPECT_EQ(success, true);
-}
+//   return true;
+// }
+// TEST(TEST_RPN, TestRPN) {
+//   bool success = test_RPN();
+//   EXPECT_EQ(success, true);
+// }
 
-TEST(TEST_SHUNTING_YARD, TestShuntingYard) {
-  bool success = test_shunting_yard();
-  EXPECT_EQ(success, true);
-}
+// TEST(TEST_SHUNTING_YARD, TestShuntingYard) {
+//   bool success = test_shunting_yard();
+//   EXPECT_EQ(success, true);
+// }
 
 
 

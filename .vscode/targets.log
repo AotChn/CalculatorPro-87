@@ -6,8 +6,11 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # PARTICULAR PURPOSE.
 
 # This program built for i386-apple-darwin11.3.0
+ 
+make: *** No rule to make target `all'.  Stop.
 
-# Make data base, printed on Thu Nov 17 21:13:02 2022
+
+# Make data base, printed on Sun Nov 20 20:57:19 2022
 
 # Variables
 
@@ -38,17 +41,15 @@ VSCODE_CWD = /
 # environment
 PATH = /usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/share/dotnet:/opt/X11/bin:~/.dotnet/tools:/Library/Apple/usr/bin:/Library/Frameworks/Mono.framework/Versions/Current/Commands
 # environment
-LaunchInstanceID = 9D8CC5F2-A6AD-480F-B3E4-4BC1AD507908
-# environment
 ELECTRON_RUN_AS_NODE = 1
 # default
 .FEATURES := target-specific order-only second-expansion else-if archives jobserver check-symlink
 # environment
-SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.BQt4h8rZHs/Listeners
+SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.0EP1LvGuSe/Listeners
 # automatic
 %F = $(notdir $%)
 # environment
-DISPLAY = /private/tmp/com.apple.launchd.YvQrxEcfvl/org.macosforge.xquartz:0
+DISPLAY = /private/tmp/com.apple.launchd.r8Xig0dwDL/org.macosforge.xquartz:0
 # environment
 PWD = /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator
 # environment
@@ -119,8 +120,6 @@ MAKEFILES :=
 <F = $(notdir $<)
 # environment
 LC_ALL = C
-# environment
-SECURITYSESSIONID = 186aa
 # automatic
 ^F = $(notdir $^)
 # default
@@ -132,9 +131,9 @@ MAKELEVEL := 0
 # environment
 LANG = C
 # environment
-VSCODE_PID = 3446
+VSCODE_PID = 2655
 # variable set hash-table stats:
-# Load=61/1024=6%, Rehash=0, Collisions=1/82=1%
+# Load=59/1024=6%, Rehash=0, Collisions=1/80=1%
 
 # Pattern-specific Variable Values
 
@@ -142,9 +141,9 @@ VSCODE_PID = 3446
 
 # Directories
 
-# . (device 16777227, inode 2029852804): 15 files, no impossibilities.
+# . (device 16777227, inode 2051485585): 14 files, no impossibilities.
 
-# 15 files, no impossibilities in 1 directories.
+# 14 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -216,8 +215,6 @@ GNUmakefile:
 # strcache size: total = 0 / max = 0 / min = 4096 / avg = 0
 # strcache free: total = 0 / max = 0 / min = 4096 / avg = 0
 
-# Finished Make data base on Thu Nov 17 21:13:02 2022
+# Finished Make data base on Sun Nov 20 20:57:19 2022
 
  
-make: *** No rule to make target `all'.  Stop.
-

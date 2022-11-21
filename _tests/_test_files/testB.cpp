@@ -20,6 +20,7 @@ using namespace std;
 #include "../../includes/shunting_yard/shunting_yard.h"
 #include "../../includes/rpn/rpn.h"
 #include "../../includes/tk_data/tk_data.h"
+#include "../../includes/token/tok_string.h"
 //++++++++++ ------------------------------------------------------>[]
 
 void title(string name){
@@ -159,83 +160,26 @@ if(debug==false){
   }
 */
 
-
-
-bool token_test(bool debug = true){
-  if(debug==false){
-  title("SYNTAX queue<..> test");
-    Queue<Token*> test;
-    test.push(new Integer(5));
-    test.push(new Integer(4));
-    test.push(new Operator("*"));
-    test.push(new Operator("-"));
-    test.push(new Operator("/"));
-    test.push(new Operator("+"));
-    test.print_pointers();
-    t("token* T = test.front()");
-    Token* T = test.front();
-    t("T :");
-    cout<<T<<endl;
-    t("*T :");
-    cout<<*T<<endl;
-    t("T->TypeOf() :");
-    cout<<T->TypeOf()<<endl;
-    t("static_cast<Integer*>(test[0])->IntegerOnly() :");
-    cout<<static_cast<Integer*>(test.front())->get_val()<<endl;
-    end();
-    border();
-  }
-  if(debug==false){
-    title("STRING -> Prefix {no input}");
-    string t = "5*4+3";
-   // Tk_string test(t.c_str());
-   // test.tokenize();
-  //  test.get_prefix().print_pointers();
-
-    end();
-    border();
-  }
-  if(debug==false){
-    title("STRING -> Prefix {input}");
-    string input;
-    cin>>input;
-  //  Tk_string test2(input.c_str());
-    //test2.tokenize();
-    t("POST_FIX: ");
-    t("",0);
- //   test2.get_prefix().print_pointers();
-
-    end();
-    border();
-  }
-
-  //---------
-  end(0);
-  return true;
-}
-
 bool shunting_yard_test(bool debug = true){
   if(debug){
     title("USER_INPUT");
-//  //   Tk_string test2;
-//     // test2.custom_funct();
-//     string input;
-//     int var;
-//     cout<<"enter equation:";
-//     cin>>input;
-//  //   test2.set_string(input);
-//     t("PRE_FIX: ");
-//     t("",0);
-//   //  test2.get_prefix(1).print_pointers();
-//     cout<<endl;
-//    // Queue<Token*> test = test2.get_prefix();
-//     ShuntingYard sy(test);
-//     t("POST_FIX: ");
-//     t("",0);
-//     sy.postfix().print_pointers();
-//     RPN result(sy.postfix());
-//     cout<<endl<<"["<<input<<"; x= 2:]"<<result();
-    
+      std::string input = "C+C";
+      cout<<"EQUATION: "<<input<<";B=5+5"<<endl;
+      
+      tokenizer Tr;
+      Tr.set_str(input);
+      Tr.tokenize();
+      cout<<endl<<"INFIX  : ";
+      Tr.Print();
+
+      ShuntingYard Sy(Tr.get_infix());
+      Sy.postfix();
+      cout<<endl<<"POSTFIX: ";
+      Sy.Print();
+
+      RPN Rn(Sy.get_postfix());
+      int answer = Rn();
+      cout<<endl<<"ANSWER: "<<answer;
   
     end();
     border();
@@ -246,89 +190,25 @@ bool shunting_yard_test(bool debug = true){
   return true;
 }
 
-
-bool rpn_test(bool debug = true){
- if(debug==false){
-//   title("RPN TEST| MANUAL QUEUE");
-//   Queue<Token*> test;
-//   test.push(new Integer(5));
-//   test.push(new Integer(4));
-//   test.push(new Operator("*"));
-//   test.push(new Integer("3"));
-//   test.push(new Operator("+"));
-//   t("POST_FIX: ");
-//   t("",0);
-//   test.print_pointers();
-//   RPN eq(test);
-  
-//   t("5*4+3 = ",1);
-//   cout<<eq.rpn_process();
-//     end();
-//     border();
-//  }
-  
-//   if(debug==false){
-//     title("DELIMITER CHECK");
-//       string t = "5,4,*,3,+";
-//  //     Tk_string test(t.c_str());
-//      // test.tokenize();
-//       // t("POST_FIX: ");
-//       // t("",0);
-//    //   test.get_prefix().print_pointers();
-
-    end();
-    border();
-  }
-
-  //------------
-  end(0);
-  return true;
-}
-
-bool tk_str_test(bool debug = true){
-  if(debug==false){
-    title("TK_DATA");
-    tk_data test(OPERATOR,"+");
-    cout<<test;
-    end();
-    border();
-  }
-  
-  if(debug==false){
-    title("TK_STR");
-    tk_data s;
-  //  Tk_string a("5*60+100");
-    //a.tokenize();
-   // a.Print();
-    cout<<endl;
-
-    end();
-    border();
-  }
-  //------------
-  end(0);
-  return true;
-}
-
-TEST(SHUNTING_YARD, TOKEN_TEST){
-  bool sucess = token_test(true);
-  EXPECT_EQ(sucess, true);
-}
+// TEST(SHUNTING_YARD, TOKEN_TEST){
+//   bool sucess = token_test(true);
+//   EXPECT_EQ(sucess, true);
+// }
 
 TEST(SHUNTING_YARD, SHUNTING_YARD_TEST){
   bool sucess = shunting_yard_test(true);
   EXPECT_EQ(sucess, true);
 }
 
-TEST(SHUNTING_YARD, RPN_TEST){
-  bool success =  rpn_test(true);
-  EXPECT_EQ(success, true);
-}
+// TEST(SHUNTING_YARD, RPN_TEST){
+//   bool success =  rpn_test(true);
+//   EXPECT_EQ(success, true);
+// }
 
-TEST(SHUNTING_YARD, TK_STR_TEST){
-  bool success =  tk_str_test(true);
-  EXPECT_EQ(success, true);
-}
+// TEST(SHUNTING_YARD, TK_STR_TEST){
+//   bool success =  tk_str_test(true);
+//   EXPECT_EQ(success, true);
+// }
 
 
 int main(int argc, char **argv) {

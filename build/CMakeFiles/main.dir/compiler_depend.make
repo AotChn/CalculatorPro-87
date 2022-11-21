@@ -2526,6 +2526,8 @@ CMakeFiles/main.dir/includes/token/rightparen.cpp.o: /Users/Aot/Desktop/CODE_MAS
 
 CMakeFiles/main.dir/includes/token/tk_string.cpp.o: /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/token/tk_string.cpp
 
+CMakeFiles/main.dir/includes/token/tok_string.cpp.o: /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/token/tok_string.cpp
+
 CMakeFiles/main.dir/includes/token/token.cpp.o: /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/token/token.cpp \
   /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/token/token.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/iostream \
@@ -2773,6 +2775,9 @@ CMakeFiles/main.dir/includes/token/token.cpp.o: /Users/Aot/Desktop/CODE_MASTER/C
   /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/token/constants.h \
   /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/token/constants.h \
   /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/tk_data/tk_data.h
+
+CMakeFiles/main.dir/includes/token/tokenizer.cpp.o: /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/token/tokenizer.cpp \
+  /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/token/tokenizer.h
 
 CMakeFiles/main.dir/main.cpp.o: /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/main.cpp \
   /Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/iostream \
@@ -3067,6 +3072,10 @@ CMakeFiles/main.dir/main.cpp.o: /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkesh
 /Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/fstream:
 
 /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/token/tk_string.h:
+
+/Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/token/tokenizer.cpp:
+
+/Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/token/tok_string.cpp:
 
 /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/token/rightparen.cpp:
 
@@ -3453,6 +3462,8 @@ CMakeFiles/main.dir/main.cpp.o: /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkesh
 /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/main.cpp:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk/usr/include/sys/signal.h:
+
+/Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/token/tokenizer.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk/usr/include/_ctype.h:
 

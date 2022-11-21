@@ -2539,6 +2539,9 @@ CMakeFiles/main.dir/includes/token/rightparen.cpp.o
 CMakeFiles/main.dir/includes/token/tk_string.cpp.o
  /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/token/tk_string.cpp
 
+CMakeFiles/main.dir/includes/token/tok_string.cpp.o
+ /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/token/tok_string.cpp
+
 CMakeFiles/main.dir/includes/token/token.cpp.o
  /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/token/token.cpp
  /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/token/token.h
@@ -2787,6 +2790,10 @@ CMakeFiles/main.dir/includes/token/token.cpp.o
  /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/token/constants.h
  /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/token/constants.h
  /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/tk_data/tk_data.h
+
+CMakeFiles/main.dir/includes/token/tokenizer.cpp.o
+ /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/token/tokenizer.cpp
+ /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/token/tokenizer.h
 
 CMakeFiles/main.dir/main.cpp.o
  /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/main.cpp

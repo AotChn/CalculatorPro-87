@@ -22,7 +22,9 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/token/operator.cpp" "CMakeFiles/testB.dir/includes/token/operator.cpp.o" "gcc" "CMakeFiles/testB.dir/includes/token/operator.cpp.o.d"
   "/Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/token/rightparen.cpp" "CMakeFiles/testB.dir/includes/token/rightparen.cpp.o" "gcc" "CMakeFiles/testB.dir/includes/token/rightparen.cpp.o.d"
   "/Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/token/tk_string.cpp" "CMakeFiles/testB.dir/includes/token/tk_string.cpp.o" "gcc" "CMakeFiles/testB.dir/includes/token/tk_string.cpp.o.d"
+  "/Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/token/tok_string.cpp" "CMakeFiles/testB.dir/includes/token/tok_string.cpp.o" "gcc" "CMakeFiles/testB.dir/includes/token/tok_string.cpp.o.d"
   "/Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/token/token.cpp" "CMakeFiles/testB.dir/includes/token/token.cpp.o" "gcc" "CMakeFiles/testB.dir/includes/token/token.cpp.o.d"
+  "/Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/token/tokenizer.cpp" "CMakeFiles/testB.dir/includes/token/tokenizer.cpp.o" "gcc" "CMakeFiles/testB.dir/includes/token/tokenizer.cpp.o.d"
   )
 
 # Targets to which this target links.

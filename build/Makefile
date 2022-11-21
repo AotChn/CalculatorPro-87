@@ -700,6 +700,36 @@ includes/token/tk_string.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/testB.dir/build.make CMakeFiles/testB.dir/includes/token/tk_string.cpp.s
 .PHONY : includes/token/tk_string.cpp.s
 
+includes/token/tok_string.o: includes/token/tok_string.cpp.o
+.PHONY : includes/token/tok_string.o
+
+# target to build an object file
+includes/token/tok_string.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/includes/token/tok_string.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/basic_test.dir/build.make CMakeFiles/basic_test.dir/includes/token/tok_string.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testB.dir/build.make CMakeFiles/testB.dir/includes/token/tok_string.cpp.o
+.PHONY : includes/token/tok_string.cpp.o
+
+includes/token/tok_string.i: includes/token/tok_string.cpp.i
+.PHONY : includes/token/tok_string.i
+
+# target to preprocess a source file
+includes/token/tok_string.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/includes/token/tok_string.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/basic_test.dir/build.make CMakeFiles/basic_test.dir/includes/token/tok_string.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testB.dir/build.make CMakeFiles/testB.dir/includes/token/tok_string.cpp.i
+.PHONY : includes/token/tok_string.cpp.i
+
+includes/token/tok_string.s: includes/token/tok_string.cpp.s
+.PHONY : includes/token/tok_string.s
+
+# target to generate assembly for a file
+includes/token/tok_string.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/includes/token/tok_string.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/basic_test.dir/build.make CMakeFiles/basic_test.dir/includes/token/tok_string.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testB.dir/build.make CMakeFiles/testB.dir/includes/token/tok_string.cpp.s
+.PHONY : includes/token/tok_string.cpp.s
+
 includes/token/token.o: includes/token/token.cpp.o
 .PHONY : includes/token/token.o
 
@@ -729,6 +759,36 @@ includes/token/token.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/basic_test.dir/build.make CMakeFiles/basic_test.dir/includes/token/token.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/testB.dir/build.make CMakeFiles/testB.dir/includes/token/token.cpp.s
 .PHONY : includes/token/token.cpp.s
+
+includes/token/tokenizer.o: includes/token/tokenizer.cpp.o
+.PHONY : includes/token/tokenizer.o
+
+# target to build an object file
+includes/token/tokenizer.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/includes/token/tokenizer.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/basic_test.dir/build.make CMakeFiles/basic_test.dir/includes/token/tokenizer.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testB.dir/build.make CMakeFiles/testB.dir/includes/token/tokenizer.cpp.o
+.PHONY : includes/token/tokenizer.cpp.o
+
+includes/token/tokenizer.i: includes/token/tokenizer.cpp.i
+.PHONY : includes/token/tokenizer.i
+
+# target to preprocess a source file
+includes/token/tokenizer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/includes/token/tokenizer.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/basic_test.dir/build.make CMakeFiles/basic_test.dir/includes/token/tokenizer.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testB.dir/build.make CMakeFiles/testB.dir/includes/token/tokenizer.cpp.i
+.PHONY : includes/token/tokenizer.cpp.i
+
+includes/token/tokenizer.s: includes/token/tokenizer.cpp.s
+.PHONY : includes/token/tokenizer.s
+
+# target to generate assembly for a file
+includes/token/tokenizer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/includes/token/tokenizer.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/basic_test.dir/build.make CMakeFiles/basic_test.dir/includes/token/tokenizer.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testB.dir/build.make CMakeFiles/testB.dir/includes/token/tokenizer.cpp.s
+.PHONY : includes/token/tokenizer.cpp.s
 
 main.o: main.cpp.o
 .PHONY : main.o
@@ -819,9 +879,15 @@ help:
 	@echo "... includes/token/tk_string.o"
 	@echo "... includes/token/tk_string.i"
 	@echo "... includes/token/tk_string.s"
+	@echo "... includes/token/tok_string.o"
+	@echo "... includes/token/tok_string.i"
+	@echo "... includes/token/tok_string.s"
 	@echo "... includes/token/token.o"
 	@echo "... includes/token/token.i"
 	@echo "... includes/token/token.s"
+	@echo "... includes/token/tokenizer.o"
+	@echo "... includes/token/tokenizer.i"
+	@echo "... includes/token/tokenizer.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

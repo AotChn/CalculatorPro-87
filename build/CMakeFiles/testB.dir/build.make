@@ -265,10 +265,24 @@ CMakeFiles/testB.dir/includes/token/tk_string.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/testB.dir/includes/token/tk_string.cpp.s"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/token/tk_string.cpp -o CMakeFiles/testB.dir/includes/token/tk_string.cpp.s
 
+CMakeFiles/testB.dir/includes/token/tok_string.cpp.o: CMakeFiles/testB.dir/flags.make
+CMakeFiles/testB.dir/includes/token/tok_string.cpp.o: /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/token/tok_string.cpp
+CMakeFiles/testB.dir/includes/token/tok_string.cpp.o: CMakeFiles/testB.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/testB.dir/includes/token/tok_string.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/testB.dir/includes/token/tok_string.cpp.o -MF CMakeFiles/testB.dir/includes/token/tok_string.cpp.o.d -o CMakeFiles/testB.dir/includes/token/tok_string.cpp.o -c /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/token/tok_string.cpp
+
+CMakeFiles/testB.dir/includes/token/tok_string.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/testB.dir/includes/token/tok_string.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/token/tok_string.cpp > CMakeFiles/testB.dir/includes/token/tok_string.cpp.i
+
+CMakeFiles/testB.dir/includes/token/tok_string.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/testB.dir/includes/token/tok_string.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/token/tok_string.cpp -o CMakeFiles/testB.dir/includes/token/tok_string.cpp.s
+
 CMakeFiles/testB.dir/includes/token/token.cpp.o: CMakeFiles/testB.dir/flags.make
 CMakeFiles/testB.dir/includes/token/token.cpp.o: /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/token/token.cpp
 CMakeFiles/testB.dir/includes/token/token.cpp.o: CMakeFiles/testB.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/testB.dir/includes/token/token.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/testB.dir/includes/token/token.cpp.o"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/testB.dir/includes/token/token.cpp.o -MF CMakeFiles/testB.dir/includes/token/token.cpp.o.d -o CMakeFiles/testB.dir/includes/token/token.cpp.o -c /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/token/token.cpp
 
 CMakeFiles/testB.dir/includes/token/token.cpp.i: cmake_force
@@ -278,6 +292,20 @@ CMakeFiles/testB.dir/includes/token/token.cpp.i: cmake_force
 CMakeFiles/testB.dir/includes/token/token.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/testB.dir/includes/token/token.cpp.s"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/token/token.cpp -o CMakeFiles/testB.dir/includes/token/token.cpp.s
+
+CMakeFiles/testB.dir/includes/token/tokenizer.cpp.o: CMakeFiles/testB.dir/flags.make
+CMakeFiles/testB.dir/includes/token/tokenizer.cpp.o: /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/token/tokenizer.cpp
+CMakeFiles/testB.dir/includes/token/tokenizer.cpp.o: CMakeFiles/testB.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/testB.dir/includes/token/tokenizer.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/testB.dir/includes/token/tokenizer.cpp.o -MF CMakeFiles/testB.dir/includes/token/tokenizer.cpp.o.d -o CMakeFiles/testB.dir/includes/token/tokenizer.cpp.o -c /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/token/tokenizer.cpp
+
+CMakeFiles/testB.dir/includes/token/tokenizer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/testB.dir/includes/token/tokenizer.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/token/tokenizer.cpp > CMakeFiles/testB.dir/includes/token/tokenizer.cpp.i
+
+CMakeFiles/testB.dir/includes/token/tokenizer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/testB.dir/includes/token/tokenizer.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/token/tokenizer.cpp -o CMakeFiles/testB.dir/includes/token/tokenizer.cpp.s
 
 # Object files for target testB
 testB_OBJECTS = \
@@ -295,7 +323,9 @@ testB_OBJECTS = \
 "CMakeFiles/testB.dir/includes/token/operator.cpp.o" \
 "CMakeFiles/testB.dir/includes/token/rightparen.cpp.o" \
 "CMakeFiles/testB.dir/includes/token/tk_string.cpp.o" \
-"CMakeFiles/testB.dir/includes/token/token.cpp.o"
+"CMakeFiles/testB.dir/includes/token/tok_string.cpp.o" \
+"CMakeFiles/testB.dir/includes/token/token.cpp.o" \
+"CMakeFiles/testB.dir/includes/token/tokenizer.cpp.o"
 
 # External object files for target testB
 testB_EXTERNAL_OBJECTS =
@@ -314,11 +344,13 @@ bin/testB: CMakeFiles/testB.dir/includes/token/leftparen.cpp.o
 bin/testB: CMakeFiles/testB.dir/includes/token/operator.cpp.o
 bin/testB: CMakeFiles/testB.dir/includes/token/rightparen.cpp.o
 bin/testB: CMakeFiles/testB.dir/includes/token/tk_string.cpp.o
+bin/testB: CMakeFiles/testB.dir/includes/token/tok_string.cpp.o
 bin/testB: CMakeFiles/testB.dir/includes/token/token.cpp.o
+bin/testB: CMakeFiles/testB.dir/includes/token/tokenizer.cpp.o
 bin/testB: CMakeFiles/testB.dir/build.make
-bin/testB: lib/libgtest.a
+bin/testB: lib/libgtestd.a
 bin/testB: CMakeFiles/testB.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Linking CXX executable bin/testB"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Linking CXX executable bin/testB"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/testB.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

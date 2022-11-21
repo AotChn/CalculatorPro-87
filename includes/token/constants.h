@@ -13,7 +13,6 @@ enum TOKEN_TYPES {INTEGER,
                   OPERATOR,
                   LPAREN,
                   RPAREN,
-                  COMP,
                   NON_TYPE};
 
 enum TASKS {MULTIPLY=1,
