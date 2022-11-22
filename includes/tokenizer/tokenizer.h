@@ -106,7 +106,7 @@ Queue<Token*> _infix;
     ASSIGN TYPE                     ->[CHECK]P1
     PKG TOKEN                       ->[CHECK]P2
     DEFINE INVALID INPUTS           ->[WIP]P3
-    IMPLEMENT COMPOSITE FUNCTS      ->[WIP]P4
+    IMPLEMENT COMPOSITE FUNCTS      ->[CHECK]P4
     IMPLEMENT USER DEFINED FUNCTS   ->[WIP]P5
     [add more ...]
 */
