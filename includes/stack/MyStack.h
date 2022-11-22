@@ -1,9 +1,12 @@
 #ifndef AOTS_STACK_H
 #define AOTS_STACK_H
 
+//|______________________STD_LIB____________________|
 #include <iostream>
 #include <iomanip>
+//|----------------MY LIBRARY FUNCTS----------------|
 #include "../linked_list_functions/linked_list_functions.h"
+//|__________________________________________________|
 
 template <typename T>
 class Stack{

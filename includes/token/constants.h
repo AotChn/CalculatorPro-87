@@ -15,13 +15,13 @@ enum TOKEN_TYPES {INTEGER,
                   RPAREN,
                   NON_TYPE};
 
-enum TASKS {MULTIPLY=1,
+enum TASKS  {MULTIPLY=1,
             DIVIDE,
             SUBTRACT,
             ADD,
             EXPONENT};
 
-
+//old function enum system *need to replace
 enum FUNCTION_TYPES {TRIG,
                     MINUS,
                     HYPERBOLIC,

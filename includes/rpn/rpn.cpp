@@ -78,8 +78,6 @@ Stack<Token*> RPN::funct_process(Stack<Token*> hold){
             hold.pop();
             hold.push(new Double(std::sin(_instan)));
             return hold;
-        // case HYPERBOLIC:
-        // return 0;
     }
 }
 

@@ -1,17 +1,18 @@
 #ifndef TOKEN_H
 #define TOKEN_H
 
+//|______________________STD_LIB____________________|
 #include <iostream>
 #include <iomanip>
 #include <cmath>
 #include <string>
 #include <vector>
+//|----------------MY LIBRARY FUNCTS----------------|
+#include "constants.h"
 #include "../stack/MyStack.h"
 #include "../queue/MyQueue.h"
-#include "constants.h"
 #include "../data_pkg/tk_data.h"
-
-using namespace std;
+//|__________________________________________________|
 
 class Token
 {

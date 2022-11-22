@@ -1,11 +1,13 @@
 #ifndef RPN_H
 #define RPN_H
 
+//|______________________STD_LIB____________________|
 #include <iostream>
 #include <iomanip>
 #include <cmath>
 #include <string>
 #include <vector>
+//|----------------MY LIBRARY FUNCTS----------------|
 #include "../stack/MyStack.h"
 #include "../queue/MyQueue.h"
 #include "../token/token.h"
@@ -14,7 +16,7 @@
 #include "../token/token.h"
 #include "../token/function.h"
 #include "../token/double.h"
-
+//|__________________________________________________|
 
 class RPN
 {
@@ -37,12 +39,15 @@ public:
 
 
 private:
-   Queue<Token*> _postfix; 
-   Token::Iterator _p;
    double _instan;
+   Token::Iterator _p;
+   Queue<Token*> _postfix;
    Queue<Token*>::Iterator it;
 };
     
 #endif // RPN_H
 
+/*NOTES 
+rework rpn because it is quite messy
+*/
 

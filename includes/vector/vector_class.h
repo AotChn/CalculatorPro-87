@@ -9,12 +9,13 @@ using namespace std;
 
 template <class T>
 class Vector{
+    
 public:
-
+    //CTOR
     Vector(int size = 0);
     Vector(T *arr, int size);
-    // big three:
-    //...
+
+    //BIG THREE
     Vector(const Vector& obj); //copy constructor
     Vector & operator= (const Vector& RHS); //copy assignment
     ~Vector(); //destructor
@@ -52,7 +53,9 @@ public:
     //OUTPUT:
     template <class U>
     friend ostream& operator <<(ostream& outs, const Vector<U>& _a);
+
 private:
+
     T* _arr;
     int _capacity;
     int _size;
@@ -136,6 +139,7 @@ Vector<T>& Vector<T>::operator +=(const T& item){
     _arr = add_entry(_arr,item,_size,_capacity);
     return *this;
 }
+
 template <class T> 
 void Vector<T>::push_back(const T& item){
     _arr = add_entry(_arr,item,_size,_capacity);
@@ -154,26 +158,31 @@ template <class T>
 void Vector<T>::insert(int insert_here, const T& insert_this){
      _arr = insert_entry(_arr,insert_this,insert_here,_size,_capacity);
 } 
+
 template <class T>
 void Vector<T>::erase(int erase_this_index){
     _arr = erase_entry(_arr,erase_this_index,_size,_capacity);
-}       
+}  
+
 template <class T>
 int Vector<T>::index_of(const T& item){
     int found = search(_arr,_size,item);
     return found;
 
-}             
+}   
+
 template <class T>
 void Vector<T>::set_size(int size){
     //assert(size<_capacity);
     _size = size;
 }
+
 template <class T>             
 void Vector<T>::set_capacity(int capacity){
     _capacity = capacity;
     _arr = reallocate(_arr,_size,_capacity);
 }  
+
 template <class T>
 bool Vector<T>::empty() const{
     if(_size==0){
