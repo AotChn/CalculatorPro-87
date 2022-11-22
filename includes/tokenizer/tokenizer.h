@@ -39,19 +39,21 @@ tokenizer(std::string _str){_tk_string = _str;}
 //MUTATORS
 void set_str(std::string str){_tk_string = str;}
 void set_infix(Queue<Token*> infix){_infix = infix;}
-Queue<Token*> tokenize(){pkg_type(_tk_string);return _infix;}
 
 //ACCESSORS
-Queue<Token*> get_infix(){return _infix;}
-std::string get_str(){return _tk_string;}
 void Print();
+std::string get_str(){return _tk_string;}
+Queue<Token*> get_infix(){return _infix;}
+Queue<Token*> tokenize(){pkg_type(_tk_string);return _infix;}
 
 protected:
 //PROCESS
+
 void pkg_type(std::string _str);
 void pkg_token(int type);
 
 //_ST_FUNCTS_______________|
+
 int Non   (std::string key);
 int Num   (std::string key);
 int Oper  (std::string key);
@@ -60,40 +62,41 @@ int Rp    (std::string key);
 int Alpha (std::string key);
 int Funct (std::string key);
 int Comp  (std::string key);
-int Accept(std::string key);
 int Inv   (std::string key);
+int Accept(std::string key);
 
-//FUNCTION POINTERS TO _ST_FUNCTS_________________________|
-int(tokenizer::*NONTYPE_ST)(std::string) = &tokenizer::Non;
-int(tokenizer::*NUMBER_ST)(std::string) = &tokenizer::Num;
-int(tokenizer::*OPERAT_ST)(std::string) = &tokenizer::Oper;
-int(tokenizer::*LEFTP_ST)(std::string) = &tokenizer::Lp;
-int(tokenizer::*RIGHTP_ST)(std::string) = &tokenizer::Rp;
-int(tokenizer::*ALPHAB_ST)(std::string) = &tokenizer::Alpha;
-int(tokenizer::*FUNCT_ST)(std::string) = &tokenizer::Funct;
-int(tokenizer::*COMP_ST)(std::string) = &tokenizer::Comp;
+//FUNCTION POINTERS TO _ST_FUNCTS___________________________|
+int(tokenizer::*NONTYPE_ST) (std::string) = &tokenizer::Non;
+int(tokenizer::*NUMBER_ST)  (std::string) = &tokenizer::Num;
+int(tokenizer::*OPERAT_ST)  (std::string) = &tokenizer::Oper;
+int(tokenizer::*LEFTP_ST)   (std::string) = &tokenizer::Lp;
+int(tokenizer::*RIGHTP_ST)  (std::string) = &tokenizer::Rp;
+int(tokenizer::*ALPHAB_ST)  (std::string) = &tokenizer::Alpha;
+int(tokenizer::*FUNCT_ST)   (std::string) = &tokenizer::Funct;
+int(tokenizer::*COMP_ST)    (std::string) = &tokenizer::Comp;
+int(tokenizer::*INVAL_ST)   (std::string) = &tokenizer::Inv;
 int(tokenizer::*ACCEPTED_ST)(std::string) = &tokenizer::Accept;
-int(tokenizer::*INVAL_ST)(std::string) = &tokenizer::Inv;
 
 private:
+//ALL POSSIBLE STATES
 std::map<int,int(tokenizer::*)(std::string)> state_map = {{NON,NONTYPE_ST},{NUM,NUMBER_ST},{OPER,OPERAT_ST},
-                                                          {LP,LEFTP_ST},  {RP,RIGHTP_ST},{ALPH,ALPHAB_ST},
-                                                          {FUNCT,FUNCT_ST},  {INV,INVAL_ST}, {COMP,COMP_ST},
+                                                          {LP,LEFTP_ST},   {RP,RIGHTP_ST},{ALPH,ALPHAB_ST},
+                                                          {FUNCT,FUNCT_ST},{INV,INVAL_ST}, {COMP,COMP_ST},
                                                           {ACCEPT,ACCEPTED_ST}};
 
 //TK STATES IN PROCESS
-int _cur_ST; 
-int _prev_ST;
+int _cur_ST; //current state
+int _prev_ST; //previous state
 
-//STR STORAGE
+//STR MANIPULTION
 std::string hold ="";
 std::string token = "";
 std::string _tk_string;
-std::string::iterator wlk;
+std::string::iterator wlk; 
 
 //FINAL PKG
-Queue<Token*> _infix;
 tk_data tk;
+Queue<Token*> _infix;
 
 };
 

@@ -1,9 +1,13 @@
 #include "tokenizer.h"
 
+const bool debug = false;
+
+//print infix
 void tokenizer::Print(){ 
         _infix.print_pointers();
     }
 
+//assign token type
 void tokenizer::pkg_type(std::string _str){
     wlk = _str.begin();
     while(wlk != _str.cend()){
@@ -15,11 +19,11 @@ void tokenizer::pkg_type(std::string _str){
             //this how we call functions pointing to member functions
         }
     }
- //   cout<<"{end}";
 }
 
+//start state
 int tokenizer::Non(std::string key){
- //   cout<<"PASSED NON->";
+    if(debug){cout<<"PASSED NON->";}
     _cur_ST = NON;
     token = "" + key;
     if(str_vect_cmp(NUMERALS_,key)||key=="."){
@@ -29,8 +33,9 @@ int tokenizer::Non(std::string key){
     return OPER;
 }
 
+//numerical char
 int tokenizer::Num(std::string key){
- //   cout<<"PASSED NUM->";
+    if(debug){cout<<"PASSED NUM->";}
     _cur_ST = NUM;
     if(str_vect_cmp(NUMERALS_,key)||key=="."){
         token = token + key;
@@ -41,8 +46,9 @@ int tokenizer::Num(std::string key){
     return ACCEPT;
 }
 
+//operator
 int tokenizer::Oper(std::string key){
-//    cout<<"PASSED OPER->";
+    if(debug){cout<<"PASSED OPER->";}
     _cur_ST = OPER;
     if(str_vect_cmp(OPERATORS_,key)){
         if(key=="("){
@@ -63,8 +69,9 @@ int tokenizer::Oper(std::string key){
     return ALPH;
 }
 
+//left parenthesis
 int tokenizer::Lp(std::string key){
-//    cout<<"PASSED LP->";
+    if(debug){cout<<"PASSED LP->";}
     _cur_ST = LP;
     switch(_prev_ST){
         case ALPH:{}
@@ -75,15 +82,17 @@ int tokenizer::Lp(std::string key){
     }
 }
 
+//right parenthesis
 int tokenizer::Rp(std::string key){
-//    cout<<"PASSED RP->";
+    if(debug){cout<<"PASSED RP->";}
     _cur_ST = RP;
     wlk++;
     return ACCEPT;
 }
 
+//alphabetical char
 int tokenizer::Alpha(std::string key){
-//    cout<<"PASSED ALPH->";
+    if(debug){cout<<"PASSED ALPHA->";}
     _cur_ST = ALPH;
     if(str_vect_cmp(ALPHAS_,key)){
         token = token + key;
@@ -94,8 +103,9 @@ int tokenizer::Alpha(std::string key){
     return ACCEPT;
 }
 
+//general function
 int tokenizer::Funct(std::string key){
- //  cout<<"PASSED FUNCT->";
+    if(debug){cout<<"PASSED FUNCT->";}
     _cur_ST = FUNCT;
     if(pre_def_functs.find(token)!=pre_def_functs.end()){
         if(pre_def_functs[token]>300){
@@ -105,7 +115,10 @@ int tokenizer::Funct(std::string key){
         }
     return ALPH;
 }
+
+//composite function
 int tokenizer::Comp (std::string key){
+    if(debug){cout<<"PASSED COMP->";}
     _cur_ST = COMP;
     hold = user_funct[token];
     pkg_token(LP);
@@ -116,20 +129,24 @@ int tokenizer::Comp (std::string key){
     pkg_token(RP);
     return ACCEPT;
 }
-int tokenizer::Accept(std::string key){
+
+//end state
+int tokenizer::Accept(std::string key){ 
+    if(debug){cout<<"[TYPE:"<<_cur_ST<<"|TOKEN :"<<token<<"] ACCEPTED"<<endl;}
     pkg_token(_cur_ST);
     _prev_ST = _cur_ST;
-    //cout<<"[TYPE:"<<_cur_ST<<"|TOKEN :"<<token<<"]STATE ACCEPT"<<endl;
+  
     _cur_ST = ACCEPT;
     return ACCEPT;
 }
 
+ //invalid inputs (end state too)
 int tokenizer::Inv(std::string key){
-//INVALID INPUTS
-    return 56;
+    return INV;
 }
 
-void tokenizer::pkg_token(int type){
+//creates respective token obj
+void tokenizer::pkg_token(int type){ 
     tk._str = token;
     tk._type = type;
     switch(type){
