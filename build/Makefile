@@ -370,6 +370,36 @@ includes/exceptions/missingparan.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/testB.dir/build.make CMakeFiles/testB.dir/includes/exceptions/missingparan.cpp.s
 .PHONY : includes/exceptions/missingparan.cpp.s
 
+includes/plotter/plot.o: includes/plotter/plot.cpp.o
+.PHONY : includes/plotter/plot.o
+
+# target to build an object file
+includes/plotter/plot.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/includes/plotter/plot.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/basic_test.dir/build.make CMakeFiles/basic_test.dir/includes/plotter/plot.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testB.dir/build.make CMakeFiles/testB.dir/includes/plotter/plot.cpp.o
+.PHONY : includes/plotter/plot.cpp.o
+
+includes/plotter/plot.i: includes/plotter/plot.cpp.i
+.PHONY : includes/plotter/plot.i
+
+# target to preprocess a source file
+includes/plotter/plot.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/includes/plotter/plot.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/basic_test.dir/build.make CMakeFiles/basic_test.dir/includes/plotter/plot.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testB.dir/build.make CMakeFiles/testB.dir/includes/plotter/plot.cpp.i
+.PHONY : includes/plotter/plot.cpp.i
+
+includes/plotter/plot.s: includes/plotter/plot.cpp.s
+.PHONY : includes/plotter/plot.s
+
+# target to generate assembly for a file
+includes/plotter/plot.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/includes/plotter/plot.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/basic_test.dir/build.make CMakeFiles/basic_test.dir/includes/plotter/plot.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testB.dir/build.make CMakeFiles/testB.dir/includes/plotter/plot.cpp.s
+.PHONY : includes/plotter/plot.cpp.s
+
 includes/rpn/rpn.o: includes/rpn/rpn.cpp.o
 .PHONY : includes/rpn/rpn.o
 
@@ -700,35 +730,35 @@ includes/token/token.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/testB.dir/build.make CMakeFiles/testB.dir/includes/token/token.cpp.s
 .PHONY : includes/token/token.cpp.s
 
-includes/token/tokenizer.o: includes/token/tokenizer.cpp.o
-.PHONY : includes/token/tokenizer.o
+includes/tokenizer/tokenizer.o: includes/tokenizer/tokenizer.cpp.o
+.PHONY : includes/tokenizer/tokenizer.o
 
 # target to build an object file
-includes/token/tokenizer.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/includes/token/tokenizer.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/basic_test.dir/build.make CMakeFiles/basic_test.dir/includes/token/tokenizer.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/testB.dir/build.make CMakeFiles/testB.dir/includes/token/tokenizer.cpp.o
-.PHONY : includes/token/tokenizer.cpp.o
+includes/tokenizer/tokenizer.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/includes/tokenizer/tokenizer.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/basic_test.dir/build.make CMakeFiles/basic_test.dir/includes/tokenizer/tokenizer.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testB.dir/build.make CMakeFiles/testB.dir/includes/tokenizer/tokenizer.cpp.o
+.PHONY : includes/tokenizer/tokenizer.cpp.o
 
-includes/token/tokenizer.i: includes/token/tokenizer.cpp.i
-.PHONY : includes/token/tokenizer.i
+includes/tokenizer/tokenizer.i: includes/tokenizer/tokenizer.cpp.i
+.PHONY : includes/tokenizer/tokenizer.i
 
 # target to preprocess a source file
-includes/token/tokenizer.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/includes/token/tokenizer.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/basic_test.dir/build.make CMakeFiles/basic_test.dir/includes/token/tokenizer.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/testB.dir/build.make CMakeFiles/testB.dir/includes/token/tokenizer.cpp.i
-.PHONY : includes/token/tokenizer.cpp.i
+includes/tokenizer/tokenizer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/includes/tokenizer/tokenizer.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/basic_test.dir/build.make CMakeFiles/basic_test.dir/includes/tokenizer/tokenizer.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testB.dir/build.make CMakeFiles/testB.dir/includes/tokenizer/tokenizer.cpp.i
+.PHONY : includes/tokenizer/tokenizer.cpp.i
 
-includes/token/tokenizer.s: includes/token/tokenizer.cpp.s
-.PHONY : includes/token/tokenizer.s
+includes/tokenizer/tokenizer.s: includes/tokenizer/tokenizer.cpp.s
+.PHONY : includes/tokenizer/tokenizer.s
 
 # target to generate assembly for a file
-includes/token/tokenizer.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/includes/token/tokenizer.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/basic_test.dir/build.make CMakeFiles/basic_test.dir/includes/token/tokenizer.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/testB.dir/build.make CMakeFiles/testB.dir/includes/token/tokenizer.cpp.s
-.PHONY : includes/token/tokenizer.cpp.s
+includes/tokenizer/tokenizer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/includes/tokenizer/tokenizer.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/basic_test.dir/build.make CMakeFiles/basic_test.dir/includes/tokenizer/tokenizer.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testB.dir/build.make CMakeFiles/testB.dir/includes/tokenizer/tokenizer.cpp.s
+.PHONY : includes/tokenizer/tokenizer.cpp.s
 
 main.o: main.cpp.o
 .PHONY : main.o
@@ -786,6 +816,9 @@ help:
 	@echo "... includes/exceptions/missingparan.o"
 	@echo "... includes/exceptions/missingparan.i"
 	@echo "... includes/exceptions/missingparan.s"
+	@echo "... includes/plotter/plot.o"
+	@echo "... includes/plotter/plot.i"
+	@echo "... includes/plotter/plot.s"
 	@echo "... includes/rpn/rpn.o"
 	@echo "... includes/rpn/rpn.i"
 	@echo "... includes/rpn/rpn.s"
@@ -819,9 +852,9 @@ help:
 	@echo "... includes/token/token.o"
 	@echo "... includes/token/token.i"
 	@echo "... includes/token/token.s"
-	@echo "... includes/token/tokenizer.o"
-	@echo "... includes/token/tokenizer.i"
-	@echo "... includes/token/tokenizer.s"
+	@echo "... includes/tokenizer/tokenizer.o"
+	@echo "... includes/tokenizer/tokenizer.i"
+	@echo "... includes/tokenizer/tokenizer.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
