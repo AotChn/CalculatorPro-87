@@ -1,39 +1,20 @@
-/* +TOKENIZER+V4 +LOGIC + + + + + + + + + + + + + + + + + + + + + + +
------OVERVIEW:
-FSM WHICH TAKES IN STRING INPUT AND THEN CONVERTS TO INFIX TOKENS 
-TO BE PROCESSED IN A SHUNTING YARD CLASS TO CONVERT TO POSTFIX-
+tokenizer.ver3 logic 
 
-START AT S0 AND THEN TRANSIONS TO ACCORDING STATE UNTIL ARRIVING 
-AT AN ACCEPTING STATE-
+OVERVIEW: fsm which takes in string input and then converts to infix tokens to be processed in a shunting yard class to convert to postfix-
 
-ONCE ARRIVING AT ACCEPTING STATE WILL PKG TOKENS IN A WRAPPER (TK_DATA)
-TO BE SENT TO ACCORDING CLASS TO CREATE TOKEN-
+start at s0 and then transions to according state until arriving at an accepting state-
 
-IMPLEMENTED IS AN INVALID STATE TO PROCESS INVALID INPUTS FROM USER- 
-SINCE STATES ARE THEIR OWN FUNCTION WE ARE ABLE TO ADD ADDITIONAL STATES
-BY DEFINING ANOTHER FUNCTION-
+once arriving at accepting state will pkg tokens in a wrapper (tk_data) to be sent to according class to create token-
 
-EACH STATE IS MAPPED TO A CORRESPONDING INT AND IS STORED AS A FUNCTION POINTER 
-WHICH THEN WILL POINT TO A SEQUENCE OF EVENT STATES EVENTUALLY LEADING TO ACCEPTING STATE-
+implemented is an invalid state to process invalid inputs from user- since states are their own function we are able to add additional states by defining another function-
 
-ENCAPSULATING FUNCTION CAN BE CALLED RECURSIVELY TO HANDLE COMPOSITE FUNCTIONS-
+each state is mapped to a corresponding int and is stored as a function pointer which then will point to a sequence of event states eventually leading to accepting state-
 
-(in this process we will inject another string to tokenize in the middle of the main process)
-we are able to do this because tokens are getting pushed to the infix queue char by char 
-instead of all at once; 
+encapsulating function can be called recursively to handle composite functions-
+(in this process we will inject another string to tokenize in the middle of the main process) we are able to do this because tokens are getting pushed to the infix queue char by char instead of all at once;
 
-WE CAN ALSO SET A PRE-INFIX AND ADD ON TO IT (store answer functionality?)
-This is my 3rd tokenizer iteration;
+we can also set a pre-infix and add on to it (store answer functionality?) this is my 3rd tokenizer iteration;
 
+THE ID SYSTEM : all tokens will have an associative id which will correspond to their functionality though not particularly important to numerical it can serve as a way to map operations ids are int values and we can categorize functions by id i.e.
 
-THE ID SYSTEM :
-ALL TOKENS WILL HAVE AN ASSOCIATIVE ID WHICH WILL CORRESPOND TO THEIR FUNCTIONALITY
-THOUGH NOT PARTICUALLY IMPORTANT TO NUMERICAL IT CAN SERVE AS A WAY TO MAP OPERATIONS
-IDS ARE INT VALUES AND WE CAN CATEGORIZE FUNCTIONS BY ID I.E. 
-
-FUNCTIONS IN 100-150 could be functions that take in 2 arguments while functions in 
-151-200 range can take in 2 aruguments etc.
-THIS COULD ELIMINTE THE PRECEDENCE SYSTEM 
-and even allow us to handle same name functions with different functions
-ie '-' OPERATOR vs '-' UNARY OPERATOR
-
+functions in 100-150 could be functions that take in 2 arguments while functions in 151-200 range can take in 2 arguments etc. this could eliminate the precedence system and even allow us to handle same name functions with different functions ie '-' operator vs '-' unary operator
