@@ -251,38 +251,10 @@ CMakeFiles/main.dir/includes/token/rightparen.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/includes/token/rightparen.cpp.s"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/token/rightparen.cpp -o CMakeFiles/main.dir/includes/token/rightparen.cpp.s
 
-CMakeFiles/main.dir/includes/token/tk_string.cpp.o: CMakeFiles/main.dir/flags.make
-CMakeFiles/main.dir/includes/token/tk_string.cpp.o: /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/token/tk_string.cpp
-CMakeFiles/main.dir/includes/token/tk_string.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/main.dir/includes/token/tk_string.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/includes/token/tk_string.cpp.o -MF CMakeFiles/main.dir/includes/token/tk_string.cpp.o.d -o CMakeFiles/main.dir/includes/token/tk_string.cpp.o -c /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/token/tk_string.cpp
-
-CMakeFiles/main.dir/includes/token/tk_string.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/includes/token/tk_string.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/token/tk_string.cpp > CMakeFiles/main.dir/includes/token/tk_string.cpp.i
-
-CMakeFiles/main.dir/includes/token/tk_string.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/includes/token/tk_string.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/token/tk_string.cpp -o CMakeFiles/main.dir/includes/token/tk_string.cpp.s
-
-CMakeFiles/main.dir/includes/token/tok_string.cpp.o: CMakeFiles/main.dir/flags.make
-CMakeFiles/main.dir/includes/token/tok_string.cpp.o: /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/token/tok_string.cpp
-CMakeFiles/main.dir/includes/token/tok_string.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/main.dir/includes/token/tok_string.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/includes/token/tok_string.cpp.o -MF CMakeFiles/main.dir/includes/token/tok_string.cpp.o.d -o CMakeFiles/main.dir/includes/token/tok_string.cpp.o -c /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/token/tok_string.cpp
-
-CMakeFiles/main.dir/includes/token/tok_string.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/includes/token/tok_string.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/token/tok_string.cpp > CMakeFiles/main.dir/includes/token/tok_string.cpp.i
-
-CMakeFiles/main.dir/includes/token/tok_string.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/includes/token/tok_string.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/token/tok_string.cpp -o CMakeFiles/main.dir/includes/token/tok_string.cpp.s
-
 CMakeFiles/main.dir/includes/token/token.cpp.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/includes/token/token.cpp.o: /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/token/token.cpp
 CMakeFiles/main.dir/includes/token/token.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/main.dir/includes/token/token.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/main.dir/includes/token/token.cpp.o"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/includes/token/token.cpp.o -MF CMakeFiles/main.dir/includes/token/token.cpp.o.d -o CMakeFiles/main.dir/includes/token/token.cpp.o -c /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/token/token.cpp
 
 CMakeFiles/main.dir/includes/token/token.cpp.i: cmake_force
@@ -296,7 +268,7 @@ CMakeFiles/main.dir/includes/token/token.cpp.s: cmake_force
 CMakeFiles/main.dir/includes/token/tokenizer.cpp.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/includes/token/tokenizer.cpp.o: /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/token/tokenizer.cpp
 CMakeFiles/main.dir/includes/token/tokenizer.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/main.dir/includes/token/tokenizer.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/main.dir/includes/token/tokenizer.cpp.o"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/includes/token/tokenizer.cpp.o -MF CMakeFiles/main.dir/includes/token/tokenizer.cpp.o.d -o CMakeFiles/main.dir/includes/token/tokenizer.cpp.o -c /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/token/tokenizer.cpp
 
 CMakeFiles/main.dir/includes/token/tokenizer.cpp.i: cmake_force
@@ -322,8 +294,6 @@ main_OBJECTS = \
 "CMakeFiles/main.dir/includes/token/leftparen.cpp.o" \
 "CMakeFiles/main.dir/includes/token/operator.cpp.o" \
 "CMakeFiles/main.dir/includes/token/rightparen.cpp.o" \
-"CMakeFiles/main.dir/includes/token/tk_string.cpp.o" \
-"CMakeFiles/main.dir/includes/token/tok_string.cpp.o" \
 "CMakeFiles/main.dir/includes/token/token.cpp.o" \
 "CMakeFiles/main.dir/includes/token/tokenizer.cpp.o"
 
@@ -343,13 +313,11 @@ bin/main: CMakeFiles/main.dir/includes/token/integer.cpp.o
 bin/main: CMakeFiles/main.dir/includes/token/leftparen.cpp.o
 bin/main: CMakeFiles/main.dir/includes/token/operator.cpp.o
 bin/main: CMakeFiles/main.dir/includes/token/rightparen.cpp.o
-bin/main: CMakeFiles/main.dir/includes/token/tk_string.cpp.o
-bin/main: CMakeFiles/main.dir/includes/token/tok_string.cpp.o
 bin/main: CMakeFiles/main.dir/includes/token/token.cpp.o
 bin/main: CMakeFiles/main.dir/includes/token/tokenizer.cpp.o
 bin/main: CMakeFiles/main.dir/build.make
 bin/main: CMakeFiles/main.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Linking CXX executable bin/main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Linking CXX executable bin/main"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/main.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

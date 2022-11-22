@@ -20,8 +20,6 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/token/leftparen.cpp" "CMakeFiles/main.dir/includes/token/leftparen.cpp.o" "gcc" "CMakeFiles/main.dir/includes/token/leftparen.cpp.o.d"
   "/Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/token/operator.cpp" "CMakeFiles/main.dir/includes/token/operator.cpp.o" "gcc" "CMakeFiles/main.dir/includes/token/operator.cpp.o.d"
   "/Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/token/rightparen.cpp" "CMakeFiles/main.dir/includes/token/rightparen.cpp.o" "gcc" "CMakeFiles/main.dir/includes/token/rightparen.cpp.o.d"
-  "/Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/token/tk_string.cpp" "CMakeFiles/main.dir/includes/token/tk_string.cpp.o" "gcc" "CMakeFiles/main.dir/includes/token/tk_string.cpp.o.d"
-  "/Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/token/tok_string.cpp" "CMakeFiles/main.dir/includes/token/tok_string.cpp.o" "gcc" "CMakeFiles/main.dir/includes/token/tok_string.cpp.o.d"
   "/Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/token/token.cpp" "CMakeFiles/main.dir/includes/token/token.cpp.o" "gcc" "CMakeFiles/main.dir/includes/token/token.cpp.o.d"
   "/Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/token/tokenizer.cpp" "CMakeFiles/main.dir/includes/token/tokenizer.cpp.o" "gcc" "CMakeFiles/main.dir/includes/token/tokenizer.cpp.o.d"
   "/Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/main.cpp" "CMakeFiles/main.dir/main.cpp.o" "gcc" "CMakeFiles/main.dir/main.cpp.o.d"
