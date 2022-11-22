@@ -9,6 +9,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/_tests/_test_files/basic_test.cpp" "CMakeFiles/basic_test.dir/_tests/_test_files/basic_test.cpp.o" "gcc" "CMakeFiles/basic_test.dir/_tests/_test_files/basic_test.cpp.o.d"
+  "/Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/data_pkg/graph_info.cpp" "CMakeFiles/basic_test.dir/includes/data_pkg/graph_info.cpp.o" "gcc" "CMakeFiles/basic_test.dir/includes/data_pkg/graph_info.cpp.o.d"
   "/Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/exceptions/dividebyzero.cpp" "CMakeFiles/basic_test.dir/includes/exceptions/dividebyzero.cpp.o" "gcc" "CMakeFiles/basic_test.dir/includes/exceptions/dividebyzero.cpp.o.d"
   "/Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/exceptions/missingparan.cpp" "CMakeFiles/basic_test.dir/includes/exceptions/missingparan.cpp.o" "gcc" "CMakeFiles/basic_test.dir/includes/exceptions/missingparan.cpp.o.d"
   "/Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/plotter/plot.cpp" "CMakeFiles/basic_test.dir/includes/plotter/plot.cpp.o" "gcc" "CMakeFiles/basic_test.dir/includes/plotter/plot.cpp.o.d"

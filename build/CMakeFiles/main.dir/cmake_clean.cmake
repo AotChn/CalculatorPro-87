@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/main.dir/includes/data_pkg/graph_info.cpp.o"
+  "CMakeFiles/main.dir/includes/data_pkg/graph_info.cpp.o.d"
   "CMakeFiles/main.dir/includes/exceptions/dividebyzero.cpp.o"
   "CMakeFiles/main.dir/includes/exceptions/dividebyzero.cpp.o.d"
   "CMakeFiles/main.dir/includes/exceptions/missingparan.cpp.o"

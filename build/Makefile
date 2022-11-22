@@ -310,6 +310,36 @@ _tests/_test_files/testB.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/testB.dir/build.make CMakeFiles/testB.dir/_tests/_test_files/testB.cpp.s
 .PHONY : _tests/_test_files/testB.cpp.s
 
+includes/data_pkg/graph_info.o: includes/data_pkg/graph_info.cpp.o
+.PHONY : includes/data_pkg/graph_info.o
+
+# target to build an object file
+includes/data_pkg/graph_info.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/includes/data_pkg/graph_info.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/basic_test.dir/build.make CMakeFiles/basic_test.dir/includes/data_pkg/graph_info.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testB.dir/build.make CMakeFiles/testB.dir/includes/data_pkg/graph_info.cpp.o
+.PHONY : includes/data_pkg/graph_info.cpp.o
+
+includes/data_pkg/graph_info.i: includes/data_pkg/graph_info.cpp.i
+.PHONY : includes/data_pkg/graph_info.i
+
+# target to preprocess a source file
+includes/data_pkg/graph_info.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/includes/data_pkg/graph_info.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/basic_test.dir/build.make CMakeFiles/basic_test.dir/includes/data_pkg/graph_info.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testB.dir/build.make CMakeFiles/testB.dir/includes/data_pkg/graph_info.cpp.i
+.PHONY : includes/data_pkg/graph_info.cpp.i
+
+includes/data_pkg/graph_info.s: includes/data_pkg/graph_info.cpp.s
+.PHONY : includes/data_pkg/graph_info.s
+
+# target to generate assembly for a file
+includes/data_pkg/graph_info.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/includes/data_pkg/graph_info.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/basic_test.dir/build.make CMakeFiles/basic_test.dir/includes/data_pkg/graph_info.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testB.dir/build.make CMakeFiles/testB.dir/includes/data_pkg/graph_info.cpp.s
+.PHONY : includes/data_pkg/graph_info.cpp.s
+
 includes/exceptions/dividebyzero.o: includes/exceptions/dividebyzero.cpp.o
 .PHONY : includes/exceptions/dividebyzero.o
 
@@ -810,6 +840,9 @@ help:
 	@echo "... _tests/_test_files/testB.o"
 	@echo "... _tests/_test_files/testB.i"
 	@echo "... _tests/_test_files/testB.s"
+	@echo "... includes/data_pkg/graph_info.o"
+	@echo "... includes/data_pkg/graph_info.i"
+	@echo "... includes/data_pkg/graph_info.s"
 	@echo "... includes/exceptions/dividebyzero.o"
 	@echo "... includes/exceptions/dividebyzero.i"
 	@echo "... includes/exceptions/dividebyzero.s"

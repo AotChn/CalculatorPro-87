@@ -110,7 +110,8 @@
 				12,
 				13,
 				14,
-				15
+				15,
+				16
 			]
 		}
 	],
@@ -194,7 +195,8 @@
 				12,
 				13,
 				14,
-				15
+				15,
+				16
 			]
 		}
 	],
@@ -204,6 +206,12 @@
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
 			"path" : "_tests/_test_files/testB.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "includes/data_pkg/graph_info.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
