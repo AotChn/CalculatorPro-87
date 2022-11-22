@@ -9,7 +9,6 @@ using namespace std;
 #include "../../includes/node/node.h"
 #include "../../includes/linked_list_functions/linked_list_functions.h"
 #include "../../includes/token/token.h"
-#include "../../includes/token/tk_string.h"
 #include "../../includes/token/operator.h"
 #include "../../includes/token/integer.h"
 #include "../../includes/token/function.h"
@@ -19,8 +18,8 @@ using namespace std;
 #include "../../includes/queue/MyQueue.h"
 #include "../../includes/shunting_yard/shunting_yard.h"
 #include "../../includes/rpn/rpn.h"
-#include "../../includes/tk_data/tk_data.h"
-#include "../../includes/token/tok_string.h"
+#include "../../includes/data_pkg/tk_data.h"
+#include "../../includes/tokenizer/tokenizer.h"
 //++++++++++ ------------------------------------------------------>[]
 
 void title(string name){
@@ -163,7 +162,7 @@ if(debug==false){
 bool shunting_yard_test(bool debug = true){
   if(debug){
     title("USER_INPUT");
-      std::string input = "C+C";
+      std::string input = "B";
       cout<<"EQUATION: "<<input<<";B=5+5"<<endl;
       
       tokenizer Tr;

@@ -7,7 +7,6 @@
 #include "includes/node/node.h"
 #include "includes/linked_list_functions/linked_list_functions.h"
 #include "includes/token/token.h"
-#include "includes/token/tk_string.h"
 #include "includes/token/operator.h"
 #include "includes/token/integer.h"
 #include "includes/token/function.h"
@@ -19,7 +18,7 @@
 #include "includes/rpn/rpn.h"
 #include "includes/token/constants.h"
 #include <map>
-#include "includes/token/tok_string.h"
+#include "includes/token/tokenizer.h"
 //++++++++++ ------------------------------------------------------>[]
 using namespace std;
 void tkizer();
