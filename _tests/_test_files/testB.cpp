@@ -20,7 +20,7 @@ using namespace std;
 #include "../../includes/rpn/rpn.h"
 #include "../../includes/data_pkg/tk_data.h"
 #include "../../includes/tokenizer/tokenizer.h"
-#include "../../includes/data_pkg/graph_info.cpp"
+#include "../../includes/data_pkg/graph_info.h"
 #include "../../includes/plotter/plot.h"
 //++++++++++ ------------------------------------------------------>[]
 
@@ -191,6 +191,8 @@ bool shunting_yard_test(bool debug = true){
     iu.total_pts = 300;
     Plot P(iu);
     P.create_plot_map();
+    P.Print();
+    cout<<"we finished";
   }
   //------------
   end(1);
