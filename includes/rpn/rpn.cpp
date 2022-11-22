@@ -11,12 +11,13 @@ RPN::RPN(Queue<Token*> postfix){;
 
 double RPN::rpn_process(){
     Stack<Token*> hold;
-    while(_postfix.empty() == false){
-        _p = _postfix.front();
+    it = _postfix.begin();
+    while(it!= _postfix.end()){
+        _p._tk = *it;
         hold = type_process(hold);
-        _postfix.pop();
+        it++;
     }
-    _p = hold.top();
+    _p._tk = hold.top();
     int result = static_cast<Integer*>(_p._tk)->get_val();
     return result;
 }
@@ -24,7 +25,7 @@ double RPN::rpn_process(){
 Stack<Token*> RPN::type_process(Stack<Token*> hold){
     switch(_p._tk->TypeOf()){
             case INTEGER:{
-               hold.push(_p._tk);
+               hold.push(*it);
                 return hold; 
             }
             case OPERATOR:{
@@ -90,10 +91,14 @@ void RPN::Print(RPN Print_this,ostream &outs){
     outs<<rpn_process()<<endl;
 }
 
- const double RPN::operator ()(){
+double RPN::operator ()(){
     return this->rpn_process();
 }
-const double RPN::operator ()(const double value){
+double RPN::operator ()(double value){
     _instan = value;
     return this->rpn_process();
+}
+
+void RPN::set_instan(int x){
+    _instan = x;
 }

@@ -28,11 +28,12 @@ public:
     Stack<Token*> funct_process(Stack<Token*> hold);
 
     void set_input(Queue<Token*> postfix);
+    void set_instan(int x);
     
     void Print(RPN Print_this,ostream &outs=cout);
 
-    const double operator ()();
-    const double operator ()(const double value);
+    double operator ()();
+    double operator ()(double value);
 
 
 private:

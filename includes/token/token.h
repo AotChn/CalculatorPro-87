@@ -65,7 +65,7 @@ class Iterator{
     
     friend ostream& operator <<(ostream& outs, const Token& Token);
     virtual void Print(ostream& outs=cout) const;
-    virtual TOKEN_TYPES TypeOf(){}
+    virtual TOKEN_TYPES TypeOf(){return NON_TYPE;}
     
 
 private:

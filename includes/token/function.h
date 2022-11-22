@@ -18,7 +18,7 @@ public:
 
     void Print(ostream &outs=cout) const ;
     TOKEN_TYPES TypeOf(){return FUNCTION;}
-    virtual FUNCTION_TYPES funct_type(){}
+    virtual FUNCTION_TYPES funct_type(){ return CONSANT;}
     
     void set_var(int value);
     void set_funct();
