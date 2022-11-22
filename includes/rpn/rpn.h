@@ -39,6 +39,7 @@ private:
    Queue<Token*> _postfix; 
    Token::Iterator _p;
    double _instan;
+   Queue<Token*>::Iterator it;
 };
     
 #endif // RPN_H
