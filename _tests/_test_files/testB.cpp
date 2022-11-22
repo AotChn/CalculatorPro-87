@@ -20,6 +20,8 @@ using namespace std;
 #include "../../includes/rpn/rpn.h"
 #include "../../includes/data_pkg/tk_data.h"
 #include "../../includes/tokenizer/tokenizer.h"
+#include "../../includes/data_pkg/graph_info.cpp"
+#include "../../includes/plotter/plot.h"
 //++++++++++ ------------------------------------------------------>[]
 
 void title(string name){
@@ -160,9 +162,9 @@ if(debug==false){
 */
 
 bool shunting_yard_test(bool debug = true){
-  if(debug){
+  if(debug==false){
     title("USER_INPUT");
-      std::string input = "B";
+      std::string input = "5+4";
       cout<<"EQUATION: "<<input<<";B=5+5"<<endl;
       
       tokenizer Tr;
@@ -183,7 +185,13 @@ bool shunting_yard_test(bool debug = true){
     end();
     border();
   }
-  
+  if(debug==true){
+    Graph_info iu("x+5");
+    iu.post_fix.print_pointers();
+    iu.total_pts = 300;
+    Plot P(iu);
+    P.create_plot_map();
+  }
   //------------
   end(1);
   return true;

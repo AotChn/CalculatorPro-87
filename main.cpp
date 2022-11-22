@@ -18,7 +18,7 @@
 #include "includes/rpn/rpn.h"
 #include "includes/token/constants.h"
 #include <map>
-#include "includes/token/tokenizer.h"
+#include "includes/tokenizer/tokenizer.h"
 //++++++++++ ------------------------------------------------------>[]
 using namespace std;
 void tkizer();
