@@ -36,3 +36,4 @@ FUNCTIONS IN 100-150 could be functions that take in 2 arguments while functions
 THIS COULD ELIMINTE THE PRECEDENCE SYSTEM 
 and even allow us to handle same name functions with different functions
 ie '-' OPERATOR vs '-' UNARY OPERATOR
+
