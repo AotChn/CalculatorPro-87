@@ -18,26 +18,28 @@
 class Plot {
 
 public:
+   //CTOR
     Plot();
     Plot(Graph_info info);
     sf::Vector2f operator()();
 
-    void create_plot_map();
+    //Process
+    void create_plot_map(); //creates vector of cartesian coords in pair form 
 
     //Mutators
     void set_info(Graph_info info); 
-    void set_point(double x, double y);
-    void set_point(pair<double,double> pt);
+    void set_point(double x, double y); //instantiates pair
+    void set_point(pair<double,double> pt); //converts pair to vect2f
 
     //Acessors 
+    void Print();
     Graph_info get_info(){return g_info;}
-    sf::Vector2f get_SFpoint(){return sf_point;}
-    pair<double,double> get_point(){return point;}
+    sf::Vector2f get_SFpoint(){return sf_point;} 
+    pair<double,double> get_point(){return point;} 
     Vector<pair<double,double>> get_coords(){return coordinates;}
 
-   // vector<sf::Vector2f(double,double)> get_plot_map(){return plot_map;}
-
 private:
+   
     double x;
     double y;
     Graph_info g_info; 
