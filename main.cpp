@@ -19,64 +19,33 @@
 #include "includes/token/constants.h"
 #include <map>
 #include "includes/tokenizer/tokenizer.h"
+#include "includes/Graphics/window.h"
+#include "includes/Graphics/animate.cpp"
+#include "includes/Graphics/system.cpp"
+#include "includes/Graphics/sidebar.cpp"
 //++++++++++ ------------------------------------------------------>[]
 using namespace std;
 void tkizer();
 void function_map_test();
 int main(int argv, char** argc) {
-    cout << "\n\n"
-         << endl;
-    tokenizer a;
-    a.set_str("(-(x))");
-    a.tokenize();
-    a.Print();
+    cout << "\n\n"<< endl;
+
+
+    Animate a;
+    a.run();
+
+    
+
+
+
+
+
+
 
     cout << "\n\n\n=====================" << endl;
     return 0;
 }
 
-int funct1(int a,std::string b){
-    int d = a;
-    cout<<"huray1";
-    cout<<b;
-    return 1;
-}
-int funct2(int a,std::string b){
-    int d = a;
-    cout<<"huray2";
-    cout<<b;
-    funct1(a,b);
-    return 2;
-}
-int funct3(int a,std::string b){
-    int d = a;
-    cout<<"huray3";
-    cout<<b;
-    return 3;
-}
-int funct4(int a,std::string b){
-    int d = a;
-    cout<<"huray4";
-    cout<<b;
-    return 4;
-}
-void function_map_test(){
-    //TESTING STD::MAP CAPABLITIES
-    using intsus = int(*)(int,std::string);
-    int(*f1)(int,std::string) = &funct1;
-    int(*f2)(int,std::string) = &funct2;
-    int(*f3)(int,std::string) = &funct3;
-    int(*f4)(int,std::string) = &funct4;
-    std::map<int,intsus> funct_map = {{1,f1},{2,f2},{3,f3},{4,f4}};
-    std::map<int,intsus>::iterator wlk = funct_map.begin();
-    int i=1;
-    while(wlk!=funct_map.end()){
-    funct_map.at(i)(1,"yellow");
-    wlk++;
-    }
-    cout<<endl;
-    
-}
 
 void tkizer(){
 
