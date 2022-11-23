@@ -46,7 +46,7 @@ private:
     sf::Vector2f sf_point;
     pair<double,double> point;
     Vector<pair<double,double>> coordinates;
-
+    Vector<sf::Vector2f> a;
 };
 
 #endif
