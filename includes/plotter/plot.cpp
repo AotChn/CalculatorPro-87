@@ -8,8 +8,8 @@ Plot::Plot(Graph_info info){
     g_info = info;
 }
 
-sf::Vector2f Plot::operator()(){
-    
+sf::Vector2f Plot::operator()(int i){
+    return coordinates[i];
 }
 
 void Plot::create_plot_map(){
@@ -21,7 +21,6 @@ void Plot::create_plot_map(){
         set_point(x,y);
         coordinates.push_back(point);
     }
-
 }
 
 void Plot::set_info(Graph_info info){
@@ -29,19 +28,17 @@ void Plot::set_info(Graph_info info){
 }
 
 void Plot::set_point(double i, double j){
-    point.first = i;
-    point.second = j;
-}
-
-void Plot::set_point(pair<double,double> pt){
-    sf_point.x = pt.first;
-    sf_point.y = pt.second;
+    point.x = i;
+    point.y = j;
 }
 
 void Plot::Print(){
     int i;
     for(i=0;i<g_info.total_pts;i++){
         point = coordinates[i];
-        cout<<"("<<point.first<<","<<point.second<<")"<<endl;
+        cout<<point.x<<"|"<<point.y<<endl;
     }
 }
+
+//we have set the point to become a real sf::Vector2f
+//in this way we are able to be to handle coordinates and set them to be in the thing;

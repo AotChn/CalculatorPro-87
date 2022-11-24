@@ -29,24 +29,21 @@ public:
     //Mutators
     void set_info(Graph_info info); 
     void set_point(double x, double y); //instantiates pair
-    void set_point(pair<double,double> pt); //converts pair to vect2f
 
     //Acessors 
     void Print();
     Graph_info get_info(){return g_info;}
-    sf::Vector2f get_SFpoint(){return sf_point;} 
-    pair<double,double> get_point(){return point;} 
-    Vector<pair<double,double>> get_coords(){return coordinates;}
+    sf::Vector2f get_SFpoint(){return point;} 
+    Vector<sf::Vector2f> get_coords(){return coordinates;}
+    sf::Vector2f operator()(int i);
 
 private:
    
     double x;
     double y;
     Graph_info g_info; 
-    sf::Vector2f sf_point;
-    pair<double,double> point;
-    Vector<pair<double,double>> coordinates;
-    Vector<sf::Vector2f> a;
+    sf::Vector2f point;
+    Vector<sf::Vector2f> coordinates;
 };
 
 #endif
