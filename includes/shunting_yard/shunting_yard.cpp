@@ -3,9 +3,11 @@
 ShuntingYard::ShuntingYard(){
 
 }
+
 ShuntingYard::ShuntingYard(Queue<Token*> prefix){
     _prefix = prefix;
 }
+
 void ShuntingYard::postfix_process(){
     while(_prefix.empty() != true){
         _p = _prefix.front();
@@ -16,7 +18,6 @@ void ShuntingYard::postfix_process(){
         _postfix.push(_op_stack.pop());
     }
 }
-
 
 void ShuntingYard::type_process(){
     switch(_p._tk->TypeOf()){
@@ -42,16 +43,14 @@ void ShuntingYard::type_process(){
 void ShuntingYard::prec_process(){
     while(_op_stack.empty() != true&&_op_stack.top()->TypeOf()!=LPAREN){
         int top_prec = static_cast<Operator*>(_op_stack.top())->get_prec();
-       while(static_cast<Operator*>(_p._tk)->get_prec() > top_prec){
-            _op_stack.push(_p._tk);
-            return;
-        }
-        while(static_cast<Operator*>(_p._tk)->get_prec() <= top_prec){
+        if(static_cast<Operator*>(_p._tk)->get_prec() <= top_prec){
             _postfix.push(_op_stack.pop());
-            _op_stack.push(_p._tk);
-            return;
+        }
+        else{
+            break;
         }
     }
+
     _op_stack.push(_p._tk);
 }
 
