@@ -122,7 +122,7 @@ template <typename T>
  Queue<T>::~Queue(){
     _clear_list(_front);
  }
-
+ 
 template <typename T>
 Queue<T>& Queue<T>::operator=(const Queue<T>& RHS){
     _clear_list(_front);
