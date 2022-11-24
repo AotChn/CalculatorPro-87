@@ -3,6 +3,7 @@
 
 #include <SFML/Graphics.hpp>
 #include <vector>
+#include "../plotter/plot.h"
 
 class System
 {
@@ -20,3 +21,4 @@ private:
 };
 
 #endif
+
