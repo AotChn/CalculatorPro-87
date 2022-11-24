@@ -11,7 +11,7 @@ class Animate{
     public:
 
     Animate(){
-        window.create(sf::VideoMode(1400,800),"TEST_WINDOW");
+        window.create(sf::VideoMode(800,800),"TEST_WINDOW");
         window.setFramerateLimit(60);
     }
     

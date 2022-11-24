@@ -4,6 +4,7 @@
 #include <SFML/Graphics.hpp>
 #include <vector>
 #include "../plotter/plot.h"
+#include "../plotter/translator.cpp"
 
 class System
 {
@@ -16,6 +17,7 @@ public:
 private:
 
     sf::CircleShape shape;
+    Translator translator;
     sf::Vector2f vel;
 
 };

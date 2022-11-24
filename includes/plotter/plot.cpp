@@ -14,9 +14,12 @@ sf::Vector2f Plot::operator()(int i){
 
 void Plot::create_plot_map(){
     RPN calculate(g_info.post_fix);
-    for(int i=0;i<g_info.total_pts;i++){
-        x = i;
-        calculate.set_instan(i);
+    int var = -400;
+    double delta = 1200/300;
+    for(int i=0;i<300;i++){
+        x = var;
+        calculate.set_instan(var);
+        var = var + delta;
         y = calculate();
         set_point(x,y);
         coordinates.push_back(point);

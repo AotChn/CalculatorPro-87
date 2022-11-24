@@ -13,7 +13,7 @@
 
 struct Graph_info{
     //CTOR
-    Graph_info(){}
+    Graph_info();
     Graph_info(std::string str); //creates postfix queue from str
     Graph_info(std::string str, Queue<Token*> postfix); 
 
@@ -23,12 +23,6 @@ struct Graph_info{
     void set_scale  (double x, double y);
     void set_domain (double x, double y);
     void set_angle  (double x, double y);
-
-    void set_window (pair<double,double> a);
-    void set_origin (pair<double,double> a);
-    void set_scale  (pair<double,double> a);
-    void set_domain (pair<double,double> a);
-    void set_angle  (pair<double,double> a);
 
     //Equation
     std::string Eq;

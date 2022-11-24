@@ -1,5 +1,13 @@
 #include "graph_info.h"
 
+Graph_info::Graph_info(){
+    set_domain(-10,10);
+    set_window(800,800);
+    set_origin(400,400);
+    set_scale(0,0);
+    total_pts = 300;
+}
+
 Graph_info::Graph_info(std::string str){
     Eq = str;
     tokenizer T;
@@ -33,25 +41,4 @@ void Graph_info::set_domain(double x, double y){
 void Graph_info::set_angle(double x, double y){
     angle.x = x;
     angle.y = y;
-}
-
-void Graph_info::set_window(pair<double,double> a){
-    window_size.x = a.first;
-    window_size.y = a.second;
-}
-void Graph_info::set_origin(pair<double,double> a){
-    origin.x = a.first;
-    origin.y = a.second;
-}
-void Graph_info::set_scale(pair<double,double> a){
-    scale.x = a.first;
-    scale.y = a.second;
-}
-void Graph_info::set_domain(pair<double,double> a){
-    domain.x = a.first;
-    domain.y = a.second;
-}
-void Graph_info::set_angle(pair<double,double> a){
-    angle.x = a.first;
-    angle.y = a.second;
 }
