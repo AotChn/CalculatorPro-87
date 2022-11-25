@@ -40,6 +40,7 @@ void ShuntingYard::type_process(){
             prec_process();
     }
 }
+
 void ShuntingYard::prec_process(){
     while(_op_stack.empty() != true&&_op_stack.top()->TypeOf()!=LPAREN){
         int top_prec = static_cast<Operator*>(_op_stack.top())->get_prec();
@@ -50,7 +51,6 @@ void ShuntingYard::prec_process(){
             break;
         }
     }
-
     _op_stack.push(_p._tk);
 }
 

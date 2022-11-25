@@ -1,3 +1,12 @@
+/* ************************************************************************* *
+ * AUTHOR:      Aot Chanthorn
+ * PROJECT:  GRAPHIC CALCULATOR
+ * ------------------------------------------------------------------------- *
+ * File: plot.h
+ *  create an array of carteasian coordinates
+ *  given graph info --> uses rpn to calculate y
+ * ************************************************************************* */
+
 #ifndef PLOT_H
 #define PLOT_H
 

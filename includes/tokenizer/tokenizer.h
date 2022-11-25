@@ -1,3 +1,12 @@
+/* ************************************************************************* *
+ * AUTHOR:      Aot Chanthorn
+ * PROJECT:  GRAPHIC CALCULATOR
+ * ------------------------------------------------------------------------- *
+ * File: tokenizer.h
+ *  converts string to infix queue
+ *  parses string into different types that then get packed as a token obj
+ * ************************************************************************* */
+
 #ifndef AOTS_TOK_STRING_H
 #define AOTS_TOK_STRING_H
 
@@ -110,3 +119,7 @@ Queue<Token*> _infix;
     IMPLEMENT USER DEFINED FUNCTS   ->[WIP]P5
     [add more ...]
 */
+
+// one way i think we can handle multiple instaniations is to have a private variable in the class
+// called variable# in which we will ++ every time the class gets called to indicate another dependent 
+// variable;

@@ -1,3 +1,12 @@
+/* ************************************************************************* *
+ * AUTHOR:      Aot Chanthorn
+ * PROJECT:  GRAPHIC CALCULATOR
+ * ------------------------------------------------------------------------- *
+ * File: graph_info.h
+ *  data wrapper for graphs 
+ *  wind size, origin, scale, domain, angle
+ * ************************************************************************* */
+
 #ifndef AOTS_GRAPH_INFO
 #define AOTS_GRAPH_INFO
 

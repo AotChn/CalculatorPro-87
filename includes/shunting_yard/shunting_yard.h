@@ -1,3 +1,12 @@
+/* ************************************************************************* *
+ * AUTHOR:      Aot Chanthorn
+ * PROJECT:  GRAPHIC CALCULATOR
+ * ------------------------------------------------------------------------- *
+ * File: shunting_yard.h
+ *  takes infix queue and converts to postfix queue
+ *  
+ * ************************************************************************* */
+
 #ifndef SHUNTING_YARD_H
 #define SHUNTING_YARD_H
 

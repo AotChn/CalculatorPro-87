@@ -1,3 +1,12 @@
+/* ************************************************************************* *
+ * AUTHOR:      Aot Chanthorn
+ * PROJECT:  GRAPHIC CALCULATOR
+ * ------------------------------------------------------------------------- *
+ * File: array_functions.h
+ *  templated low level functions to manipulate 1D arrays 
+ *  search - copy - re/allocate - print
+ * ************************************************************************* */
+
 #ifndef AOTS_ANIMATE_H
 #define AOTS_ANIMATE_H
 #include <SFML/Graphics.hpp>

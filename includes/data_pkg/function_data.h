@@ -1,3 +1,12 @@
+/* ************************************************************************* *
+ * AUTHOR:      Aot Chanthorn
+ * PROJECT:  GRAPHIC CALCULATOR
+ * ------------------------------------------------------------------------- *
+ * File: function_data.h
+ *  data wrapper class for function tokens
+ *  funct name, def, id
+ * ************************************************************************* */
+
 #ifndef FUNCT_DATA_H
 #define FUNCT_DATA_H
 

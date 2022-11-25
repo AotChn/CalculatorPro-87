@@ -1,3 +1,12 @@
+/* ************************************************************************* *
+ * AUTHOR:      Aot Chanthorn
+ * PROJECT:  GRAPHIC CALCULATOR
+ * ------------------------------------------------------------------------- *
+ * File: vector_class.h
+ *  custom vector class meant to mimic std::vector
+ *  basic vector functionalities 
+ * ************************************************************************* */
+
 #ifndef AOTS_VECTOR_CLASS_H
 #define AOTS_VECTOR_CLASS_H
 

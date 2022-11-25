@@ -45,6 +45,7 @@ Stack<Token*> RPN::type_process(Stack<Token*> hold){
         }   
         return hold;
         hold.top();
+
 }
 
 int RPN::op_process(int a, int b){

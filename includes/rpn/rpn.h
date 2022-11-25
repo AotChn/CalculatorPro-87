@@ -1,3 +1,12 @@
+/* ************************************************************************* *
+ * AUTHOR:      Aot Chanthorn
+ * PROJECT:  GRAPHIC CALCULATOR
+ * ------------------------------------------------------------------------- *
+ * File: rpn.h
+ *  reverse polish notation evaluator
+ *  give x evaluate y 
+ * ************************************************************************* */
+
 #ifndef RPN_H
 #define RPN_H
 

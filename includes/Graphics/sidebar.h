@@ -1,3 +1,12 @@
+/* ************************************************************************* *
+ * AUTHOR:      Aot Chanthorn
+ * PROJECT:  GRAPHIC CALCULATOR
+ * ------------------------------------------------------------------------- *
+ * File: array_functions.h
+ *  templated low level functions to manipulate 1D arrays 
+ *  search - copy - re/allocate - print
+ * ************************************************************************* */
+
 #ifndef SIDEBAR_H
 #define SIDEBAR_H
 #include <SFML/Graphics.hpp>

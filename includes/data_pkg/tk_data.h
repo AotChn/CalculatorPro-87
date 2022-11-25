@@ -1,3 +1,12 @@
+/* ************************************************************************* *
+ * AUTHOR:      Aot Chanthorn
+ * PROJECT:  GRAPHIC CALCULATOR
+ * ------------------------------------------------------------------------- *
+ * File: tk_data.h
+ *  general data wrapper for tokens
+ *  all tokens will have this as a wrapper 
+ * ************************************************************************* */
+
 #ifndef TK_DATA_H
 #define TK_DATA_H
 

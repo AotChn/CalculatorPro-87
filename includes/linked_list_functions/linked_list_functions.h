@@ -1,3 +1,12 @@
+/* ************************************************************************* *
+ * AUTHOR:      Aot Chanthorn
+ * PROJECT:  GRAPHIC CALCULATOR
+ * ------------------------------------------------------------------------- *
+ * File: linked_list_functions.h
+ *  templated low-level functions for linked-list
+ *  searching - inserting - removing - print 
+ * ************************************************************************* */
+
 #ifndef LINKED_LIST_FUNCTIONS_H
 #define LINKED_LIST_FUNCTIONS_H
 
@@ -5,6 +14,7 @@
 #include <iostream>
 #include <iomanip>
 #include "../node/node.h"
+
     //Linked List General Functions:
     template <typename ITEM_TYPE>
     void _print_list(node<ITEM_TYPE>* head);
@@ -95,10 +105,8 @@
         std::cout << *wlk;
         wlk=wlk->_next;
         } 
-        /*if(wlk == nullptr){
-            std::cout<<"{END}"<<std::endl;
-        }*/
     }
+    
     //recursive fun! :)
     template <typename ITEM_TYPE>
     void _print_list_backwards(node<ITEM_TYPE> *head){
