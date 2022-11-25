@@ -162,9 +162,9 @@ if(debug==false){
 */
 
 bool shunting_yard_test(bool debug = true){
-  if(debug==false){
+  if(debug==true){
     title("USER_INPUT");
-      std::string input = "5+4";
+      std::string input = "1+2*3";
       cout<<"EQUATION: "<<input<<";B=5+5"<<endl;
       
       tokenizer Tr;
@@ -172,6 +172,8 @@ bool shunting_yard_test(bool debug = true){
       Tr.tokenize();
       cout<<endl<<"INFIX  : ";
       Tr.Print();
+      cout<<endl;
+      cout<<Tr.get_infix().get_queue_str();
 
       ShuntingYard Sy(Tr.get_infix());
       Sy.postfix();
@@ -181,17 +183,19 @@ bool shunting_yard_test(bool debug = true){
       RPN Rn(Sy.get_postfix());
       int answer = Rn();
       cout<<endl<<"ANSWER: "<<answer;
-  
+      
+
     end();
     border();
   }
-  if(debug==true){
+  if(debug==false){
     Graph_info iu("x+5");
     iu.post_fix.print_pointers();
     iu.total_pts = 300;
     Plot P(iu);
     P.create_plot_map();
     P.Print();
+    cout<<P(1).x<<"|"<<P(1).y<<endl;
     cout<<"we finished";
   }
   //------------
