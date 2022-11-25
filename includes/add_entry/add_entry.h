@@ -127,4 +127,4 @@ T *erase_entry(T *list, int index, int &size, int &capacity)
 }
 
 
-#endif
+#endif //add_entry.h
