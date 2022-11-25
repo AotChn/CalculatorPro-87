@@ -36,7 +36,7 @@ static std::map<std::string,int> pre_def_functs = {{"sin",147},{"cos",148},{"tan
                                             {"pi",153},{"log",154},{"ln",155},
                                             {"e",156},{"$",157},{"B",303},{"C",304}};
                                             
-static std::map<std::string,std::string> user_funct = {{"B","5+C"},{"C","B"}};
+static std::map<std::string,std::string> user_funct = {{"B","5+C"},{"C","9"}};
 
 class tokenizer{
 public:

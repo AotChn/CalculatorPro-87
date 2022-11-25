@@ -16,7 +16,8 @@ void tokenizer::pkg_type(std::string _str){
         while(_cur_ST!=ACCEPT){
             hold = *wlk;
             i = (this->*(state_map.at(i)))(hold); 
-            //this how we call functions pointing to member functions
+            //state i determines function to call
+            //then function returns new state/same
         }
     }
 }
@@ -119,6 +120,7 @@ int tokenizer::Funct(std::string key){
 //composite function
 int tokenizer::Comp (std::string key){
     if(debug){cout<<"PASSED COMP->";}
+    //we inject equation into string
     _cur_ST = COMP;
     hold = user_funct[token];
     pkg_token(LP);
