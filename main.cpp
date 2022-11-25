@@ -2,6 +2,7 @@
 #include <iomanip>
 #include <cmath>
 #include <math.h>
+#include <map>
 
 //TEST FILES ------------------------------------------------------>[]
 #include "includes/node/node.h"
@@ -17,12 +18,12 @@
 #include "includes/shunting_yard/shunting_yard.h"
 #include "includes/rpn/rpn.h"
 #include "includes/token/constants.h"
-#include <map>
 #include "includes/tokenizer/tokenizer.h"
 #include "includes/Graphics/window.h"
-#include "includes/Graphics/animate.cpp"
-#include "includes/Graphics/system.cpp"
-#include "includes/Graphics/sidebar.cpp"
+#include "includes/Graphics/animate.h"
+#include "includes/Graphics/system.h"
+#include "includes/Graphics/sidebar.h"
+
 //++++++++++ ------------------------------------------------------>[]
 using namespace std;
 void tkizer();
