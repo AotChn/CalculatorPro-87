@@ -2,7 +2,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "bin/main"
+			"path" : "bin/testB"
 		}
 	],
 	"backtrace" : 1,
@@ -27,7 +27,7 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 64,
+				"line" : 71,
 				"parent" : 0
 			},
 			{
@@ -39,7 +39,7 @@
 			{
 				"command" : 2,
 				"file" : 0,
-				"line" : 89,
+				"line" : 85,
 				"parent" : 0
 			},
 			{
@@ -128,7 +128,7 @@
 			"id" : "gtest::@1ea2dfc0605fe3ab2a3f"
 		}
 	],
-	"id" : "main::@6890427a1f51a3e7e1df",
+	"id" : "testB::@6890427a1f51a3e7e1df",
 	"link" : 
 	{
 		"commandFragments" : 
@@ -173,8 +173,8 @@
 		],
 		"language" : "CXX"
 	},
-	"name" : "main",
-	"nameOnDisk" : "main",
+	"name" : "testB",
+	"nameOnDisk" : "testB",
 	"paths" : 
 	{
 		"build" : ".",
@@ -217,7 +217,7 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "main.cpp",
+			"path" : "_tests/_test_files/testB.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{

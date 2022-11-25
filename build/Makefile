@@ -211,6 +211,19 @@ testB/fast:
 .PHONY : testB/fast
 
 #=============================================================================
+# Target rules for targets named testC
+
+# Build rule for target.
+testC: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 testC
+.PHONY : testC
+
+# fast build rule for target.
+testC/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testC.dir/build.make CMakeFiles/testC.dir/build
+.PHONY : testC/fast
+
+#=============================================================================
 # Target rules for targets named gmock
 
 # Build rule for target.
@@ -310,6 +323,162 @@ _tests/_test_files/testB.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/testB.dir/build.make CMakeFiles/testB.dir/_tests/_test_files/testB.cpp.s
 .PHONY : _tests/_test_files/testB.cpp.s
 
+_tests/_test_files/testC.o: _tests/_test_files/testC.cpp.o
+.PHONY : _tests/_test_files/testC.o
+
+# target to build an object file
+_tests/_test_files/testC.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testC.dir/build.make CMakeFiles/testC.dir/_tests/_test_files/testC.cpp.o
+.PHONY : _tests/_test_files/testC.cpp.o
+
+_tests/_test_files/testC.i: _tests/_test_files/testC.cpp.i
+.PHONY : _tests/_test_files/testC.i
+
+# target to preprocess a source file
+_tests/_test_files/testC.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testC.dir/build.make CMakeFiles/testC.dir/_tests/_test_files/testC.cpp.i
+.PHONY : _tests/_test_files/testC.cpp.i
+
+_tests/_test_files/testC.s: _tests/_test_files/testC.cpp.s
+.PHONY : _tests/_test_files/testC.s
+
+# target to generate assembly for a file
+_tests/_test_files/testC.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testC.dir/build.make CMakeFiles/testC.dir/_tests/_test_files/testC.cpp.s
+.PHONY : _tests/_test_files/testC.cpp.s
+
+includes/Graphics/animate.o: includes/Graphics/animate.cpp.o
+.PHONY : includes/Graphics/animate.o
+
+# target to build an object file
+includes/Graphics/animate.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/includes/Graphics/animate.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/basic_test.dir/build.make CMakeFiles/basic_test.dir/includes/Graphics/animate.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testB.dir/build.make CMakeFiles/testB.dir/includes/Graphics/animate.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testC.dir/build.make CMakeFiles/testC.dir/includes/Graphics/animate.cpp.o
+.PHONY : includes/Graphics/animate.cpp.o
+
+includes/Graphics/animate.i: includes/Graphics/animate.cpp.i
+.PHONY : includes/Graphics/animate.i
+
+# target to preprocess a source file
+includes/Graphics/animate.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/includes/Graphics/animate.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/basic_test.dir/build.make CMakeFiles/basic_test.dir/includes/Graphics/animate.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testB.dir/build.make CMakeFiles/testB.dir/includes/Graphics/animate.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testC.dir/build.make CMakeFiles/testC.dir/includes/Graphics/animate.cpp.i
+.PHONY : includes/Graphics/animate.cpp.i
+
+includes/Graphics/animate.s: includes/Graphics/animate.cpp.s
+.PHONY : includes/Graphics/animate.s
+
+# target to generate assembly for a file
+includes/Graphics/animate.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/includes/Graphics/animate.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/basic_test.dir/build.make CMakeFiles/basic_test.dir/includes/Graphics/animate.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testB.dir/build.make CMakeFiles/testB.dir/includes/Graphics/animate.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testC.dir/build.make CMakeFiles/testC.dir/includes/Graphics/animate.cpp.s
+.PHONY : includes/Graphics/animate.cpp.s
+
+includes/Graphics/sidebar.o: includes/Graphics/sidebar.cpp.o
+.PHONY : includes/Graphics/sidebar.o
+
+# target to build an object file
+includes/Graphics/sidebar.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/includes/Graphics/sidebar.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/basic_test.dir/build.make CMakeFiles/basic_test.dir/includes/Graphics/sidebar.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testB.dir/build.make CMakeFiles/testB.dir/includes/Graphics/sidebar.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testC.dir/build.make CMakeFiles/testC.dir/includes/Graphics/sidebar.cpp.o
+.PHONY : includes/Graphics/sidebar.cpp.o
+
+includes/Graphics/sidebar.i: includes/Graphics/sidebar.cpp.i
+.PHONY : includes/Graphics/sidebar.i
+
+# target to preprocess a source file
+includes/Graphics/sidebar.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/includes/Graphics/sidebar.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/basic_test.dir/build.make CMakeFiles/basic_test.dir/includes/Graphics/sidebar.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testB.dir/build.make CMakeFiles/testB.dir/includes/Graphics/sidebar.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testC.dir/build.make CMakeFiles/testC.dir/includes/Graphics/sidebar.cpp.i
+.PHONY : includes/Graphics/sidebar.cpp.i
+
+includes/Graphics/sidebar.s: includes/Graphics/sidebar.cpp.s
+.PHONY : includes/Graphics/sidebar.s
+
+# target to generate assembly for a file
+includes/Graphics/sidebar.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/includes/Graphics/sidebar.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/basic_test.dir/build.make CMakeFiles/basic_test.dir/includes/Graphics/sidebar.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testB.dir/build.make CMakeFiles/testB.dir/includes/Graphics/sidebar.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testC.dir/build.make CMakeFiles/testC.dir/includes/Graphics/sidebar.cpp.s
+.PHONY : includes/Graphics/sidebar.cpp.s
+
+includes/Graphics/system.o: includes/Graphics/system.cpp.o
+.PHONY : includes/Graphics/system.o
+
+# target to build an object file
+includes/Graphics/system.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/includes/Graphics/system.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/basic_test.dir/build.make CMakeFiles/basic_test.dir/includes/Graphics/system.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testB.dir/build.make CMakeFiles/testB.dir/includes/Graphics/system.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testC.dir/build.make CMakeFiles/testC.dir/includes/Graphics/system.cpp.o
+.PHONY : includes/Graphics/system.cpp.o
+
+includes/Graphics/system.i: includes/Graphics/system.cpp.i
+.PHONY : includes/Graphics/system.i
+
+# target to preprocess a source file
+includes/Graphics/system.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/includes/Graphics/system.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/basic_test.dir/build.make CMakeFiles/basic_test.dir/includes/Graphics/system.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testB.dir/build.make CMakeFiles/testB.dir/includes/Graphics/system.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testC.dir/build.make CMakeFiles/testC.dir/includes/Graphics/system.cpp.i
+.PHONY : includes/Graphics/system.cpp.i
+
+includes/Graphics/system.s: includes/Graphics/system.cpp.s
+.PHONY : includes/Graphics/system.s
+
+# target to generate assembly for a file
+includes/Graphics/system.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/includes/Graphics/system.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/basic_test.dir/build.make CMakeFiles/basic_test.dir/includes/Graphics/system.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testB.dir/build.make CMakeFiles/testB.dir/includes/Graphics/system.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testC.dir/build.make CMakeFiles/testC.dir/includes/Graphics/system.cpp.s
+.PHONY : includes/Graphics/system.cpp.s
+
+includes/Graphics/window.o: includes/Graphics/window.cpp.o
+.PHONY : includes/Graphics/window.o
+
+# target to build an object file
+includes/Graphics/window.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/includes/Graphics/window.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/basic_test.dir/build.make CMakeFiles/basic_test.dir/includes/Graphics/window.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testB.dir/build.make CMakeFiles/testB.dir/includes/Graphics/window.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testC.dir/build.make CMakeFiles/testC.dir/includes/Graphics/window.cpp.o
+.PHONY : includes/Graphics/window.cpp.o
+
+includes/Graphics/window.i: includes/Graphics/window.cpp.i
+.PHONY : includes/Graphics/window.i
+
+# target to preprocess a source file
+includes/Graphics/window.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/includes/Graphics/window.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/basic_test.dir/build.make CMakeFiles/basic_test.dir/includes/Graphics/window.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testB.dir/build.make CMakeFiles/testB.dir/includes/Graphics/window.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testC.dir/build.make CMakeFiles/testC.dir/includes/Graphics/window.cpp.i
+.PHONY : includes/Graphics/window.cpp.i
+
+includes/Graphics/window.s: includes/Graphics/window.cpp.s
+.PHONY : includes/Graphics/window.s
+
+# target to generate assembly for a file
+includes/Graphics/window.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/includes/Graphics/window.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/basic_test.dir/build.make CMakeFiles/basic_test.dir/includes/Graphics/window.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testB.dir/build.make CMakeFiles/testB.dir/includes/Graphics/window.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testC.dir/build.make CMakeFiles/testC.dir/includes/Graphics/window.cpp.s
+.PHONY : includes/Graphics/window.cpp.s
+
 includes/data_pkg/graph_info.o: includes/data_pkg/graph_info.cpp.o
 .PHONY : includes/data_pkg/graph_info.o
 
@@ -318,6 +487,7 @@ includes/data_pkg/graph_info.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/includes/data_pkg/graph_info.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/basic_test.dir/build.make CMakeFiles/basic_test.dir/includes/data_pkg/graph_info.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/testB.dir/build.make CMakeFiles/testB.dir/includes/data_pkg/graph_info.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testC.dir/build.make CMakeFiles/testC.dir/includes/data_pkg/graph_info.cpp.o
 .PHONY : includes/data_pkg/graph_info.cpp.o
 
 includes/data_pkg/graph_info.i: includes/data_pkg/graph_info.cpp.i
@@ -328,6 +498,7 @@ includes/data_pkg/graph_info.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/includes/data_pkg/graph_info.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/basic_test.dir/build.make CMakeFiles/basic_test.dir/includes/data_pkg/graph_info.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/testB.dir/build.make CMakeFiles/testB.dir/includes/data_pkg/graph_info.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testC.dir/build.make CMakeFiles/testC.dir/includes/data_pkg/graph_info.cpp.i
 .PHONY : includes/data_pkg/graph_info.cpp.i
 
 includes/data_pkg/graph_info.s: includes/data_pkg/graph_info.cpp.s
@@ -338,6 +509,7 @@ includes/data_pkg/graph_info.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/includes/data_pkg/graph_info.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/basic_test.dir/build.make CMakeFiles/basic_test.dir/includes/data_pkg/graph_info.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/testB.dir/build.make CMakeFiles/testB.dir/includes/data_pkg/graph_info.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testC.dir/build.make CMakeFiles/testC.dir/includes/data_pkg/graph_info.cpp.s
 .PHONY : includes/data_pkg/graph_info.cpp.s
 
 includes/exceptions/dividebyzero.o: includes/exceptions/dividebyzero.cpp.o
@@ -348,6 +520,7 @@ includes/exceptions/dividebyzero.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/includes/exceptions/dividebyzero.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/basic_test.dir/build.make CMakeFiles/basic_test.dir/includes/exceptions/dividebyzero.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/testB.dir/build.make CMakeFiles/testB.dir/includes/exceptions/dividebyzero.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testC.dir/build.make CMakeFiles/testC.dir/includes/exceptions/dividebyzero.cpp.o
 .PHONY : includes/exceptions/dividebyzero.cpp.o
 
 includes/exceptions/dividebyzero.i: includes/exceptions/dividebyzero.cpp.i
@@ -358,6 +531,7 @@ includes/exceptions/dividebyzero.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/includes/exceptions/dividebyzero.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/basic_test.dir/build.make CMakeFiles/basic_test.dir/includes/exceptions/dividebyzero.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/testB.dir/build.make CMakeFiles/testB.dir/includes/exceptions/dividebyzero.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testC.dir/build.make CMakeFiles/testC.dir/includes/exceptions/dividebyzero.cpp.i
 .PHONY : includes/exceptions/dividebyzero.cpp.i
 
 includes/exceptions/dividebyzero.s: includes/exceptions/dividebyzero.cpp.s
@@ -368,6 +542,7 @@ includes/exceptions/dividebyzero.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/includes/exceptions/dividebyzero.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/basic_test.dir/build.make CMakeFiles/basic_test.dir/includes/exceptions/dividebyzero.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/testB.dir/build.make CMakeFiles/testB.dir/includes/exceptions/dividebyzero.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testC.dir/build.make CMakeFiles/testC.dir/includes/exceptions/dividebyzero.cpp.s
 .PHONY : includes/exceptions/dividebyzero.cpp.s
 
 includes/exceptions/missingparan.o: includes/exceptions/missingparan.cpp.o
@@ -378,6 +553,7 @@ includes/exceptions/missingparan.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/includes/exceptions/missingparan.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/basic_test.dir/build.make CMakeFiles/basic_test.dir/includes/exceptions/missingparan.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/testB.dir/build.make CMakeFiles/testB.dir/includes/exceptions/missingparan.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testC.dir/build.make CMakeFiles/testC.dir/includes/exceptions/missingparan.cpp.o
 .PHONY : includes/exceptions/missingparan.cpp.o
 
 includes/exceptions/missingparan.i: includes/exceptions/missingparan.cpp.i
@@ -388,6 +564,7 @@ includes/exceptions/missingparan.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/includes/exceptions/missingparan.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/basic_test.dir/build.make CMakeFiles/basic_test.dir/includes/exceptions/missingparan.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/testB.dir/build.make CMakeFiles/testB.dir/includes/exceptions/missingparan.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testC.dir/build.make CMakeFiles/testC.dir/includes/exceptions/missingparan.cpp.i
 .PHONY : includes/exceptions/missingparan.cpp.i
 
 includes/exceptions/missingparan.s: includes/exceptions/missingparan.cpp.s
@@ -398,7 +575,41 @@ includes/exceptions/missingparan.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/includes/exceptions/missingparan.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/basic_test.dir/build.make CMakeFiles/basic_test.dir/includes/exceptions/missingparan.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/testB.dir/build.make CMakeFiles/testB.dir/includes/exceptions/missingparan.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testC.dir/build.make CMakeFiles/testC.dir/includes/exceptions/missingparan.cpp.s
 .PHONY : includes/exceptions/missingparan.cpp.s
+
+includes/node/node.o: includes/node/node.cpp.o
+.PHONY : includes/node/node.o
+
+# target to build an object file
+includes/node/node.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/includes/node/node.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/basic_test.dir/build.make CMakeFiles/basic_test.dir/includes/node/node.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testB.dir/build.make CMakeFiles/testB.dir/includes/node/node.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testC.dir/build.make CMakeFiles/testC.dir/includes/node/node.cpp.o
+.PHONY : includes/node/node.cpp.o
+
+includes/node/node.i: includes/node/node.cpp.i
+.PHONY : includes/node/node.i
+
+# target to preprocess a source file
+includes/node/node.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/includes/node/node.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/basic_test.dir/build.make CMakeFiles/basic_test.dir/includes/node/node.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testB.dir/build.make CMakeFiles/testB.dir/includes/node/node.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testC.dir/build.make CMakeFiles/testC.dir/includes/node/node.cpp.i
+.PHONY : includes/node/node.cpp.i
+
+includes/node/node.s: includes/node/node.cpp.s
+.PHONY : includes/node/node.s
+
+# target to generate assembly for a file
+includes/node/node.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/includes/node/node.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/basic_test.dir/build.make CMakeFiles/basic_test.dir/includes/node/node.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testB.dir/build.make CMakeFiles/testB.dir/includes/node/node.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testC.dir/build.make CMakeFiles/testC.dir/includes/node/node.cpp.s
+.PHONY : includes/node/node.cpp.s
 
 includes/plotter/plot.o: includes/plotter/plot.cpp.o
 .PHONY : includes/plotter/plot.o
@@ -408,6 +619,7 @@ includes/plotter/plot.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/includes/plotter/plot.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/basic_test.dir/build.make CMakeFiles/basic_test.dir/includes/plotter/plot.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/testB.dir/build.make CMakeFiles/testB.dir/includes/plotter/plot.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testC.dir/build.make CMakeFiles/testC.dir/includes/plotter/plot.cpp.o
 .PHONY : includes/plotter/plot.cpp.o
 
 includes/plotter/plot.i: includes/plotter/plot.cpp.i
@@ -418,6 +630,7 @@ includes/plotter/plot.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/includes/plotter/plot.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/basic_test.dir/build.make CMakeFiles/basic_test.dir/includes/plotter/plot.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/testB.dir/build.make CMakeFiles/testB.dir/includes/plotter/plot.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testC.dir/build.make CMakeFiles/testC.dir/includes/plotter/plot.cpp.i
 .PHONY : includes/plotter/plot.cpp.i
 
 includes/plotter/plot.s: includes/plotter/plot.cpp.s
@@ -428,7 +641,41 @@ includes/plotter/plot.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/includes/plotter/plot.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/basic_test.dir/build.make CMakeFiles/basic_test.dir/includes/plotter/plot.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/testB.dir/build.make CMakeFiles/testB.dir/includes/plotter/plot.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testC.dir/build.make CMakeFiles/testC.dir/includes/plotter/plot.cpp.s
 .PHONY : includes/plotter/plot.cpp.s
+
+includes/plotter/translator.o: includes/plotter/translator.cpp.o
+.PHONY : includes/plotter/translator.o
+
+# target to build an object file
+includes/plotter/translator.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/includes/plotter/translator.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/basic_test.dir/build.make CMakeFiles/basic_test.dir/includes/plotter/translator.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testB.dir/build.make CMakeFiles/testB.dir/includes/plotter/translator.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testC.dir/build.make CMakeFiles/testC.dir/includes/plotter/translator.cpp.o
+.PHONY : includes/plotter/translator.cpp.o
+
+includes/plotter/translator.i: includes/plotter/translator.cpp.i
+.PHONY : includes/plotter/translator.i
+
+# target to preprocess a source file
+includes/plotter/translator.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/includes/plotter/translator.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/basic_test.dir/build.make CMakeFiles/basic_test.dir/includes/plotter/translator.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testB.dir/build.make CMakeFiles/testB.dir/includes/plotter/translator.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testC.dir/build.make CMakeFiles/testC.dir/includes/plotter/translator.cpp.i
+.PHONY : includes/plotter/translator.cpp.i
+
+includes/plotter/translator.s: includes/plotter/translator.cpp.s
+.PHONY : includes/plotter/translator.s
+
+# target to generate assembly for a file
+includes/plotter/translator.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/includes/plotter/translator.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/basic_test.dir/build.make CMakeFiles/basic_test.dir/includes/plotter/translator.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testB.dir/build.make CMakeFiles/testB.dir/includes/plotter/translator.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testC.dir/build.make CMakeFiles/testC.dir/includes/plotter/translator.cpp.s
+.PHONY : includes/plotter/translator.cpp.s
 
 includes/rpn/rpn.o: includes/rpn/rpn.cpp.o
 .PHONY : includes/rpn/rpn.o
@@ -438,6 +685,7 @@ includes/rpn/rpn.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/includes/rpn/rpn.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/basic_test.dir/build.make CMakeFiles/basic_test.dir/includes/rpn/rpn.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/testB.dir/build.make CMakeFiles/testB.dir/includes/rpn/rpn.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testC.dir/build.make CMakeFiles/testC.dir/includes/rpn/rpn.cpp.o
 .PHONY : includes/rpn/rpn.cpp.o
 
 includes/rpn/rpn.i: includes/rpn/rpn.cpp.i
@@ -448,6 +696,7 @@ includes/rpn/rpn.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/includes/rpn/rpn.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/basic_test.dir/build.make CMakeFiles/basic_test.dir/includes/rpn/rpn.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/testB.dir/build.make CMakeFiles/testB.dir/includes/rpn/rpn.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testC.dir/build.make CMakeFiles/testC.dir/includes/rpn/rpn.cpp.i
 .PHONY : includes/rpn/rpn.cpp.i
 
 includes/rpn/rpn.s: includes/rpn/rpn.cpp.s
@@ -458,6 +707,7 @@ includes/rpn/rpn.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/includes/rpn/rpn.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/basic_test.dir/build.make CMakeFiles/basic_test.dir/includes/rpn/rpn.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/testB.dir/build.make CMakeFiles/testB.dir/includes/rpn/rpn.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testC.dir/build.make CMakeFiles/testC.dir/includes/rpn/rpn.cpp.s
 .PHONY : includes/rpn/rpn.cpp.s
 
 includes/shunting_yard/shunting_yard.o: includes/shunting_yard/shunting_yard.cpp.o
@@ -468,6 +718,7 @@ includes/shunting_yard/shunting_yard.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/includes/shunting_yard/shunting_yard.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/basic_test.dir/build.make CMakeFiles/basic_test.dir/includes/shunting_yard/shunting_yard.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/testB.dir/build.make CMakeFiles/testB.dir/includes/shunting_yard/shunting_yard.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testC.dir/build.make CMakeFiles/testC.dir/includes/shunting_yard/shunting_yard.cpp.o
 .PHONY : includes/shunting_yard/shunting_yard.cpp.o
 
 includes/shunting_yard/shunting_yard.i: includes/shunting_yard/shunting_yard.cpp.i
@@ -478,6 +729,7 @@ includes/shunting_yard/shunting_yard.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/includes/shunting_yard/shunting_yard.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/basic_test.dir/build.make CMakeFiles/basic_test.dir/includes/shunting_yard/shunting_yard.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/testB.dir/build.make CMakeFiles/testB.dir/includes/shunting_yard/shunting_yard.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testC.dir/build.make CMakeFiles/testC.dir/includes/shunting_yard/shunting_yard.cpp.i
 .PHONY : includes/shunting_yard/shunting_yard.cpp.i
 
 includes/shunting_yard/shunting_yard.s: includes/shunting_yard/shunting_yard.cpp.s
@@ -488,6 +740,7 @@ includes/shunting_yard/shunting_yard.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/includes/shunting_yard/shunting_yard.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/basic_test.dir/build.make CMakeFiles/basic_test.dir/includes/shunting_yard/shunting_yard.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/testB.dir/build.make CMakeFiles/testB.dir/includes/shunting_yard/shunting_yard.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testC.dir/build.make CMakeFiles/testC.dir/includes/shunting_yard/shunting_yard.cpp.s
 .PHONY : includes/shunting_yard/shunting_yard.cpp.s
 
 includes/stub/stub.o: includes/stub/stub.cpp.o
@@ -498,6 +751,7 @@ includes/stub/stub.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/includes/stub/stub.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/basic_test.dir/build.make CMakeFiles/basic_test.dir/includes/stub/stub.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/testB.dir/build.make CMakeFiles/testB.dir/includes/stub/stub.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testC.dir/build.make CMakeFiles/testC.dir/includes/stub/stub.cpp.o
 .PHONY : includes/stub/stub.cpp.o
 
 includes/stub/stub.i: includes/stub/stub.cpp.i
@@ -508,6 +762,7 @@ includes/stub/stub.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/includes/stub/stub.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/basic_test.dir/build.make CMakeFiles/basic_test.dir/includes/stub/stub.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/testB.dir/build.make CMakeFiles/testB.dir/includes/stub/stub.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testC.dir/build.make CMakeFiles/testC.dir/includes/stub/stub.cpp.i
 .PHONY : includes/stub/stub.cpp.i
 
 includes/stub/stub.s: includes/stub/stub.cpp.s
@@ -518,6 +773,7 @@ includes/stub/stub.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/includes/stub/stub.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/basic_test.dir/build.make CMakeFiles/basic_test.dir/includes/stub/stub.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/testB.dir/build.make CMakeFiles/testB.dir/includes/stub/stub.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testC.dir/build.make CMakeFiles/testC.dir/includes/stub/stub.cpp.s
 .PHONY : includes/stub/stub.cpp.s
 
 includes/token/alpha.o: includes/token/alpha.cpp.o
@@ -528,6 +784,7 @@ includes/token/alpha.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/includes/token/alpha.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/basic_test.dir/build.make CMakeFiles/basic_test.dir/includes/token/alpha.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/testB.dir/build.make CMakeFiles/testB.dir/includes/token/alpha.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testC.dir/build.make CMakeFiles/testC.dir/includes/token/alpha.cpp.o
 .PHONY : includes/token/alpha.cpp.o
 
 includes/token/alpha.i: includes/token/alpha.cpp.i
@@ -538,6 +795,7 @@ includes/token/alpha.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/includes/token/alpha.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/basic_test.dir/build.make CMakeFiles/basic_test.dir/includes/token/alpha.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/testB.dir/build.make CMakeFiles/testB.dir/includes/token/alpha.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testC.dir/build.make CMakeFiles/testC.dir/includes/token/alpha.cpp.i
 .PHONY : includes/token/alpha.cpp.i
 
 includes/token/alpha.s: includes/token/alpha.cpp.s
@@ -548,6 +806,7 @@ includes/token/alpha.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/includes/token/alpha.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/basic_test.dir/build.make CMakeFiles/basic_test.dir/includes/token/alpha.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/testB.dir/build.make CMakeFiles/testB.dir/includes/token/alpha.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testC.dir/build.make CMakeFiles/testC.dir/includes/token/alpha.cpp.s
 .PHONY : includes/token/alpha.cpp.s
 
 includes/token/double.o: includes/token/double.cpp.o
@@ -558,6 +817,7 @@ includes/token/double.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/includes/token/double.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/basic_test.dir/build.make CMakeFiles/basic_test.dir/includes/token/double.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/testB.dir/build.make CMakeFiles/testB.dir/includes/token/double.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testC.dir/build.make CMakeFiles/testC.dir/includes/token/double.cpp.o
 .PHONY : includes/token/double.cpp.o
 
 includes/token/double.i: includes/token/double.cpp.i
@@ -568,6 +828,7 @@ includes/token/double.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/includes/token/double.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/basic_test.dir/build.make CMakeFiles/basic_test.dir/includes/token/double.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/testB.dir/build.make CMakeFiles/testB.dir/includes/token/double.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testC.dir/build.make CMakeFiles/testC.dir/includes/token/double.cpp.i
 .PHONY : includes/token/double.cpp.i
 
 includes/token/double.s: includes/token/double.cpp.s
@@ -578,6 +839,7 @@ includes/token/double.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/includes/token/double.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/basic_test.dir/build.make CMakeFiles/basic_test.dir/includes/token/double.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/testB.dir/build.make CMakeFiles/testB.dir/includes/token/double.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testC.dir/build.make CMakeFiles/testC.dir/includes/token/double.cpp.s
 .PHONY : includes/token/double.cpp.s
 
 includes/token/function.o: includes/token/function.cpp.o
@@ -588,6 +850,7 @@ includes/token/function.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/includes/token/function.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/basic_test.dir/build.make CMakeFiles/basic_test.dir/includes/token/function.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/testB.dir/build.make CMakeFiles/testB.dir/includes/token/function.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testC.dir/build.make CMakeFiles/testC.dir/includes/token/function.cpp.o
 .PHONY : includes/token/function.cpp.o
 
 includes/token/function.i: includes/token/function.cpp.i
@@ -598,6 +861,7 @@ includes/token/function.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/includes/token/function.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/basic_test.dir/build.make CMakeFiles/basic_test.dir/includes/token/function.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/testB.dir/build.make CMakeFiles/testB.dir/includes/token/function.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testC.dir/build.make CMakeFiles/testC.dir/includes/token/function.cpp.i
 .PHONY : includes/token/function.cpp.i
 
 includes/token/function.s: includes/token/function.cpp.s
@@ -608,6 +872,7 @@ includes/token/function.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/includes/token/function.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/basic_test.dir/build.make CMakeFiles/basic_test.dir/includes/token/function.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/testB.dir/build.make CMakeFiles/testB.dir/includes/token/function.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testC.dir/build.make CMakeFiles/testC.dir/includes/token/function.cpp.s
 .PHONY : includes/token/function.cpp.s
 
 includes/token/integer.o: includes/token/integer.cpp.o
@@ -618,6 +883,7 @@ includes/token/integer.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/includes/token/integer.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/basic_test.dir/build.make CMakeFiles/basic_test.dir/includes/token/integer.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/testB.dir/build.make CMakeFiles/testB.dir/includes/token/integer.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testC.dir/build.make CMakeFiles/testC.dir/includes/token/integer.cpp.o
 .PHONY : includes/token/integer.cpp.o
 
 includes/token/integer.i: includes/token/integer.cpp.i
@@ -628,6 +894,7 @@ includes/token/integer.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/includes/token/integer.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/basic_test.dir/build.make CMakeFiles/basic_test.dir/includes/token/integer.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/testB.dir/build.make CMakeFiles/testB.dir/includes/token/integer.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testC.dir/build.make CMakeFiles/testC.dir/includes/token/integer.cpp.i
 .PHONY : includes/token/integer.cpp.i
 
 includes/token/integer.s: includes/token/integer.cpp.s
@@ -638,6 +905,7 @@ includes/token/integer.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/includes/token/integer.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/basic_test.dir/build.make CMakeFiles/basic_test.dir/includes/token/integer.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/testB.dir/build.make CMakeFiles/testB.dir/includes/token/integer.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testC.dir/build.make CMakeFiles/testC.dir/includes/token/integer.cpp.s
 .PHONY : includes/token/integer.cpp.s
 
 includes/token/leftparen.o: includes/token/leftparen.cpp.o
@@ -648,6 +916,7 @@ includes/token/leftparen.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/includes/token/leftparen.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/basic_test.dir/build.make CMakeFiles/basic_test.dir/includes/token/leftparen.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/testB.dir/build.make CMakeFiles/testB.dir/includes/token/leftparen.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testC.dir/build.make CMakeFiles/testC.dir/includes/token/leftparen.cpp.o
 .PHONY : includes/token/leftparen.cpp.o
 
 includes/token/leftparen.i: includes/token/leftparen.cpp.i
@@ -658,6 +927,7 @@ includes/token/leftparen.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/includes/token/leftparen.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/basic_test.dir/build.make CMakeFiles/basic_test.dir/includes/token/leftparen.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/testB.dir/build.make CMakeFiles/testB.dir/includes/token/leftparen.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testC.dir/build.make CMakeFiles/testC.dir/includes/token/leftparen.cpp.i
 .PHONY : includes/token/leftparen.cpp.i
 
 includes/token/leftparen.s: includes/token/leftparen.cpp.s
@@ -668,6 +938,7 @@ includes/token/leftparen.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/includes/token/leftparen.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/basic_test.dir/build.make CMakeFiles/basic_test.dir/includes/token/leftparen.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/testB.dir/build.make CMakeFiles/testB.dir/includes/token/leftparen.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testC.dir/build.make CMakeFiles/testC.dir/includes/token/leftparen.cpp.s
 .PHONY : includes/token/leftparen.cpp.s
 
 includes/token/operator.o: includes/token/operator.cpp.o
@@ -678,6 +949,7 @@ includes/token/operator.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/includes/token/operator.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/basic_test.dir/build.make CMakeFiles/basic_test.dir/includes/token/operator.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/testB.dir/build.make CMakeFiles/testB.dir/includes/token/operator.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testC.dir/build.make CMakeFiles/testC.dir/includes/token/operator.cpp.o
 .PHONY : includes/token/operator.cpp.o
 
 includes/token/operator.i: includes/token/operator.cpp.i
@@ -688,6 +960,7 @@ includes/token/operator.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/includes/token/operator.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/basic_test.dir/build.make CMakeFiles/basic_test.dir/includes/token/operator.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/testB.dir/build.make CMakeFiles/testB.dir/includes/token/operator.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testC.dir/build.make CMakeFiles/testC.dir/includes/token/operator.cpp.i
 .PHONY : includes/token/operator.cpp.i
 
 includes/token/operator.s: includes/token/operator.cpp.s
@@ -698,6 +971,7 @@ includes/token/operator.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/includes/token/operator.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/basic_test.dir/build.make CMakeFiles/basic_test.dir/includes/token/operator.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/testB.dir/build.make CMakeFiles/testB.dir/includes/token/operator.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testC.dir/build.make CMakeFiles/testC.dir/includes/token/operator.cpp.s
 .PHONY : includes/token/operator.cpp.s
 
 includes/token/rightparen.o: includes/token/rightparen.cpp.o
@@ -708,6 +982,7 @@ includes/token/rightparen.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/includes/token/rightparen.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/basic_test.dir/build.make CMakeFiles/basic_test.dir/includes/token/rightparen.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/testB.dir/build.make CMakeFiles/testB.dir/includes/token/rightparen.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testC.dir/build.make CMakeFiles/testC.dir/includes/token/rightparen.cpp.o
 .PHONY : includes/token/rightparen.cpp.o
 
 includes/token/rightparen.i: includes/token/rightparen.cpp.i
@@ -718,6 +993,7 @@ includes/token/rightparen.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/includes/token/rightparen.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/basic_test.dir/build.make CMakeFiles/basic_test.dir/includes/token/rightparen.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/testB.dir/build.make CMakeFiles/testB.dir/includes/token/rightparen.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testC.dir/build.make CMakeFiles/testC.dir/includes/token/rightparen.cpp.i
 .PHONY : includes/token/rightparen.cpp.i
 
 includes/token/rightparen.s: includes/token/rightparen.cpp.s
@@ -728,6 +1004,7 @@ includes/token/rightparen.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/includes/token/rightparen.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/basic_test.dir/build.make CMakeFiles/basic_test.dir/includes/token/rightparen.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/testB.dir/build.make CMakeFiles/testB.dir/includes/token/rightparen.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testC.dir/build.make CMakeFiles/testC.dir/includes/token/rightparen.cpp.s
 .PHONY : includes/token/rightparen.cpp.s
 
 includes/token/token.o: includes/token/token.cpp.o
@@ -738,6 +1015,7 @@ includes/token/token.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/includes/token/token.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/basic_test.dir/build.make CMakeFiles/basic_test.dir/includes/token/token.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/testB.dir/build.make CMakeFiles/testB.dir/includes/token/token.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testC.dir/build.make CMakeFiles/testC.dir/includes/token/token.cpp.o
 .PHONY : includes/token/token.cpp.o
 
 includes/token/token.i: includes/token/token.cpp.i
@@ -748,6 +1026,7 @@ includes/token/token.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/includes/token/token.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/basic_test.dir/build.make CMakeFiles/basic_test.dir/includes/token/token.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/testB.dir/build.make CMakeFiles/testB.dir/includes/token/token.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testC.dir/build.make CMakeFiles/testC.dir/includes/token/token.cpp.i
 .PHONY : includes/token/token.cpp.i
 
 includes/token/token.s: includes/token/token.cpp.s
@@ -758,6 +1037,7 @@ includes/token/token.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/includes/token/token.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/basic_test.dir/build.make CMakeFiles/basic_test.dir/includes/token/token.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/testB.dir/build.make CMakeFiles/testB.dir/includes/token/token.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testC.dir/build.make CMakeFiles/testC.dir/includes/token/token.cpp.s
 .PHONY : includes/token/token.cpp.s
 
 includes/tokenizer/tokenizer.o: includes/tokenizer/tokenizer.cpp.o
@@ -768,6 +1048,7 @@ includes/tokenizer/tokenizer.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/includes/tokenizer/tokenizer.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/basic_test.dir/build.make CMakeFiles/basic_test.dir/includes/tokenizer/tokenizer.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/testB.dir/build.make CMakeFiles/testB.dir/includes/tokenizer/tokenizer.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testC.dir/build.make CMakeFiles/testC.dir/includes/tokenizer/tokenizer.cpp.o
 .PHONY : includes/tokenizer/tokenizer.cpp.o
 
 includes/tokenizer/tokenizer.i: includes/tokenizer/tokenizer.cpp.i
@@ -778,6 +1059,7 @@ includes/tokenizer/tokenizer.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/includes/tokenizer/tokenizer.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/basic_test.dir/build.make CMakeFiles/basic_test.dir/includes/tokenizer/tokenizer.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/testB.dir/build.make CMakeFiles/testB.dir/includes/tokenizer/tokenizer.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testC.dir/build.make CMakeFiles/testC.dir/includes/tokenizer/tokenizer.cpp.i
 .PHONY : includes/tokenizer/tokenizer.cpp.i
 
 includes/tokenizer/tokenizer.s: includes/tokenizer/tokenizer.cpp.s
@@ -788,6 +1070,7 @@ includes/tokenizer/tokenizer.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/includes/tokenizer/tokenizer.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/basic_test.dir/build.make CMakeFiles/basic_test.dir/includes/tokenizer/tokenizer.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/testB.dir/build.make CMakeFiles/testB.dir/includes/tokenizer/tokenizer.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testC.dir/build.make CMakeFiles/testC.dir/includes/tokenizer/tokenizer.cpp.s
 .PHONY : includes/tokenizer/tokenizer.cpp.s
 
 main.o: main.cpp.o
@@ -834,12 +1117,28 @@ help:
 	@echo "... gtest_main"
 	@echo "... main"
 	@echo "... testB"
+	@echo "... testC"
 	@echo "... _tests/_test_files/basic_test.o"
 	@echo "... _tests/_test_files/basic_test.i"
 	@echo "... _tests/_test_files/basic_test.s"
 	@echo "... _tests/_test_files/testB.o"
 	@echo "... _tests/_test_files/testB.i"
 	@echo "... _tests/_test_files/testB.s"
+	@echo "... _tests/_test_files/testC.o"
+	@echo "... _tests/_test_files/testC.i"
+	@echo "... _tests/_test_files/testC.s"
+	@echo "... includes/Graphics/animate.o"
+	@echo "... includes/Graphics/animate.i"
+	@echo "... includes/Graphics/animate.s"
+	@echo "... includes/Graphics/sidebar.o"
+	@echo "... includes/Graphics/sidebar.i"
+	@echo "... includes/Graphics/sidebar.s"
+	@echo "... includes/Graphics/system.o"
+	@echo "... includes/Graphics/system.i"
+	@echo "... includes/Graphics/system.s"
+	@echo "... includes/Graphics/window.o"
+	@echo "... includes/Graphics/window.i"
+	@echo "... includes/Graphics/window.s"
 	@echo "... includes/data_pkg/graph_info.o"
 	@echo "... includes/data_pkg/graph_info.i"
 	@echo "... includes/data_pkg/graph_info.s"
@@ -849,9 +1148,15 @@ help:
 	@echo "... includes/exceptions/missingparan.o"
 	@echo "... includes/exceptions/missingparan.i"
 	@echo "... includes/exceptions/missingparan.s"
+	@echo "... includes/node/node.o"
+	@echo "... includes/node/node.i"
+	@echo "... includes/node/node.s"
 	@echo "... includes/plotter/plot.o"
 	@echo "... includes/plotter/plot.i"
 	@echo "... includes/plotter/plot.s"
+	@echo "... includes/plotter/translator.o"
+	@echo "... includes/plotter/translator.i"
+	@echo "... includes/plotter/translator.s"
 	@echo "... includes/rpn/rpn.o"
 	@echo "... includes/rpn/rpn.i"
 	@echo "... includes/rpn/rpn.s"

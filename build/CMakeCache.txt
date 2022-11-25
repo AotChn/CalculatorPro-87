@@ -314,6 +314,9 @@ barkeshli_s22_IS_TOP_LEVEL:STATIC=ON
 //Value Computed by CMake
 barkeshli_s22_SOURCE_DIR:STATIC=/Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator
 
+//The directory containing a CMake configuration file for doctest.
+doctest_DIR:PATH=doctest_DIR-NOTFOUND
+
 //Value Computed by CMake
 gmock_BINARY_DIR:STATIC=/Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/build/_deps/googletest-build/googlemock
 
