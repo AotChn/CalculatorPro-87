@@ -4,28 +4,29 @@ ShuntingYard::ShuntingYard(){
 
 }
 
-ShuntingYard::ShuntingYard(Queue<Token*> prefix){
-    _prefix = prefix;
+ShuntingYard::ShuntingYard(Queue<Token*> infix){
+    set_infix(infix);
 }
 
+//main process
 void ShuntingYard::postfix_process(){
-    while(_prefix.empty() != true){
-        _p = _prefix.front();
+    //go through entire queue
+    while(!_infix.empty()){
+        _p = _infix.front();
         type_process();
-        _prefix.pop();
+        _infix.pop();
     }
-    while(_op_stack.empty() != true){
+    //pop entire op_stack
+    while(!_op_stack.empty()){
         _postfix.push(_op_stack.pop());
     }
 }
 
+//process filter by type 
 void ShuntingYard::type_process(){
     switch(_p._tk->TypeOf()){
         case INTEGER:
             _postfix.push(_p._tk);
-            return;
-        case OPERATOR:
-            prec_process();
             return;
         case LPAREN:
             _op_stack.push(_p._tk);
@@ -36,16 +37,20 @@ void ShuntingYard::type_process(){
            }
            _op_stack.pop();
             return;
+        case OPERATOR:
+            prec_process();
+            return;       
         case FUNCTION:
             prec_process();
     }
 }
 
-void ShuntingYard::prec_process(){
-    while(_op_stack.empty() != true&&_op_stack.top()->TypeOf()!=LPAREN){
+//process filter by prec 
+void ShuntingYard::prec_process(){ 
+    while(_op_stack.empty() != true&&_op_stack.top()->TypeOf()!=LPAREN){ //not empty & not lp
         int top_prec = static_cast<Operator*>(_op_stack.top())->get_prec();
-        if(static_cast<Operator*>(_p._tk)->get_prec() <= top_prec){
-            _postfix.push(_op_stack.pop());
+        if(static_cast<Operator*>(_p._tk)->get_prec() <= top_prec){ //prec <= top_prec
+            _postfix.push(_op_stack.pop()); 
         }
         else{
             break;
@@ -54,13 +59,13 @@ void ShuntingYard::prec_process(){
     _op_stack.push(_p._tk);
 }
 
-void ShuntingYard::set_infix(Queue<Token*> prefix){
-    _prefix = prefix;
+//sets the infix 
+void ShuntingYard::set_infix(Queue<Token*> infix){
+    _infix = infix;
 }
 
- Queue<Token*> ShuntingYard::postfix(Queue<Token*> prefix){
-        set_infix(prefix);
+ Queue<Token*> ShuntingYard::postfix(Queue<Token*> infix){
+        set_infix(infix);
         postfix_process(); 
         return _postfix;
 }
-//3+(9*8+4)

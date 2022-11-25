@@ -31,15 +31,15 @@ class ShuntingYard{
 public:
     //CTOR
     ShuntingYard();
-    ShuntingYard(Queue<Token*> prefix);
+    ShuntingYard(Queue<Token*> infix);
 
-    //Processes
-    void postfix_process(); //main process
-    void type_process(); //process filter by type 
-    void prec_process(); //process filter by prec 
+    //process
+    void postfix_process();
+    void type_process();
+    void prec_process(); 
     
     //Mutators
-    void set_infix(Queue<Token*> prefix);
+    void set_infix(Queue<Token*> infix);
     
     //Acessors
     Queue<Token*> get_postfix(){return _postfix;}
@@ -49,10 +49,13 @@ public:
 
 private:
 
-    Queue<Token*> _prefix;
+    Queue<Token*> _infix;
     Queue<Token*> _postfix;
     Stack<Token*> _op_stack;
     Token::Iterator _p;
 };
 
 #endif 
+
+//notes: no error checking [should be handled by tokenizer]
+//we must assume all incoming infix are correct
