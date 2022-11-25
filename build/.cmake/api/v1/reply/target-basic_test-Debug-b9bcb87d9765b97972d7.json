@@ -39,7 +39,7 @@
 			{
 				"command" : 2,
 				"file" : 0,
-				"line" : 80,
+				"line" : 87,
 				"parent" : 0
 			},
 			{
@@ -111,7 +111,13 @@
 				13,
 				14,
 				15,
-				16
+				16,
+				17,
+				18,
+				19,
+				20,
+				21,
+				22
 			]
 		}
 	],
@@ -196,7 +202,13 @@
 				13,
 				14,
 				15,
-				16
+				16,
+				17,
+				18,
+				19,
+				20,
+				21,
+				22
 			]
 		}
 	],
@@ -206,6 +218,30 @@
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
 			"path" : "_tests/_test_files/basic_test.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "includes/Graphics/animate.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "includes/Graphics/sidebar.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "includes/Graphics/system.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "includes/Graphics/window.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
@@ -229,7 +265,19 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
+			"path" : "includes/node/node.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
 			"path" : "includes/plotter/plot.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "includes/plotter/translator.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{

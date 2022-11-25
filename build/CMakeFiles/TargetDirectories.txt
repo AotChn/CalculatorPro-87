@@ -1,6 +1,7 @@
 /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/build/CMakeFiles/main.dir
 /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/build/CMakeFiles/basic_test.dir
 /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/build/CMakeFiles/testB.dir
+/Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/build/CMakeFiles/testC.dir
 /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/build/CMakeFiles/test.dir
 /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/build/CMakeFiles/edit_cache.dir
 /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/build/CMakeFiles/rebuild_cache.dir

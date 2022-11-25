@@ -8,10 +8,16 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/Graphics/animate.cpp" "CMakeFiles/main.dir/includes/Graphics/animate.cpp.o" "gcc" "CMakeFiles/main.dir/includes/Graphics/animate.cpp.o.d"
+  "/Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/Graphics/sidebar.cpp" "CMakeFiles/main.dir/includes/Graphics/sidebar.cpp.o" "gcc" "CMakeFiles/main.dir/includes/Graphics/sidebar.cpp.o.d"
+  "/Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/Graphics/system.cpp" "CMakeFiles/main.dir/includes/Graphics/system.cpp.o" "gcc" "CMakeFiles/main.dir/includes/Graphics/system.cpp.o.d"
+  "/Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/Graphics/window.cpp" "CMakeFiles/main.dir/includes/Graphics/window.cpp.o" "gcc" "CMakeFiles/main.dir/includes/Graphics/window.cpp.o.d"
   "/Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/data_pkg/graph_info.cpp" "CMakeFiles/main.dir/includes/data_pkg/graph_info.cpp.o" "gcc" "CMakeFiles/main.dir/includes/data_pkg/graph_info.cpp.o.d"
   "/Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/exceptions/dividebyzero.cpp" "CMakeFiles/main.dir/includes/exceptions/dividebyzero.cpp.o" "gcc" "CMakeFiles/main.dir/includes/exceptions/dividebyzero.cpp.o.d"
   "/Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/exceptions/missingparan.cpp" "CMakeFiles/main.dir/includes/exceptions/missingparan.cpp.o" "gcc" "CMakeFiles/main.dir/includes/exceptions/missingparan.cpp.o.d"
+  "/Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/node/node.cpp" "CMakeFiles/main.dir/includes/node/node.cpp.o" "gcc" "CMakeFiles/main.dir/includes/node/node.cpp.o.d"
   "/Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/plotter/plot.cpp" "CMakeFiles/main.dir/includes/plotter/plot.cpp.o" "gcc" "CMakeFiles/main.dir/includes/plotter/plot.cpp.o.d"
+  "/Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/plotter/translator.cpp" "CMakeFiles/main.dir/includes/plotter/translator.cpp.o" "gcc" "CMakeFiles/main.dir/includes/plotter/translator.cpp.o.d"
   "/Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/rpn/rpn.cpp" "CMakeFiles/main.dir/includes/rpn/rpn.cpp.o" "gcc" "CMakeFiles/main.dir/includes/rpn/rpn.cpp.o.d"
   "/Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/shunting_yard/shunting_yard.cpp" "CMakeFiles/main.dir/includes/shunting_yard/shunting_yard.cpp.o" "gcc" "CMakeFiles/main.dir/includes/shunting_yard/shunting_yard.cpp.o.d"
   "/Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/stub/stub.cpp" "CMakeFiles/main.dir/includes/stub/stub.cpp.o" "gcc" "CMakeFiles/main.dir/includes/stub/stub.cpp.o.d"

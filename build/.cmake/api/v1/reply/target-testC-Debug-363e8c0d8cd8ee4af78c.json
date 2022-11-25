@@ -2,7 +2,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "bin/main"
+			"path" : "bin/testC"
 		}
 	],
 	"backtrace" : 1,
@@ -27,7 +27,7 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 64,
+				"line" : 80,
 				"parent" : 0
 			},
 			{
@@ -39,7 +39,7 @@
 			{
 				"command" : 2,
 				"file" : 0,
-				"line" : 82,
+				"line" : 86,
 				"parent" : 0
 			},
 			{
@@ -111,7 +111,13 @@
 				13,
 				14,
 				15,
-				16
+				16,
+				17,
+				18,
+				19,
+				20,
+				21,
+				22
 			]
 		}
 	],
@@ -122,7 +128,7 @@
 			"id" : "gtest::@1ea2dfc0605fe3ab2a3f"
 		}
 	],
-	"id" : "main::@6890427a1f51a3e7e1df",
+	"id" : "testC::@6890427a1f51a3e7e1df",
 	"link" : 
 	{
 		"commandFragments" : 
@@ -167,8 +173,8 @@
 		],
 		"language" : "CXX"
 	},
-	"name" : "main",
-	"nameOnDisk" : "main",
+	"name" : "testC",
+	"nameOnDisk" : "testC",
 	"paths" : 
 	{
 		"build" : ".",
@@ -196,7 +202,13 @@
 				13,
 				14,
 				15,
-				16
+				16,
+				17,
+				18,
+				19,
+				20,
+				21,
+				22
 			]
 		}
 	],
@@ -205,7 +217,31 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "main.cpp",
+			"path" : "_tests/_test_files/testC.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "includes/Graphics/animate.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "includes/Graphics/sidebar.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "includes/Graphics/system.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "includes/Graphics/window.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
@@ -229,7 +265,19 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
+			"path" : "includes/node/node.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
 			"path" : "includes/plotter/plot.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "includes/plotter/translator.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
