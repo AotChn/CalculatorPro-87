@@ -58,9 +58,6 @@ set(INCLUDES_FOLDER includes)
 FILE(GLOB_RECURSE SOURCE_FILES RELATIVE ${CMAKE_CURRENT_SOURCE_DIR}   "${INCLUDES_FOLDER}/*.cpp" )
 #- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 
-
-
-
 ADD_EXECUTABLE(main
     main.cpp
     ${SOURCE_FILES}
@@ -77,6 +74,13 @@ ADD_EXECUTABLE(testB
     #- - - - - - - - - - - - - - - - 
 )
 
+ADD_EXECUTABLE(testC
+    _tests/_test_files/testC.cpp
+    ${SOURCE_FILES}
+    #- - - - - - - - - - - - - - - - 
+)
+
+TARGET_LINK_LIBRARIES(testC gtest sfml-graphics sfml-window sfml-system)
 TARGET_LINK_LIBRARIES(basic_test gtest sfml-graphics sfml-window sfml-system)
 TARGET_LINK_LIBRARIES(testB gtest sfml-graphics sfml-window sfml-system)
 TARGET_LINK_LIBRARIES(main gtest sfml-graphics sfml-window sfml-system)
