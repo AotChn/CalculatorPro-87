@@ -12,6 +12,7 @@
 
 #include <iostream>
 #include <iomanip>
+#include <sstream>
 #include "../linked_list_functions/linked_list_functions.h"
 #include "../token/token.h"
 #include "../data_pkg/tk_data.h"
@@ -107,7 +108,8 @@ public:
     int size() const { return _size; }
     template<typename TT>
     friend std::ostream& operator << (std::ostream& outs, const Queue<TT>& printMe);
-    
+    std::string get_queue_str();
+
  private:
     node<T>* _front;
     node<T>* _rear;
@@ -197,6 +199,22 @@ void Queue<T>::print_pointers(){
         std::cout<<*(wlk->_item);
         wlk=wlk->_next;
     }
+}
+
+template <typename T>
+std::string Queue<T>::get_queue_str(){
+    std::stringstream ss;
+    std::string hold;
+    std::string queue;
+    node<T> * wlk = _front;
+    while(wlk != nullptr){
+        ss.clear();
+        ss<<*(wlk->_item);
+        ss>>hold;
+        queue = queue+hold;
+        wlk=wlk->_next;
+    }
+    return queue;
 }
 
 template<typename TT>
