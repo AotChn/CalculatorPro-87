@@ -65,7 +65,7 @@ int RPN::op_process(int a, int b){
             result = a + b;
             return result; 
         case EXPONENT:
-            result = pow(b,a);
+            result = pow(a,b);
             return result;
     }
 }
