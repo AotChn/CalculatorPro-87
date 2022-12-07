@@ -29,7 +29,7 @@ class Plot {
 public:
    //CTOR
     Plot();
-    Plot(Graph_info info);
+    Plot(Graph_info Info);
     sf::Vector2f operator()();
 
     //Process
@@ -38,21 +38,27 @@ public:
     //Mutators
     void set_info(Graph_info info); 
     void set_point(double x, double y); //instantiates pair
+    double get_delta();
+    double get_s_delta();
 
     //Acessors 
     void Print();
-    Graph_info get_info(){return g_info;}
+    Graph_info* get_info(){return info;}
     sf::Vector2f get_SFpoint(){return point;} 
     Vector<sf::Vector2f> get_coords(){return coordinates;}
     sf::Vector2f operator()(int i);
+    
+    void print2();
 
 private:
    
     double x;
     double y;
-    Graph_info g_info; 
+    Graph_info* info; 
     sf::Vector2f point;
     Vector<sf::Vector2f> coordinates;
 };
 
 #endif
+
+//seg fault 

@@ -68,6 +68,9 @@
         "any": "cpp",
         "array": "cpp",
         "sstream": "cpp",
-        "variant": "cpp"
+        "variant": "cpp",
+        "__hash_table": "cpp",
+        "csignal": "cpp",
+        "unordered_set": "cpp"
     }
 }

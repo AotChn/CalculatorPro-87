@@ -18,29 +18,28 @@ double RPN::rpn_process(){
         it++;
     }
     _p._tk = hold.top();
-    int result = static_cast<Integer*>(_p._tk)->get_val();
+    double result = static_cast<Double*>(_p._tk)->get_val();
     return result;
 }
 
 Stack<Token*> RPN::type_process(Stack<Token*> hold){
     switch(_p._tk->TypeOf()){
-            case INTEGER:{
+            case DOUBLE:{
                hold.push(*it);
                 return hold; 
             }
             case OPERATOR:{
                 Token* i = hold.pop();
-                int a = static_cast<Integer*>(i)->get_val();
+                double a = static_cast<Double*>(i)->get_val();
                 i = hold.pop();
-                int b = static_cast<Integer*>(i)->get_val();
-                int result = op_process(b,a);
-                i = new Integer(result);
+                double b = static_cast<Double*>(i)->get_val();
+                double result = op_process(b,a);
+                i = new Double(result);
                 hold.push(i);
                 return hold;
             }   
             case FUNCTION:{
-                hold.push(new Integer(_instan));
-                return hold;
+                return funct_process(hold);
             }
         }   
         return hold;
@@ -48,8 +47,8 @@ Stack<Token*> RPN::type_process(Stack<Token*> hold){
 
 }
 
-int RPN::op_process(int a, int b){
-    int result;
+double RPN::op_process(double a, double b){
+    double result;
     int task = (static_cast<Operator*>(_p._tk)->get_task());
     switch(task){
         case MULTIPLY:
@@ -71,13 +70,15 @@ int RPN::op_process(int a, int b){
 }
 
 Stack<Token*> RPN::funct_process(Stack<Token*> hold){
-    switch(static_cast<Function*>(_p._tk)->get_funct()){
-        case VARIABLE:
-        hold.push(new Integer(_instan));
+    switch(static_cast<Function*>(_p._tk)->get_id()){
+        case 99:
+        hold.push(new Double(_instan));
             return hold;
-        case TRIG:
+        case 147:
             hold.pop();
-            hold.push(new Double(std::sin(_instan)));
+            double sin4 = std::sin(_instan);
+            hold.push(new Double(sin4));
+   //         hold.push(new Integer(_instan));
             return hold;
     }
 }
@@ -98,6 +99,6 @@ double RPN::operator ()(double value){
     return this->rpn_process();
 }
 
-void RPN::set_instan(int x){
+void RPN::set_instan(double x){
     _instan = x;
 }

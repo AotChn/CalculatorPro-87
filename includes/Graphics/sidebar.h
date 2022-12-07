@@ -10,6 +10,7 @@
 #ifndef SIDEBAR_H
 #define SIDEBAR_H
 #include <SFML/Graphics.hpp>
+#include "constants.h"
 #include <iostream>
 #include <string>
 #include <vector>

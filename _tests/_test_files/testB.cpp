@@ -22,7 +22,11 @@ using namespace std;
 #include "../../includes/tokenizer/tokenizer.h"
 #include "../../includes/data_pkg/graph_info.h"
 #include "../../includes/plotter/plot.h"
+#include "../../includes/plotter/translator.h"
+
 //++++++++++ ------------------------------------------------------>[]
+#include "../../RPN2/rpn2.h"
+
 
 void title(string name){
   cout << "\033[1;33mTEST [ \033[0m" << name << "\033[1;33m ] \033[0m"<<"\033[1;43m::\033[0m"<<endl;
@@ -164,7 +168,7 @@ if(debug==false){
 bool shunting_yard_test(bool debug = true){
   if(debug==true){
     title("USER_INPUT");
-      std::string input = "1+2*3";
+      std::string input = "5+4";
       cout<<"EQUATION: "<<input<<";B=5+5"<<endl;
       
       tokenizer Tr;
@@ -180,23 +184,33 @@ bool shunting_yard_test(bool debug = true){
       cout<<endl<<"POSTFIX: ";
       Sy.Print();
 
-      RPN Rn(Sy.get_postfix());
-      int answer = Rn();
+      RPN Rn;
+      Rn.set_input(Sy.get_postfix());
+      double answer = Rn(2);
       cout<<endl<<"ANSWER: "<<answer;
       
 
     end();
     border();
   }
-  if(debug==false){
+  if(debug==true){
     Graph_info iu("x+5");
     iu.post_fix.print_pointers();
-    iu.total_pts = 300;
+    iu.total_pts = 100;
+    iu.set_eq_domain(-2,2);
+    cout<<iu.Eq_domain.x<<"<>"<<iu.Eq_domain.y<<endl;
+    iu.set_offset();
     Plot P(iu);
+    P.print2();
     P.create_plot_map();
     P.Print();
     cout<<P(1).x<<"|"<<P(1).y<<endl;
     cout<<"we finished";
+    Translator T(iu);
+    for(int i=0;i<iu.total_pts;i++){
+    T.cart_to_sfml(P.get_coords(),i);
+    T.print();
+    }
   }
   //------------
   end(1);

@@ -35,11 +35,11 @@ public:
     
     double rpn_process();
     Stack<Token*> type_process(Stack<Token*> hold);
-    int op_process(int a, int b);
+    double op_process(double a, double b);
     Stack<Token*> funct_process(Stack<Token*> hold);
 
     void set_input(Queue<Token*> postfix);
-    void set_instan(int x);
+    void set_instan(double x);
     
     void Print(RPN Print_this,ostream &outs=cout);
 

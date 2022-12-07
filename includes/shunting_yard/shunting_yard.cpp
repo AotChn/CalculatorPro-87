@@ -25,7 +25,7 @@ void ShuntingYard::postfix_process(){
 //process filter by type 
 void ShuntingYard::type_process(){
     switch(_p._tk->TypeOf()){
-        case INTEGER:
+        case DOUBLE:
             _postfix.push(_p._tk);
             return;
         case LPAREN:

@@ -5,6 +5,7 @@ Double::Double(){
 }
 Double::Double(tk_data info){
     _info = info;
+    _d = stof(_info._str);
 }
 Double::Double(double value){
     _d = value;
@@ -13,7 +14,7 @@ Double::Double(double value){
 }
 
 Double::Double(string value){
-    _d = atof(value.c_str());
+    _d = stof(value.c_str());
     _info.set_type(DOUBLE);
 }
 

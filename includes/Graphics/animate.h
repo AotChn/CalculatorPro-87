@@ -13,15 +13,19 @@
 #include "system.h"
 #include "sidebar.h"
 #include <string>
+#include "constants.h"
 // #include "sidebar.h"
 
 class Animate{
 
     public:
 
-    Animate(){
-        window.create(sf::VideoMode(800,800),"TEST_WINDOW");
+    Animate() : sidebar(WORK_PANEL, SIDE_BAR)
+    {
+        window.create(sf::VideoMode(SCREEN_WIDTH,SCREEN_HEIGHT),"CALCULATOR ULTRA-47");
         window.setFramerateLimit(60);
+        bool take_input = false;
+    
     }
     
     void run();
@@ -29,11 +33,17 @@ class Animate{
     void render();
     void update();
     void process_events();
+    void create_new_graph();
 
     private:
     System system;
     Sidebar sidebar;
     sf::RenderWindow window;
+    sf::Text text;
+    sf::Font font;
+    std::string input;
+    Graph_info* info;
+    bool take_input;
 
 
 };

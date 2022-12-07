@@ -12,6 +12,7 @@
 
 #include <SFML/Graphics.hpp>
 #include <vector>
+#include "constants.h"
 #include "../plotter/plot.h"
 #include "../plotter/translator.h"
 
@@ -22,6 +23,7 @@ public:
     void Step(int command);
     int Size();
     void Draw(sf::RenderWindow& window);
+    void grid_lines(Graph_info info);
 
 private:
 

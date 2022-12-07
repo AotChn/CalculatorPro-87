@@ -32,20 +32,26 @@ public:
     void set_type(TOKEN_TYPES type){
         _type = type;
     }
+    void set_id(int id){
+        _id = id;
+    }
     void set_str(string str){
         _str = str;
     }
 
-    int get_type(){
-        return _type;
-    }
-    string get_str(){
-        return _str;
-    }
+    // int get_type(){
+    //     return _type;
+    // }
+    // int get_id(){
+    //     return _id;
+    // }
+    // string get_str(){
+    //     return _str;
+    // }
 
+    int _id;
     int _type;
     string _str;
-    int _id;
 };
 
 #endif

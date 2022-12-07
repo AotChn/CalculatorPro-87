@@ -3,7 +3,12 @@
     //run application 
     void Animate::run(){
         while(window.isOpen()){
-            
+            text.setFillColor(sf::Color::Red);
+            text.setPosition(sf::Vector2f(600,30));
+            text.setFont(font);
+            text.setStyle(sf::Text::Bold);
+            font.loadFromFile("Roboto-Thin.ttf");
+
             process_events();
             update();
             render();
@@ -13,10 +18,12 @@
     void Animate::Draw(){
         system.Draw(window);
         sidebar.draw(window);
+        window.draw(text);
+        
     }
     //clear->draw->display cycle
     void Animate::render(){
-        window.clear();
+        window.clear(sf::Color(0, 0, 0,255));
         Draw();
         window.display();
     }
@@ -32,13 +39,42 @@
                 case sf::Event::Closed:
                 window.close();
                 break;
+                case sf::Event::TextEntered:{
+                    if(event.text.unicode == '\b'){
+                        input.pop_back();
+                    }
+                    else if(event.text.unicode == '\t'){
+                        take_input = !take_input;
+                        input = "";
+                    }
+                    else if (event.text.unicode<128){
+                        input += event.text.unicode;
+                    }
+                    if(take_input){
+                        text.setString(input);
+                    }
+                    else{
+                        text.setString("");
+                    }
+                    cout<<input<<endl;
+                }
+                break;
+                
                 default:
                 break;
             }
         }
     }
 
- 
+// void Animate::create_new_graph(){
+//     Graph_info graph("");
+//     info = &graph;
+
+// }
+
+
+
+ //bool flag = !flag; toggle switch
 
 
 

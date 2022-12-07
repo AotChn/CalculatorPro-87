@@ -2,6 +2,7 @@
 #define INTEGER_H
 #include <string>
 #include "token.h"
+#include "double.h"
 
 using namespace std;
 

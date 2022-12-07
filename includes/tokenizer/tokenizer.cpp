@@ -112,8 +112,9 @@ int tokenizer::Funct(std::string key){
         if(pre_def_functs[token]>300){
             return COMP;
         }
+        tk._id = pre_def_functs[token];
         return ACCEPT;
-        }
+    }
     return ALPH;
 }
 
@@ -153,7 +154,7 @@ void tokenizer::pkg_token(int type){
     tk._type = type;
     switch(type){
         case NUM:
-            _infix.push(new Integer(tk));
+            _infix.push(new Double(tk));
             break;
         case OPER:
             _infix.push(new Operator(tk));
@@ -172,3 +173,7 @@ void tokenizer::pkg_token(int type){
             break;
     }
 }
+
+
+//we can use rotational matracies to be something 
+
