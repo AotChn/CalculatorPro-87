@@ -10,31 +10,30 @@ RPN::RPN(Queue<Token*> postfix){;
 }
 
 double RPN::rpn_process(){
-    Stack<Token*> hold;
+    Stack<double> hold;
     it = _postfix.begin();
     while(it!= _postfix.end()){
         _p._tk = *it;
         hold = type_process(hold);
         it++;
     }
-    _p._tk = hold.top();
-    double result = static_cast<Double*>(_p._tk)->get_val();
+    double result = hold.top();
     return result;
 }
 
-Stack<Token*> RPN::type_process(Stack<Token*> hold){
-    switch(_p._tk->TypeOf()){
+Stack<double> RPN::type_process(Stack<double> hold){
+    switch(static_cast<Token*>(*it)->TypeOf()){
             case DOUBLE:{
-               hold.push(*it);
+               hold.push(static_cast<Double*>(*it)->get_val());
                 return hold; 
             }
             case OPERATOR:{
-                Token* i = hold.pop();
-                double a = static_cast<Double*>(i)->get_val();
+                double i = hold.pop();
+                double a = i;
                 i = hold.pop();
-                double b = static_cast<Double*>(i)->get_val();
+                double b = i;
                 double result = op_process(b,a);
-                i = new Double(result);
+                i = result;
                 hold.push(i);
                 return hold;
             }   
@@ -69,15 +68,15 @@ double RPN::op_process(double a, double b){
     }
 }
 
-Stack<Token*> RPN::funct_process(Stack<Token*> hold){
+Stack<double> RPN::funct_process(Stack<double> hold){
     switch(static_cast<Function*>(_p._tk)->get_id()){
         case 99:
-        hold.push(new Double(_instan));
+        hold.push(_instan);
             return hold;
         case 147:
             hold.pop();
             double sin4 = std::sin(_instan);
-            hold.push(new Double(sin4));
+            hold.push(sin4);
    //         hold.push(new Integer(_instan));
             return hold;
     }

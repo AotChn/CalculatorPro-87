@@ -34,9 +34,9 @@ public:
     RPN(Queue<Token*> postfix);
     
     double rpn_process();
-    Stack<Token*> type_process(Stack<Token*> hold);
+    Stack<double> type_process(Stack<double> hold);
     double op_process(double a, double b);
-    Stack<Token*> funct_process(Stack<Token*> hold);
+    Stack<double> funct_process(Stack<double> hold);
 
     void set_input(Queue<Token*> postfix);
     void set_instan(double x);
