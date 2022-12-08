@@ -1,7 +1,7 @@
 #ifndef GRAPH_CONSTANTS_H
 #define GRAPH_CONSTANTS_H
-const float SCREEN_WIDTH = 1500;
-const float SCREEN_HEIGHT = 1200;
+const float SCREEN_WIDTH = 2500;
+const float SCREEN_HEIGHT = 2000;
 const float WORK_PANEL = SCREEN_WIDTH*4/5;
 const float SIDE_BAR = SCREEN_WIDTH*1/5;
 const float TOTAL_PTS = 750;

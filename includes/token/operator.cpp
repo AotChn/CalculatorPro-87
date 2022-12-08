@@ -56,6 +56,9 @@ void Operator::set_task(){
     else if(_info._str == "-"){
         _task = SUBTRACT;
     }
+    else if(_info._str == "$"){
+        _task = NEGATIVE;
+    }
 }
 
 void Operator::Print(ostream& outs) const{

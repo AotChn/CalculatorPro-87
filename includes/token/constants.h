@@ -19,7 +19,8 @@ enum TASKS  {MULTIPLY=1,
             DIVIDE,
             SUBTRACT,
             ADD,
-            EXPONENT};
+            EXPONENT,
+            NEGATIVE};
 
 //old function enum system *need to replace
 enum FUNCTION_TYPES {TRIG,

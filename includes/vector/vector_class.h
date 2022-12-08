@@ -29,7 +29,7 @@ public:
     Vector & operator= (const Vector& RHS); //copy assignment
     ~Vector(); //destructor
     
-    //member access functions:
+    //member  access functions:
     T& operator [](int index);
     const T& operator [](int index) const;
 

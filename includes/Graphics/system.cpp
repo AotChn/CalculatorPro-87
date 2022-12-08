@@ -51,7 +51,7 @@ void System::Draw(sf::RenderWindow& window){
     
     for(int i=0;i<info->total_pts;i++){
         sf::Vector2f point;
-        point = translator.cart_to_sfml(P.get_coords(),i);
+        point = translator.cart_to_sfml(P(i));
         shape.setPosition(point);
         window.draw(shape);    
     }
