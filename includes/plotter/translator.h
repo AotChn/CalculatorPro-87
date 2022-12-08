@@ -27,10 +27,10 @@ class Translator {
 public:
    //CTOR
    Translator(){}
-   Translator(Graph_info Info);
+   Translator(Graph_info * Info);
    sf::Vector2f cart_to_sfml(Vector<sf::Vector2f> coordinates, int i);
    
-   void set_graph_info(Graph_info Info);
+   void set_graph_info(Graph_info * Info);
    void set_start();
    void set_dx();
    void set_delta_x();

@@ -29,14 +29,14 @@ class Plot {
 public:
    //CTOR
     Plot();
-    Plot(Graph_info Info);
+    Plot(Graph_info * Info);
     sf::Vector2f operator()();
 
     //Process
     void create_plot_map(); //creates vector of cartesian coords in pair form 
 
     //Mutators
-    void set_info(Graph_info info); 
+    void set_info(Graph_info * Info); 
     void set_point(double x, double y); //instantiates pair
     double get_delta();
     double get_s_delta();

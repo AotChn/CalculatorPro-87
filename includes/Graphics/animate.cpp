@@ -2,11 +2,14 @@
     
     //run application 
     void Animate::run(){
+        graph.Eq = "x";
+        create_new_graph();
         while(window.isOpen()){
             text.setFillColor(sf::Color::Red);
-            text.setPosition(sf::Vector2f(600,30));
+            text.setPosition(sf::Vector2f(30,SCREEN_HEIGHT/6+30));
             text.setFont(font);
             text.setStyle(sf::Text::Bold);
+            text.setCharacterSize(60);
             font.loadFromFile("Roboto-Thin.ttf");
 
             process_events();
@@ -18,6 +21,9 @@
     void Animate::Draw(){
         system.Draw(window);
         sidebar.draw(window);
+        if(take_input){
+            window.draw(input_box());
+        }
         window.draw(text);
         
     }
@@ -29,7 +35,6 @@
     }
 
     void Animate::update(){
-
     }
 
     void Animate::process_events(){
@@ -45,10 +50,22 @@
                     }
                     else if(event.text.unicode == '\t'){
                         take_input = !take_input;
+                        if(!take_input){
+                            text.setString(input);
+                        }   
+                    }
+                    else if(event.text.unicode == '\n'){
+                        take_input = false;
+                        if(input != ""){
+                            graph.Eq = input;    
+                        }
                         input = "";
+                        text.setString("");
                     }
                     else if (event.text.unicode<128){
-                        input += event.text.unicode;
+                        if(take_input){
+                            input += event.text.unicode;
+                        }
                     }
                     if(take_input){
                         text.setString(input);
@@ -59,56 +76,24 @@
                     cout<<input<<endl;
                 }
                 break;
-                
+                case sf::Event::KeyPressed:
+                    break;
                 default:
                 break;
             }
         }
     }
 
-// void Animate::create_new_graph(){
-//     Graph_info graph("");
-//     info = &graph;
-
-// }
-
+void Animate::create_new_graph(){
+    info = &graph;
+    system.set_graph_info(info);
+}
 
 
- //bool flag = !flag; toggle switch
-
-
-
-// class window{
-
-//     public:
-//     window(){}
-
-//     void show(){
-//         sf::RenderWindow screen;
-//         screen.create(sf::VideoMode(1400,800),"Cool window");
-//         //we should see nothing program immediately closes with just this ^^
-//         // lets make it do something cool 
-
-//         while(screen.isOpen()){ //app stays open as long as not closed
-//             sf::Event event;
-//             while(screen.pollEvent(event)){
-                
-//                 if(event.type == sf::Event::Closed)
-//                     screen.close();
-//             }
-        
-
-//         screen.clear();
-//         sf::CircleShape a(1.f);
-//         a.setFillColor(sf::Color::Red);
-//         a.setPosition(sf::Vector2f(700, 400));
-//         screen.draw(a);
-//       //  screen.draw(sf::CircleShape(500));
-//         screen.display();
-//         }
-//     }
-
-// };
-
-
-
+ sf::RectangleShape Animate::input_box(){
+    sf::RectangleShape input_box;
+    input_box.setFillColor(sf::Color(0,240,0,50));
+    input_box.setPosition(sf::Vector2f(0,(SCREEN_HEIGHT/6)));
+    input_box.setSize(sf::Vector2f(WORK_PANEL,(SCREEN_HEIGHT/6)));
+    return input_box;
+}

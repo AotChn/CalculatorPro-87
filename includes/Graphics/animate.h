@@ -14,6 +14,7 @@
 #include "sidebar.h"
 #include <string>
 #include "constants.h"
+#include "../vector/vector_class.h"
 // #include "sidebar.h"
 
 class Animate{
@@ -34,6 +35,7 @@ class Animate{
     void update();
     void process_events();
     void create_new_graph();
+    sf::RectangleShape input_box();
 
     private:
     System system;
@@ -43,9 +45,10 @@ class Animate{
     sf::Font font;
     std::string input;
     Graph_info* info;
+    Graph_info graph;
     bool take_input;
-
-
+    Vector<std::string> history;
+    
 };
 //clear -> draw -> display cycle  is the way to draw stuff
 //no other good way to do it 

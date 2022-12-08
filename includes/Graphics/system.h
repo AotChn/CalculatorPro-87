@@ -21,6 +21,7 @@ class System
 public:
     System();
     void Step(int command);
+    void set_graph_info(Graph_info * Info);
     int Size();
     void Draw(sf::RenderWindow& window);
     void grid_lines(Graph_info info);
@@ -30,6 +31,7 @@ private:
     sf::CircleShape shape;
     Translator translator;
     sf::Vector2f vel;
+    Graph_info * info;
 
 };
 

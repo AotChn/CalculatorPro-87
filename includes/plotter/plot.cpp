@@ -4,8 +4,8 @@ Plot::Plot(){
 
 }
 
-Plot::Plot(Graph_info Info){
-    info = &Info;
+Plot::Plot(Graph_info * Info){
+    info = Info;
 }
 
 sf::Vector2f Plot::operator()(int i){
@@ -24,8 +24,8 @@ void Plot::create_plot_map(){
         x = x + get_delta();
     }
 }
-void Plot::set_info(Graph_info info){
-    info = info;
+void Plot::set_info(Graph_info * Info){
+    info = Info;
 }
 
 void Plot::set_point(double i, double j){

@@ -2,12 +2,12 @@
 #include "translator.h"
 
 
- Translator::Translator(Graph_info Info){
-    info = &Info;
+ Translator::Translator(Graph_info *Info){
+    info = Info;
  }
 
-void Translator::set_graph_info(Graph_info Info){
-    info = &Info;
+void Translator::set_graph_info(Graph_info * Info){
+    info = Info;
 }
 
 void Translator::set_delta_x(){

@@ -200,13 +200,14 @@ bool shunting_yard_test(bool debug = true){
     iu.set_eq_domain(-2,2);
     cout<<iu.Eq_domain.x<<"<>"<<iu.Eq_domain.y<<endl;
     iu.set_offset();
-    Plot P(iu);
+    Graph_info * gi = &iu;
+    Plot P(gi);
     P.print2();
     P.create_plot_map();
     P.Print();
     cout<<P(1).x<<"|"<<P(1).y<<endl;
     cout<<"we finished";
-    Translator T(iu);
+    Translator T(gi);
     for(int i=0;i<iu.total_pts;i++){
     T.cart_to_sfml(P.get_coords(),i);
     T.print();

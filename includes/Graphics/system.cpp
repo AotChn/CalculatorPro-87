@@ -8,16 +8,19 @@ System::System(){
     shape.setPosition(vel);
 }
 
+void System::set_graph_info(Graph_info * Info){
+    info = Info;
+}
+
 
 void System::Draw(sf::RenderWindow& window){
-    Graph_info iu("sinx");
-    iu.set_s_domain(-10,10);
-  //  iu.set_eq_domain(-2,2);
+    info->set_s_domain(-10,10);
+  //  info->set_eq_domain(-2,2);
 
-    translator.set_graph_info(iu);
-    Plot P(iu);
+    translator.set_graph_info(info);
+    Plot P(info);
     double SDI = translator.get_SDI();
-    int intervals = (iu.Screen_domain.y-iu.Screen_domain.x);
+    int intervals = (info->Screen_domain.y-info->Screen_domain.x);
     for(int i=0;i<intervals;i++){
         sf::Vertex hori_lines[]={
             sf::Vertex(sf::Vector2f(0,i*SDI),sf::Color(50,50,255,75)),
@@ -46,7 +49,7 @@ void System::Draw(sf::RenderWindow& window){
     P.create_plot_map();
     //P.Print();
     
-    for(int i=0;i<iu.total_pts;i++){
+    for(int i=0;i<info->total_pts;i++){
         sf::Vector2f point;
         point = translator.cart_to_sfml(P.get_coords(),i);
         shape.setPosition(point);
