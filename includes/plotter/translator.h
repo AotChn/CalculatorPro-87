@@ -28,17 +28,14 @@ public:
    //CTOR
    Translator(){}
    Translator(Graph_info * Info);
-   sf::Vector2f cart_to_sfml(Vector<sf::Vector2f> coordinates, int i);
+   sf::Vector2f cart_to_sfml(sf::Vector2f coords);
    
    void set_graph_info(Graph_info * Info);
-   void set_start();
    void set_dx();
    void set_delta_x();
    void set_delta_y();
    void set_domain(double min, double max);
 
-   double get_R_offset();
-   double get_L_offset();
    double get_SDI(); //screen domain interval
    double get_dx(){return dx;}
    double get_dy(){return dy;}
