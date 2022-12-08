@@ -28,16 +28,18 @@ struct Graph_info{
     //Mutators
     void set_window (double width, double height);
     void set_origin (double x, double y);
+    void set_origin();
     void set_scale  (double x, double y);
     void set_angle  (double x, double y);
     void set_s_domain(double x, double y);
-    void set_offset();
+    void set_string(std::string eq);
 
     void set_eq_domain (double min, double max);
     void set_eq_domain (double min, std::string pos_inf);
     void set_eq_domain (std::string neg_inf, double max);
     void set_eq_domain (std::string neg_inf, std::string pos_inf);
     void set_post_fix();
+    void set_total_pts(int pts);
 
     std::string get_str(){return Eq;}
     Queue<Token*> get_post_fix(){return post_fix;}
@@ -48,7 +50,6 @@ struct Graph_info{
     sf::Vector2f get_Eq_domain(){return Eq_domain;}
     sf::Vector2f get_Screen_domain(){return Screen_domain;}
     sf::Vector2f get_angle(){return angle;}
-    sf::Vector2f get_offset(){return offset;}
 
     int get_total_pts(){return total_pts;}
 
@@ -59,7 +60,7 @@ struct Graph_info{
 
     //Interface
     sf::Vector2f window_size;
-    sf::Vector2f origin;
+    sf::Vector2f origin; //sfml origin
     sf::Vector2f scale;
     sf::Vector2f Eq_domain;
     sf::Vector2f Screen_domain;
@@ -68,6 +69,9 @@ struct Graph_info{
 
     //resolution 
     int total_pts;
+
+    tokenizer T;
+    ShuntingYard Sy;
 };
 
 #endif 
