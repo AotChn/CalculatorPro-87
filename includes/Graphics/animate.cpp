@@ -35,6 +35,7 @@
     }
 
     void Animate::update(){
+     // graph.set_eq_domain(-2,2);
     }
 
     void Animate::process_events(){
@@ -76,10 +77,14 @@
                     cout<<input<<endl;
                 }
                 break;
-                case sf::Event::KeyPressed:
+                case sf::Event::Resized:
+                    graph.set_window(window.getSize().x,window.getSize().y);
+                    cout<<window.getSize().x<<"|";
+                    cout<<window.getView().getSize().x<<"|";
+                    cout<<window.getSize().y<<"|";
+                    cout<<window.getView().getSize().y<<endl;
+
                     break;
-                default:
-                break;
             }
         }
     }
