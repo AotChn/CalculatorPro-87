@@ -2,7 +2,9 @@
     
     //run application 
     void Animate::run(){
-        graph.Eq = "x";
+        i = 0;
+        j = 2;
+        graph.Eq = "";
         create_new_graph();
         while(window.isOpen()){
             text.setFillColor(sf::Color::Red);
@@ -25,17 +27,24 @@
             window.draw(input_box());
         }
         window.draw(text);
+        gui.set_axis_labels(window);
+        window.draw(sidebar.create_button(i,j));
+
         
     }
     //clear->draw->display cycle
     void Animate::render(){
-        window.clear(sf::Color(0, 0, 0,255));
+        window.clear(sf::Color(20, 20, 20,255));
         Draw();
         window.display();
     }
 
     void Animate::update(){
-     // graph.set_eq_domain(-2,2);
+    //  graph.set_s_domain(-2,2);
+    //  graph.set_eq_domain(-2,2);
+        sidebar.set_bottom_Bar_info(info);
+        gui.set_graph_info(info);
+        
     }
 
     void Animate::process_events(){
@@ -56,12 +65,12 @@
                         }   
                     }
                     else if(event.text.unicode == '\n'){
-                        take_input = false;
-                        if(input != ""){
-                            graph.Eq = input;    
-                        }
+                        if(take_input==true){
+                        graph.set_string(input);   
                         input = "";
                         text.setString("");
+                        take_input = false;
+                        }
                     }
                     else if (event.text.unicode<128){
                         if(take_input){
@@ -74,17 +83,62 @@
                     else{
                         text.setString("");
                     }
-                    cout<<input<<endl;
+                   // cout<<input<<endl;
                 }
                 break;
+                case sf::Event::KeyPressed:
+                    if(event.key.code == sf::Keyboard::Left){
+                        info->set_offset(-1,0);
+                    }
+                    else if(event.key.code == sf::Keyboard::Right){
+                        info->set_offset(1,0);
+                    }
+                    else if(event.key.code == sf::Keyboard::Up){
+                        info->set_offset(0,-1);
+                    }
+                    else if(event.key.code == sf::Keyboard::Down){
+                        info->set_offset(0,1);
+                    }
+                    else if(event.key.code == sf::Keyboard::Space){
+                        info->set_offset(-info->x_offset.y,-info->y_offset.y);
+                    }
+                    else if(event.key.code == sf::Keyboard::P){
+                        info->set_scale(1,0);
+                        info->offset_recalculate();
+                    }
+                    else if(event.key.code == sf::Keyboard::O){
+                        info->set_scale(-1,0);
+                        info->offset_recalculate();
+                    }
+                    break;
                 case sf::Event::Resized:
                     graph.set_window(window.getSize().x,window.getSize().y);
                     cout<<window.getSize().x<<"|";
                     cout<<window.getView().getSize().x<<"|";
                     cout<<window.getSize().y<<"|";
                     cout<<window.getView().getSize().y<<endl;
-
                     break;
+                case sf::Event::MouseMoved:
+                    if(sf::Mouse::getPosition(window).x>WORK_PANEL){
+                        i = 1;
+                        j = -1;
+                        int Mouse_y = (sf::Mouse::getPosition(window).y);
+                        while(Mouse_y>0){
+                            Mouse_y = Mouse_y-(BUTTON_SIZE);
+                            j++;
+                        }
+                        if(j>8){
+                            j=8;
+                        }
+                        else if(j<2){
+                            j=2;
+                        }
+                    }
+                    else{
+                        i = 0;
+                    }
+                default:
+                break;
             }
         }
     }
@@ -102,3 +156,4 @@ void Animate::create_new_graph(){
     input_box.setSize(sf::Vector2f(WORK_PANEL,(SCREEN_HEIGHT/6)));
     return input_box;
 }
+

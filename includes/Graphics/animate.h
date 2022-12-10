@@ -15,6 +15,7 @@
 #include <string>
 #include "constants.h"
 #include "../vector/vector_class.h"
+#include "interface.cpp"
 // #include "sidebar.h"
 
 class Animate{
@@ -26,6 +27,7 @@ class Animate{
         window.create(sf::VideoMode(SCREEN_WIDTH,SCREEN_HEIGHT),"CALCULATOR ULTRA-47");
         window.setFramerateLimit(60);
         bool take_input = false;
+
     
     }
     
@@ -38,6 +40,7 @@ class Animate{
     sf::RectangleShape input_box();
 
     private:
+    Interface gui;
     System system;
     Sidebar sidebar;
     sf::RenderWindow window;
@@ -47,7 +50,9 @@ class Animate{
     Graph_info* info;
     Graph_info graph;
     bool take_input;
-    Vector<std::string> history;
+    int i;
+    int j;
+   // Vector<std::string> history;
     
 };
 //clear -> draw -> display cycle  is the way to draw stuff
