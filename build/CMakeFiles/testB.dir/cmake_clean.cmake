@@ -3,6 +3,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/testB.dir/_tests/_test_files/testB.cpp.o.d"
   "CMakeFiles/testB.dir/includes/Graphics/animate.cpp.o"
   "CMakeFiles/testB.dir/includes/Graphics/animate.cpp.o.d"
+  "CMakeFiles/testB.dir/includes/Graphics/interface.cpp.o"
+  "CMakeFiles/testB.dir/includes/Graphics/interface.cpp.o.d"
   "CMakeFiles/testB.dir/includes/Graphics/sidebar.cpp.o"
   "CMakeFiles/testB.dir/includes/Graphics/sidebar.cpp.o.d"
   "CMakeFiles/testB.dir/includes/Graphics/system.cpp.o"

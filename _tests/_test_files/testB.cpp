@@ -199,7 +199,6 @@ bool shunting_yard_test(bool debug = true){
     iu.total_pts = 100;
     iu.set_eq_domain(-2,2);
     cout<<iu.Eq_domain.x<<"<>"<<iu.Eq_domain.y<<endl;
-    iu.set_offset();
     Graph_info * gi = &iu;
     Plot P(gi);
     P.print2();
@@ -209,7 +208,7 @@ bool shunting_yard_test(bool debug = true){
     cout<<"we finished";
     Translator T(gi);
     for(int i=0;i<iu.total_pts;i++){
-    T.cart_to_sfml(P.get_coords(),i);
+    T.cart_to_sfml(P(i));
     T.print();
     }
   }

@@ -2,7 +2,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "bin/basic_test"
+			"path" : "bin/testC"
 		}
 	],
 	"backtrace" : 1,
@@ -27,7 +27,7 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 66,
+				"line" : 77,
 				"parent" : 0
 			},
 			{
@@ -39,7 +39,7 @@
 			{
 				"command" : 2,
 				"file" : 0,
-				"line" : 84,
+				"line" : 83,
 				"parent" : 0
 			},
 			{
@@ -117,7 +117,8 @@
 				19,
 				20,
 				21,
-				22
+				22,
+				23
 			]
 		}
 	],
@@ -128,7 +129,7 @@
 			"id" : "gtest::@1ea2dfc0605fe3ab2a3f"
 		}
 	],
-	"id" : "basic_test::@6890427a1f51a3e7e1df",
+	"id" : "testC::@6890427a1f51a3e7e1df",
 	"link" : 
 	{
 		"commandFragments" : 
@@ -173,8 +174,8 @@
 		],
 		"language" : "CXX"
 	},
-	"name" : "basic_test",
-	"nameOnDisk" : "basic_test",
+	"name" : "testC",
+	"nameOnDisk" : "testC",
 	"paths" : 
 	{
 		"build" : ".",
@@ -208,7 +209,8 @@
 				19,
 				20,
 				21,
-				22
+				22,
+				23
 			]
 		}
 	],
@@ -217,13 +219,19 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "_tests/_test_files/basic_test.cpp",
+			"path" : "_tests/_test_files/testC.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
 			"path" : "includes/Graphics/animate.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "includes/Graphics/interface.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{

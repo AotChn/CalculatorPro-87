@@ -380,6 +380,39 @@ includes/Graphics/animate.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/testC.dir/build.make CMakeFiles/testC.dir/includes/Graphics/animate.cpp.s
 .PHONY : includes/Graphics/animate.cpp.s
 
+includes/Graphics/interface.o: includes/Graphics/interface.cpp.o
+.PHONY : includes/Graphics/interface.o
+
+# target to build an object file
+includes/Graphics/interface.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/includes/Graphics/interface.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/basic_test.dir/build.make CMakeFiles/basic_test.dir/includes/Graphics/interface.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testB.dir/build.make CMakeFiles/testB.dir/includes/Graphics/interface.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testC.dir/build.make CMakeFiles/testC.dir/includes/Graphics/interface.cpp.o
+.PHONY : includes/Graphics/interface.cpp.o
+
+includes/Graphics/interface.i: includes/Graphics/interface.cpp.i
+.PHONY : includes/Graphics/interface.i
+
+# target to preprocess a source file
+includes/Graphics/interface.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/includes/Graphics/interface.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/basic_test.dir/build.make CMakeFiles/basic_test.dir/includes/Graphics/interface.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testB.dir/build.make CMakeFiles/testB.dir/includes/Graphics/interface.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testC.dir/build.make CMakeFiles/testC.dir/includes/Graphics/interface.cpp.i
+.PHONY : includes/Graphics/interface.cpp.i
+
+includes/Graphics/interface.s: includes/Graphics/interface.cpp.s
+.PHONY : includes/Graphics/interface.s
+
+# target to generate assembly for a file
+includes/Graphics/interface.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/includes/Graphics/interface.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/basic_test.dir/build.make CMakeFiles/basic_test.dir/includes/Graphics/interface.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testB.dir/build.make CMakeFiles/testB.dir/includes/Graphics/interface.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testC.dir/build.make CMakeFiles/testC.dir/includes/Graphics/interface.cpp.s
+.PHONY : includes/Graphics/interface.cpp.s
+
 includes/Graphics/sidebar.o: includes/Graphics/sidebar.cpp.o
 .PHONY : includes/Graphics/sidebar.o
 
@@ -1130,6 +1163,9 @@ help:
 	@echo "... includes/Graphics/animate.o"
 	@echo "... includes/Graphics/animate.i"
 	@echo "... includes/Graphics/animate.s"
+	@echo "... includes/Graphics/interface.o"
+	@echo "... includes/Graphics/interface.i"
+	@echo "... includes/Graphics/interface.s"
 	@echo "... includes/Graphics/sidebar.o"
 	@echo "... includes/Graphics/sidebar.i"
 	@echo "... includes/Graphics/sidebar.s"

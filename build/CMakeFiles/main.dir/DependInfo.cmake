@@ -9,6 +9,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/Graphics/animate.cpp" "CMakeFiles/main.dir/includes/Graphics/animate.cpp.o" "gcc" "CMakeFiles/main.dir/includes/Graphics/animate.cpp.o.d"
+  "/Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/Graphics/interface.cpp" "CMakeFiles/main.dir/includes/Graphics/interface.cpp.o" "gcc" "CMakeFiles/main.dir/includes/Graphics/interface.cpp.o.d"
   "/Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/Graphics/sidebar.cpp" "CMakeFiles/main.dir/includes/Graphics/sidebar.cpp.o" "gcc" "CMakeFiles/main.dir/includes/Graphics/sidebar.cpp.o.d"
   "/Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/Graphics/system.cpp" "CMakeFiles/main.dir/includes/Graphics/system.cpp.o" "gcc" "CMakeFiles/main.dir/includes/Graphics/system.cpp.o.d"
   "/Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/Graphics/window.cpp" "CMakeFiles/main.dir/includes/Graphics/window.cpp.o" "gcc" "CMakeFiles/main.dir/includes/Graphics/window.cpp.o.d"

@@ -10,6 +10,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/_tests/_test_files/testC.cpp" "CMakeFiles/testC.dir/_tests/_test_files/testC.cpp.o" "gcc" "CMakeFiles/testC.dir/_tests/_test_files/testC.cpp.o.d"
   "/Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/Graphics/animate.cpp" "CMakeFiles/testC.dir/includes/Graphics/animate.cpp.o" "gcc" "CMakeFiles/testC.dir/includes/Graphics/animate.cpp.o.d"
+  "/Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/Graphics/interface.cpp" "CMakeFiles/testC.dir/includes/Graphics/interface.cpp.o" "gcc" "CMakeFiles/testC.dir/includes/Graphics/interface.cpp.o.d"
   "/Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/Graphics/sidebar.cpp" "CMakeFiles/testC.dir/includes/Graphics/sidebar.cpp.o" "gcc" "CMakeFiles/testC.dir/includes/Graphics/sidebar.cpp.o.d"
   "/Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/Graphics/system.cpp" "CMakeFiles/testC.dir/includes/Graphics/system.cpp.o" "gcc" "CMakeFiles/testC.dir/includes/Graphics/system.cpp.o.d"
   "/Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/Graphics/window.cpp" "CMakeFiles/testC.dir/includes/Graphics/window.cpp.o" "gcc" "CMakeFiles/testC.dir/includes/Graphics/window.cpp.o.d"

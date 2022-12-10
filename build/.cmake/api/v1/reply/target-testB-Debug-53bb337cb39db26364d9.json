@@ -117,7 +117,8 @@
 				19,
 				20,
 				21,
-				22
+				22,
+				23
 			]
 		}
 	],
@@ -208,7 +209,8 @@
 				19,
 				20,
 				21,
-				22
+				22,
+				23
 			]
 		}
 	],
@@ -224,6 +226,12 @@
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
 			"path" : "includes/Graphics/animate.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "includes/Graphics/interface.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{

@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/main.dir/includes/Graphics/animate.cpp.o"
   "CMakeFiles/main.dir/includes/Graphics/animate.cpp.o.d"
+  "CMakeFiles/main.dir/includes/Graphics/interface.cpp.o"
+  "CMakeFiles/main.dir/includes/Graphics/interface.cpp.o.d"
   "CMakeFiles/main.dir/includes/Graphics/sidebar.cpp.o"
   "CMakeFiles/main.dir/includes/Graphics/sidebar.cpp.o.d"
   "CMakeFiles/main.dir/includes/Graphics/system.cpp.o"

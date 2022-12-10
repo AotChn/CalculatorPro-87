@@ -11,6 +11,11 @@
 },
 {
   "directory": "/Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++  -I/Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/SFML_INCLUDE_DIR -isystem /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/build/_deps/googletest-src/googletest/include -isystem /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/build/_deps/googletest-src/googletest -isystem /usr/local/include -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk -mmacosx-version-min=11.6 -std=gnu++11 -o CMakeFiles/main.dir/includes/Graphics/interface.cpp.o -c /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/Graphics/interface.cpp",
+  "file": "/Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/Graphics/interface.cpp"
+},
+{
+  "directory": "/Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/build",
   "command": "/Library/Developer/CommandLineTools/usr/bin/c++  -I/Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/SFML_INCLUDE_DIR -isystem /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/build/_deps/googletest-src/googletest/include -isystem /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/build/_deps/googletest-src/googletest -isystem /usr/local/include -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk -mmacosx-version-min=11.6 -std=gnu++11 -o CMakeFiles/main.dir/includes/Graphics/sidebar.cpp.o -c /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/Graphics/sidebar.cpp",
   "file": "/Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/Graphics/sidebar.cpp"
 },
@@ -123,6 +128,11 @@
   "directory": "/Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/build",
   "command": "/Library/Developer/CommandLineTools/usr/bin/c++  -I/Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/SFML_INCLUDE_DIR -isystem /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/build/_deps/googletest-src/googletest/include -isystem /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/build/_deps/googletest-src/googletest -isystem /usr/local/include -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk -mmacosx-version-min=11.6 -std=gnu++11 -o CMakeFiles/basic_test.dir/includes/Graphics/animate.cpp.o -c /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/Graphics/animate.cpp",
   "file": "/Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/Graphics/animate.cpp"
+},
+{
+  "directory": "/Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++  -I/Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/SFML_INCLUDE_DIR -isystem /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/build/_deps/googletest-src/googletest/include -isystem /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/build/_deps/googletest-src/googletest -isystem /usr/local/include -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk -mmacosx-version-min=11.6 -std=gnu++11 -o CMakeFiles/basic_test.dir/includes/Graphics/interface.cpp.o -c /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/Graphics/interface.cpp",
+  "file": "/Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/Graphics/interface.cpp"
 },
 {
   "directory": "/Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/build",
@@ -241,6 +251,11 @@
 },
 {
   "directory": "/Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++  -I/Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/SFML_INCLUDE_DIR -isystem /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/build/_deps/googletest-src/googletest/include -isystem /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/build/_deps/googletest-src/googletest -isystem /usr/local/include -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk -mmacosx-version-min=11.6 -std=gnu++11 -o CMakeFiles/testB.dir/includes/Graphics/interface.cpp.o -c /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/Graphics/interface.cpp",
+  "file": "/Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/Graphics/interface.cpp"
+},
+{
+  "directory": "/Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/build",
   "command": "/Library/Developer/CommandLineTools/usr/bin/c++  -I/Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/SFML_INCLUDE_DIR -isystem /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/build/_deps/googletest-src/googletest/include -isystem /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/build/_deps/googletest-src/googletest -isystem /usr/local/include -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk -mmacosx-version-min=11.6 -std=gnu++11 -o CMakeFiles/testB.dir/includes/Graphics/sidebar.cpp.o -c /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/Graphics/sidebar.cpp",
   "file": "/Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/Graphics/sidebar.cpp"
 },
@@ -353,6 +368,11 @@
   "directory": "/Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/build",
   "command": "/Library/Developer/CommandLineTools/usr/bin/c++  -I/Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/SFML_INCLUDE_DIR -isystem /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/build/_deps/googletest-src/googletest/include -isystem /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/build/_deps/googletest-src/googletest -isystem /usr/local/include -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk -mmacosx-version-min=11.6 -std=gnu++11 -o CMakeFiles/testC.dir/includes/Graphics/animate.cpp.o -c /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/Graphics/animate.cpp",
   "file": "/Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/Graphics/animate.cpp"
+},
+{
+  "directory": "/Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++  -I/Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/SFML_INCLUDE_DIR -isystem /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/build/_deps/googletest-src/googletest/include -isystem /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/build/_deps/googletest-src/googletest -isystem /usr/local/include -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk -mmacosx-version-min=11.6 -std=gnu++11 -o CMakeFiles/testC.dir/includes/Graphics/interface.cpp.o -c /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/Graphics/interface.cpp",
+  "file": "/Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/Graphics/interface.cpp"
 },
 {
   "directory": "/Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/build",
