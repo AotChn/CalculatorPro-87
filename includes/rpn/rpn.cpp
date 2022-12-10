@@ -12,6 +12,9 @@ RPN::RPN(Queue<Token*> postfix){;
 double RPN::rpn_process(){
     Stack<double> hold;
     it = _postfix.begin();
+    if(_postfix.empty()){
+        return 0;
+    }
     while(it!= _postfix.end()){
         _p._tk = *it;
         hold = type_process(hold);
@@ -69,15 +72,41 @@ double RPN::op_process(double a, double b){
 }
 
 Stack<double> RPN::funct_process(Stack<double> hold){
+    double result;
     switch(static_cast<Function*>(_p._tk)->get_id()){
         case 99:
         hold.push(_instan);
             return hold;
         case 147:
-            hold.pop();
-            double sin4 = std::sin(_instan);
-            hold.push(sin4);
-   //         hold.push(new Integer(_instan));
+            result = std::sin(hold.pop());
+            hold.push(result);
+            return hold;
+        case 148:
+            result = std::cos(hold.pop());
+            hold.push(result);
+            return hold;
+        case 149:
+            result = std::tan(hold.pop());
+            hold.push(result);
+            return hold;
+        case 150:
+            result = std::asin(hold.pop());
+            hold.push(result);
+            return hold;
+        case 151:
+            result = std::acos(hold.pop());
+            hold.push(result);
+            return hold;
+        case 152:
+            result = std::atan(hold.pop());
+            hold.push(result);
+            return hold;
+        case 153: 
+            hold.push(3.14);
+            return hold;
+        case 155:
+            result = std::log(hold.pop());
+            hold.push(result);
             return hold;
     }
 }
