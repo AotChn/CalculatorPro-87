@@ -25,11 +25,11 @@ public:
     int Size();
     void Draw(sf::RenderWindow& window);
     void grid_lines(Graph_info info);
+    void set_axis_label();
 
 private:
-
+   // Plot P;
     sf::CircleShape shape;
-    Translator translator;
     sf::Vector2f vel;
     Graph_info * info;
 
