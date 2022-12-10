@@ -26,9 +26,8 @@ double Translator::get_SDI(){
 sf::Vector2f Translator::cart_to_sfml(sf::Vector2f coords){
     set_delta_x();
     set_delta_y();
-    sfml_point.x = (coords.x  * dx) + info->origin.x;
-    sfml_point.y = -1*(coords.y * dy) + info->origin.y;
-
+    sfml_point.x = (coords.x  * dx) + info->origin.x + (dx*info->x_offset.y);
+    sfml_point.y = -1*(coords.y * dy) + info->origin.y + (dx*info->y_offset.y);
     return sfml_point;
 }
 
