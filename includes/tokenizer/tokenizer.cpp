@@ -27,7 +27,11 @@ int tokenizer::Non(std::string key){
     if(debug){cout<<"PASSED NON->";}
     _cur_ST = NON;
     token = "" + key;
-    if(str_vect_cmp(NUMERALS_,key)||key=="."){
+    if(str_vect_cmp(DELIMS_,key)){
+        wlk++;
+        return NON;
+    }
+    else if(str_vect_cmp(NUMERALS_,key)||key=="."){
         wlk++;
         return NUM;
     }
