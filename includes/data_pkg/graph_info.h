@@ -32,7 +32,10 @@ struct Graph_info{
     void set_scale  (double x, double y);
     void set_angle  (double x, double y);
     void set_s_domain(double x, double y);
+    void set_s_range(double x, double y);
     void set_string(std::string eq);
+    void set_offset(double x = 0, double y = 0);
+    void offset_recalculate();
 
     void set_eq_domain (double min, double max);
     void set_eq_domain (double min, std::string pos_inf);
@@ -40,6 +43,8 @@ struct Graph_info{
     void set_eq_domain (std::string neg_inf, std::string pos_inf);
     void set_post_fix();
     void set_total_pts(int pts);
+    void set_intervals();
+    int set_grid_offset();
 
     std::string get_str(){return Eq;}
     Queue<Token*> get_post_fix(){return post_fix;}
@@ -53,6 +58,7 @@ struct Graph_info{
 
     int get_total_pts(){return total_pts;}
 
+    bool update;
 
     //Equation
     std::string Eq;
@@ -64,14 +70,14 @@ struct Graph_info{
     sf::Vector2f scale;
     sf::Vector2f Eq_domain;
     sf::Vector2f Screen_domain;
+    sf::Vector2f Screen_range;
     sf::Vector2f angle;
-    sf::Vector2f offset;
-
+    sf::Vector2f x_offset;
+    sf::Vector2f y_offset;
     //resolution 
     int total_pts;
+    double intervals;
 
-    tokenizer T;
-    ShuntingYard Sy;
 };
 
 #endif 
