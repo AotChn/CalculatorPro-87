@@ -14,8 +14,9 @@ sf::Vector2f Plot::operator()(int i){
 
 void Plot::create_plot_map(){
     info->set_post_fix();
+    info->update = false;
     RPN calculate(info->get_post_fix());
-    x = info->get_Eq_domain().x;
+    x = info->Eq_domain.x - info->x_offset.y;
     for(int i=0;i<info->get_total_pts();i++){
         calculate.set_instan(x);
         y = calculate();
