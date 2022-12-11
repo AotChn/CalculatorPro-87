@@ -62,6 +62,12 @@ void Graph_info::set_origin(){
 }
 void Graph_info::set_scale(double x, double y){ 
     scale.y = scale.y + x;
+    if(scale.y>24){
+        scale.y = 24;
+    }
+    else if(scale.y<-7){
+        scale.y = -7;
+    }
     scale.x = scale.y;
     if(scale.y<0){
         scale.x = 1/(std::pow(2,std::abs(scale.y)));
@@ -125,7 +131,7 @@ void Graph_info::set_offset(double x, double y){
 }   
 void Graph_info::offset_recalculate(){
     x_offset.x = (x_offset.y * (window_size.x/(Screen_domain.y - Screen_domain.x)));
-    y_offset.x = (y_offset.y * (window_size.y/(Screen_domain.y - Screen_domain.x)));
+    y_offset.x = ((y_offset.y * (window_size.y/(Screen_domain.y - Screen_domain.x)))*1);
     update = true;
 }
 
