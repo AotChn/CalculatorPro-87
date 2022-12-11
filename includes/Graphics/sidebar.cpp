@@ -52,11 +52,11 @@ Sidebar::Sidebar(float left, float width) : _left(left), _width(width){
     current_eq.setFillColor(sf::Color::Black);
     current_eq.setPosition(sf::Vector2f(30, SCREEN_HEIGHT-50));
 
-    domain.setFont(font);
-    domain.setCharacterSize(25);
-    domain.setStyle(sf::Text::Bold);
-    domain.setFillColor(sf::Color::Black);
-    domain.setPosition(sf::Vector2f(400, SCREEN_HEIGHT-(bottomBar.getSize().y/2)-15));
+    current_coord.setFont(font);
+    current_coord.setCharacterSize(25);
+    current_coord.setStyle(sf::Text::Bold);
+    current_coord.setFillColor(sf::Color::Black);
+    current_coord.setPosition(sf::Vector2f(600, SCREEN_HEIGHT-(bottomBar.getSize().y/2)-15));
 
     ////this is how you would position text on screen:
     // sb_text.setPosition(sf::Vector2f(10, SCREEN_HEIGHT-sb_text.getLocalBounds().height-5));
@@ -75,7 +75,7 @@ void Sidebar::draw(sf::RenderWindow &window){
     window.draw(rect);
     window.draw(bottomBar);
     window.draw(current_eq);
-    window.draw(domain);
+    window.draw(current_coord);
 
     
 }
@@ -84,18 +84,22 @@ string &Sidebar::operator[](int index){
     return items[index];
 }
 
-void Sidebar::set_bottom_Bar_info(Graph_info* info){
-    current_eq.setString(info->Eq);
-    std::string domain_string = "Domain : (";
-    domain_string += std::to_string(info->Screen_domain.x);
-    domain_string += " , ";
-    domain_string += std::to_string(info->Screen_domain.y);
-    domain_string += ") | Range : (";
-    domain_string += std::to_string(info->Screen_range.x);
-    domain_string += " , ";
-    domain_string += std::to_string(info->Screen_range.y);
-    domain_string += ")";
-    domain.setString(domain_string);
+void Sidebar::set_bottom_Bar_info(Graph_info* info, sf::RenderWindow& window, bool Mousein){
+    if(strlen((info->Eq.c_str()))>20){
+        current_eq.setString("y = "+(info->Eq).substr(0,20)+"...");
+    }
+    else{
+        current_eq.setString("y = "+(info->Eq).substr(0,20));
+    }
+    
+    if(Mousein){
+        Translator T;
+        T.set_graph_info(info);
+        sf::Vector2f Mouse_pos(sf::Mouse::getPosition(window).x,sf::Mouse::getPosition(window).y);
+        std::string cart_coords;
+        cart_coords += "Current Coordinates :(" + to_string(T.sfml_to_cart(Mouse_pos).x) + "," + to_string(T.sfml_to_cart(Mouse_pos).y) + ")";
+        current_coord.setString(cart_coords);
+    }
 }
 
 sf::RectangleShape Sidebar::create_button(int i,int j){

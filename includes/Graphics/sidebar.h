@@ -11,6 +11,7 @@
 #define SIDEBAR_H
 #include <SFML/Graphics.hpp>
 #include "constants.h"
+#include "../plotter/translator.h"
 #include <iostream>
 #include <string>
 #include <vector>
@@ -25,7 +26,7 @@ public:
     Sidebar(float left, float width);
     void draw(sf::RenderWindow& window);
     string& operator [](int index);
-    void set_bottom_Bar_info(Graph_info* info);
+    void set_bottom_Bar_info(Graph_info* info,sf::RenderWindow& window,bool Mousein);
     void history_buttons();
     sf::RectangleShape create_button(int i,int j);
 private:
@@ -37,7 +38,7 @@ private:
     float _left;
     float _width;
     sf::Text current_eq;
-    sf::Text domain;
+    sf::Text current_coord;
 };
 
 #endif // SIDEBAR_H
