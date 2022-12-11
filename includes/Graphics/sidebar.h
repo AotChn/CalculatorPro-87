@@ -26,9 +26,10 @@ public:
     Sidebar(float left, float width);
     void draw(sf::RenderWindow& window);
     string& operator [](int index);
-    void set_bottom_Bar_info(Graph_info* info,sf::RenderWindow& window,bool Mousein);
+    void set_bottom_Bar_info(Graph_info* info,sf::RenderWindow& window,bool Mousein, std::string input);
     void history_buttons();
     sf::RectangleShape create_button(int i,int j);
+    sf::Text show_equation(std::string eq, int j);
 private:
     sf::RectangleShape rect;            //sidebar rectangle
     vector<string> items;               //strings to place on the sidebar

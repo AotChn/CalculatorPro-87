@@ -11,7 +11,7 @@ void System::set_graph_info(Graph_info * Info){
     info = Info;
 }
 
-void System::Draw(sf::RenderWindow& window){
+void System::Draw_axis(sf::RenderWindow& window){
     Translator T(info);
     Plot P;
     P.set_info(info);
@@ -44,17 +44,44 @@ void System::Draw(sf::RenderWindow& window){
 
     window.draw(x_axis,2,sf::Lines); 
     window.draw(y_axis,2,sf::Lines);
-    P.create_plot_map();
+}
 
+void System::Draw_curve(sf::RenderWindow& window, int j){
+    Translator T(info);
+    Plot P;
+    P.set_info(info);
+    P.create_plot_map();
+    sf::Color color;
+    switch(j){
+        case 1:
+            color = sf::Color(223,15,15);
+            break;
+        case 2:
+            color = sf::Color(225,255,0);
+            break;
+        case 3:
+            color = sf::Color(22,192,22);
+            break;
+        case 4:
+            color = sf::Color(225,153,51);
+            break;
+        case 5:
+            color = sf::Color(0,204,204);
+            break;
+        case 6:
+            color = sf::Color(0,0,225);
+            break;
+        case 0:
+            color = sf::Color(22,192,22);
+            break;
+    }
     sf::VertexArray curve(sf::LinesStrip, info->total_pts);
     for(int i=0;i<info->total_pts;i++){
-        curve[i] = (sf::Vertex(T.cart_to_sfml(P(i)),sf::Color(22,192,22)));
+        curve[i] = (sf::Vertex(T.cart_to_sfml(P(i)),sf::Color(color)));
     }
     if(info->Eq!=""){
         window.draw(curve);
     }
 }
-
-
 
 

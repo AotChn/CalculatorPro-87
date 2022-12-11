@@ -23,7 +23,8 @@ public:
     void Step(int command);
     void set_graph_info(Graph_info * Info);
     int Size();
-    void Draw(sf::RenderWindow& window);
+    void Draw_axis(sf::RenderWindow& window);
+    void Draw_curve(sf::RenderWindow& window, int j);
     void grid_lines(Graph_info info);
     void set_axis_label();
 

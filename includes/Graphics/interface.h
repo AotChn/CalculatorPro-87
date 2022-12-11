@@ -95,6 +95,7 @@ void set_axis_labels(sf::RenderWindow& window){
     }
 }
 
+
 private:
     Graph_info * info;
 };

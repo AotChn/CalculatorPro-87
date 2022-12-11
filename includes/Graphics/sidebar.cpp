@@ -84,12 +84,12 @@ string &Sidebar::operator[](int index){
     return items[index];
 }
 
-void Sidebar::set_bottom_Bar_info(Graph_info* info, sf::RenderWindow& window, bool Mousein){
-    if(strlen((info->Eq.c_str()))>20){
-        current_eq.setString("y = "+(info->Eq).substr(0,20)+"...");
+void Sidebar::set_bottom_Bar_info(Graph_info* info, sf::RenderWindow& window, bool Mousein, std::string input){
+    if(strlen((input.c_str()))>20){
+        current_eq.setString("y = "+(input).substr(0,20)+"...");
     }
     else{
-        current_eq.setString("y = "+(info->Eq).substr(0,20));
+        current_eq.setString("y = "+(input).substr(0,20));
     }
     
     if(Mousein){
@@ -104,7 +104,10 @@ void Sidebar::set_bottom_Bar_info(Graph_info* info, sf::RenderWindow& window, bo
 
 sf::RectangleShape Sidebar::create_button(int i,int j){
     sf::RectangleShape box1;
-    if(i==1){
+    if(j == 0){
+        box1.setFillColor(sf::Color(66,68,77,0));
+    }
+    else if(i==1){
         box1.setFillColor(sf::Color(66,68,77,255));
     }
     else{
@@ -113,4 +116,15 @@ sf::RectangleShape Sidebar::create_button(int i,int j){
     box1.setPosition(sf::Vector2f(_left,(SCREEN_HEIGHT/10*j)));
     box1.setSize(sf::Vector2f(_width,SCREEN_HEIGHT/10));
     return box1;
+}
+
+sf::Text Sidebar::show_equation(std::string eq, int j){
+    sf::Text eq_string;
+    eq_string.setString(eq);
+    eq_string.setStyle(sf::Text::Bold);
+    eq_string.setFont(font);
+    eq_string.setFillColor(sf::Color::White);
+    eq_string.setPosition(sf::Vector2f(_left+200,(SCREEN_HEIGHT/10*(j+2))+30));
+    eq_string.setCharacterSize(100);
+    return eq_string;
 }

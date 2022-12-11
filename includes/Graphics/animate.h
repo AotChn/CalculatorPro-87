@@ -2,9 +2,9 @@
  * AUTHOR:      Aot Chanthorn
  * PROJECT:  GRAPHIC CALCULATOR
  * ------------------------------------------------------------------------- *
- * File: array_functions.h
- *  templated low level functions to manipulate 1D arrays 
- *  search - copy - re/allocate - print
+ * File: animate.h
+ *  manipulate window actions in sfml
+ *  on screen content
  * ************************************************************************* */
 
 #ifndef AOTS_ANIMATE_H
@@ -16,6 +16,9 @@
 #include "constants.h"
 #include "../vector/vector_class.h"
 #include "interface.cpp"
+#include <fstream>
+#include <iostream>
+#include "../array_functions/array_functions.h"
 // #include "sidebar.h"
 
 class Animate{
@@ -27,8 +30,10 @@ class Animate{
         window.create(sf::VideoMode(SCREEN_WIDTH,SCREEN_HEIGHT),"CALCULATOR ULTRA-47");
         window.setFramerateLimit(60);
         bool take_input = false;
-
-    
+        info = &graph;
+        system.set_graph_info(info);
+        button_color = 0;
+        j = 2;
     }
     
     void run();
@@ -36,7 +41,9 @@ class Animate{
     void render();
     void update();
     void process_events();
-    void create_new_graph();
+    void create_graphs();
+    void load_graphs();
+    void save_graphs();
     sf::RectangleShape input_box();
 
     private:
@@ -50,11 +57,12 @@ class Animate{
     Graph_info* info;
     Graph_info graph;
     bool take_input;
-    int i;
+    int button_color;
     int j;
     bool Mousein;
     sf::Vector2f mouse_pos;
-   // Vector<std::string> history;
+    std::string graphs[7];
+    bool show_graphs[7];
     
 };
 //clear -> draw -> display cycle  is the way to draw stuff
