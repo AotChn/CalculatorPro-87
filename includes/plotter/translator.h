@@ -29,6 +29,7 @@ public:
    Translator(){}
    Translator(Graph_info * Info);
    sf::Vector2f cart_to_sfml(sf::Vector2f coords);
+   sf::Vector2f sfml_to_cart(sf::Vector2f coords);
    
    void set_graph_info(Graph_info * Info);
    void set_dx();

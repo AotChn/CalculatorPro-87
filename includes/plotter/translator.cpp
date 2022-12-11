@@ -31,6 +31,15 @@ sf::Vector2f Translator::cart_to_sfml(sf::Vector2f coords){
     return sfml_point;
 }
 
+sf::Vector2f Translator::sfml_to_cart(sf::Vector2f coords){
+    set_delta_x();
+    set_delta_y();
+    sf::Vector2f cart_point;
+    cart_point.x = (coords.x - info->origin.x - (dx*info->x_offset.y)) / dx;
+    cart_point.y = ((coords.y - info->origin.y - (-1*dx*info->y_offset.y)) / dx)*-1;
+    return cart_point;
+}
+
 void Translator::print(){
     cout<<"SFML_PT.x = "<<sfml_point.x<<"|"<<"SFML_PT.y = "<<sfml_point.y<<endl;
     cout<<"Offset = "<<offset<<endl;
