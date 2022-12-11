@@ -52,6 +52,8 @@ class Animate{
     bool take_input;
     int i;
     int j;
+    bool Mousein;
+    sf::Vector2f mouse_pos;
    // Vector<std::string> history;
     
 };
@@ -60,3 +62,4 @@ class Animate{
 
 
 #endif 
+

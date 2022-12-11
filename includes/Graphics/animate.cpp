@@ -4,6 +4,7 @@
     void Animate::run(){
         i = 0;
         j = 2;
+        Mousein = false;
         graph.Eq = "";
         create_new_graph();
         while(window.isOpen()){
@@ -40,10 +41,15 @@
     }
 
     void Animate::update(){
-    //  graph.set_s_domain(-2,2);
-    //  graph.set_eq_domain(-2,2);
-        sidebar.set_bottom_Bar_info(info);
+        sidebar.set_bottom_Bar_info(info,window,Mousein);
         gui.set_graph_info(info);
+        // Translator T;
+        // T.set_graph_info(info);
+        // cout<<endl;
+        // cout<<T.sfml_to_cart(sf::Vector2f(SCREEN_HEIGHT/2,SCREEN_HEIGHT/2)).x;
+        // cout<<",";
+        // cout<<T.sfml_to_cart(sf::Vector2f(SCREEN_HEIGHT/2,SCREEN_HEIGHT/2)).y;
+
         
     }
 
@@ -78,7 +84,12 @@
                         }
                     }
                     if(take_input){
-                        text.setString(input);
+                        if(strlen(input.c_str())>45){
+                            text.setString(input.substr(strlen(input.c_str())-45,45));
+                        }
+                        else{
+                            text.setString(input);
+                        }
                     }
                     else{
                         text.setString("");
@@ -119,7 +130,9 @@
                     cout<<window.getView().getSize().y<<endl;
                     break;
                 case sf::Event::MouseMoved:
+                    Mousein = true;
                     if(sf::Mouse::getPosition(window).x>WORK_PANEL){
+                        Mousein = false;
                         i = 1;
                         j = -1;
                         int Mouse_y = (sf::Mouse::getPosition(window).y);
@@ -137,8 +150,12 @@
                     else{
                         i = 0;
                     }
+                case sf::Event::MouseButtonPressed:
+                    
+                    break;
                 default:
-                break;
+                    break;
+
             }
         }
     }
