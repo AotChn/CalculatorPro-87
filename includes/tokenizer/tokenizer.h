@@ -51,6 +51,7 @@ void set_infix(Queue<Token*> infix){_infix = infix;}
 
 //ACCESSORS
 void Print();
+bool valid(){return is_valid;}
 std::string get_str(){return _tk_string;}
 Queue<Token*> get_infix(){return _infix;}
 Queue<Token*> tokenize(){pkg_type(_tk_string);return _infix;}
@@ -106,7 +107,7 @@ std::string::iterator wlk;
 //FINAL PKG
 tk_data tk;
 Queue<Token*> _infix;
-
+bool is_valid;
 };
 
 #endif 

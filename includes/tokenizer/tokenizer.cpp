@@ -15,11 +15,15 @@ void tokenizer::pkg_type(std::string _str){
         int i = 0;
         while(_cur_ST!=ACCEPT){
             hold = *wlk;
+            if(i == INV){
+                return;
+            }
             i = (this->*(state_map.at(i)))(hold); 
             //state i determines function to call
             //then function returns new state/same
         }
     }
+    is_valid = true;
 }
 
 //start state
@@ -104,6 +108,9 @@ int tokenizer::Alpha(std::string key){
         wlk++;
         return FUNCT;
     }
+    if(_prev_ST!=FUNCT){
+        return INV;
+    }
     tk._id = 99;
     return ACCEPT;
 }
@@ -119,6 +126,7 @@ int tokenizer::Funct(std::string key){
         tk._id = pre_def_functs[token];
         return ACCEPT;
     }
+    _prev_ST= _cur_ST;
     return ALPH;
 }
 
@@ -149,6 +157,8 @@ int tokenizer::Accept(std::string key){
 
  //invalid inputs (end state too)
 int tokenizer::Inv(std::string key){
+    is_valid = false;
+    cout<<"not valid expression";
     return INV;
 }
 
