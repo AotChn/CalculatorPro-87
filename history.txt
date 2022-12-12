@@ -1,6 +1,6 @@
-
-x^2
 sinx
-
-cosx
-
+x^2
+3^x
+sinx^sinx
+lnx
+sin(sin(x^3))
