@@ -36,6 +36,7 @@ struct Graph_info{
     void set_string(std::string eq);
     void set_offset(double x = 0, double y = 0);
     void offset_recalculate();
+    void reset_scale();
 
     void set_eq_domain (double min, double max);
     void set_eq_domain (double min, std::string pos_inf);

@@ -40,6 +40,11 @@ void Graph_info::set_post_fix(){
     ShuntingYard Sy;
     T.set_str(Eq);
     T.tokenize();
+    if(T.valid()==false){
+        Eq = "!NOT VALID EXPRESSION!";
+        T.set_str(Eq);
+        T.tokenize();
+    }
     post_fix = Sy.postfix(T.get_infix());
     update = true;
 }
@@ -151,4 +156,16 @@ int Graph_info::set_grid_offset(){
     //     grid_offset = std::pow(2,scale.y);
     // }
     return grid_offset;
+}
+
+void Graph_info::reset_scale(){
+    scale.y = 0;
+    scale.x = 0;
+    x_offset.x = 0;
+    y_offset.x = 0;
+    x_offset.y = 0;
+    y_offset.y = 0;
+    set_eq_domain(-10,10);
+    set_s_domain(-10,10);
+    set_s_range(-10,10);
 }
