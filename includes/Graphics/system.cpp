@@ -60,7 +60,7 @@ void System::Draw_curve(sf::RenderWindow& window, int j){
             color = sf::Color(225,255,0);
             break;
         case 3:
-            color = sf::Color(22,192,22);
+            color = sf::Color(206,29,250);
             break;
         case 4:
             color = sf::Color(225,153,51);
