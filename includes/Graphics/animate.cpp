@@ -181,7 +181,7 @@
                     }
                     break;
                  case sf::Event::MouseButtonPressed:
-                    cout<<sf::Mouse::getPosition(window).x<<"|"<<sf::Mouse::getPosition(window).y<<endl;
+                    //cout<<sf::Mouse::getPosition(window).x<<"|"<<sf::Mouse::getPosition(window).y<<endl;
                     if(sf::Mouse::getPosition(window).x>WORK_PANEL){
                         Mousein = false;
                         button_color = 1;

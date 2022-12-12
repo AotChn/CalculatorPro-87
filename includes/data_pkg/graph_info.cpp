@@ -85,7 +85,6 @@ void Graph_info::set_scale(double x, double y){
     }
     set_eq_domain(-10*scale.x-x_offset.y,10*scale.x+x_offset.y);
     set_offset(0,0);
-    cout<<scale.y<<endl;
     update = true;
 }
 void Graph_info::set_eq_domain(double min, double max){
