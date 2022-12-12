@@ -29,7 +29,7 @@ public:
     void set_bottom_Bar_info(Graph_info* info,sf::RenderWindow& window,bool Mousein, std::string input);
     void history_buttons();
     sf::RectangleShape create_button(int i,int j);
-    sf::Text show_equation(std::string eq, int j);
+    sf::Text show_equation(std::string eq, int j,bool on, int state);
 private:
     sf::RectangleShape rect;            //sidebar rectangle
     vector<string> items;               //strings to place on the sidebar

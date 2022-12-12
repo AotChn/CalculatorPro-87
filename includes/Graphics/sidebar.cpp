@@ -118,13 +118,21 @@ sf::RectangleShape Sidebar::create_button(int i,int j){
     return box1;
 }
 
-sf::Text Sidebar::show_equation(std::string eq, int j){
+sf::Text Sidebar::show_equation(std::string eq, int j, bool on, int state){
     sf::Text eq_string;
     eq_string.setString(eq);
     eq_string.setStyle(sf::Text::Bold);
     eq_string.setFont(font);
-    eq_string.setFillColor(sf::Color::White);
+    if(on){
+        eq_string.setFillColor(sf::Color::Green);
+    }
+    else if(state==1){
+        eq_string.setFillColor(sf::Color::Yellow);
+    }
+    else{
+        eq_string.setFillColor(sf::Color::White);
+    }
     eq_string.setPosition(sf::Vector2f(_left+200,(SCREEN_HEIGHT/10*(j+2))+30));
-    eq_string.setCharacterSize(100);
+    eq_string.setCharacterSize(50);
     return eq_string;
 }
