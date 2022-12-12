@@ -27,12 +27,14 @@ class Animate{
 
     Animate() : sidebar(WORK_PANEL, SIDE_BAR)
     {
-        window.create(sf::VideoMode(SCREEN_WIDTH,SCREEN_HEIGHT),"CALCULATOR ULTRA-47");
+        window.create(sf::VideoMode(SCREEN_WIDTH,SCREEN_HEIGHT),"Calculator Pro-87");
         window.setFramerateLimit(60);
         bool take_input = false;
         info = &graph;
         system.set_graph_info(info);
         button_color = 0;
+        input = "";
+        Mousein = false;
         j = 2;
     }
     
@@ -45,6 +47,8 @@ class Animate{
     void load_graphs();
     void save_graphs();
     sf::RectangleShape input_box();
+    void load_help_screen();
+    sf::Text name_stamp();
 
     private:
     Interface gui;
@@ -59,10 +63,15 @@ class Animate{
     bool take_input;
     int button_color;
     int j;
+    int help;
     bool Mousein;
+    bool help_on;
     sf::Vector2f mouse_pos;
     std::string graphs[7];
     bool show_graphs[7];
+    sf::Sprite sprite;
+    sf::Texture texture;
+    int state;
     
 };
 //clear -> draw -> display cycle  is the way to draw stuff

@@ -95,6 +95,38 @@ void set_axis_labels(sf::RenderWindow& window){
     }
 }
 
+void set_help_button(sf::RenderWindow& window, sf::Font font, int state){
+    sf::RectangleShape help;
+    sf::Text help_label;
+    help.setSize(sf::Vector2f(40*2,40*2));
+    help.setOrigin(40,40);
+    help.setPosition(sf::Vector2f(166,166));
+    if(state==1){
+        help.setFillColor(sf::Color(89,157,255,255));
+    }
+    else if(state==2){
+        help.setFillColor(sf::Color::Green);
+    }
+    else{
+        help.setFillColor(sf::Color(89,157,255,100));
+    }
+    window.draw(help);
+
+    help_label.setFillColor(sf::Color(sf::Color::Black));
+    help_label.setString("help");
+    help_label.setStyle(sf::Text::Bold);
+    help_label.setCharacterSize(30);
+    help_label.setFont(font);
+    help_label.setOrigin(help_label.getLocalBounds().width/2,help_label.getLocalBounds().height/2);
+    help_label.setPosition(sf::Vector2f(166,166));
+    window.draw(help_label);
+
+
+}
+
+void show_help_page(sf::RenderWindow& window, sf::Font font){
+
+}
 
 private:
     Graph_info * info;

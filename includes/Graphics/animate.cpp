@@ -2,11 +2,9 @@
     
     //run application 
     void Animate::run(){
-        button_color = 0;
-        j = 0;
-        Mousein = false;
         graph.Eq = "";
         load_graphs();
+        take_input = false;
         while(window.isOpen()){
             text.setFillColor(sf::Color::Red);
             text.setPosition(sf::Vector2f(30,SCREEN_HEIGHT/6+30));
@@ -28,15 +26,21 @@
             window.draw(input_box());
         }
         window.draw(text);
-        gui.set_axis_labels(window);
         window.draw(sidebar.create_button(button_color,j));
         for(int i=0;i<6;i++){
-            window.draw(sidebar.show_equation(graphs[i],i));
+            window.draw(sidebar.show_equation(graphs[i],i,show_graphs[i],0));
             if(show_graphs[i]){
                 info->set_string(graphs[i]);
                 system.Draw_curve(window,i);
+                graphs[i]= info->Eq;
             }
         }
+        gui.set_axis_labels(window);
+        gui.set_help_button(window,font,help);
+        if(help_on){
+            load_help_screen();
+        }
+        window.draw(name_stamp());
     }
     //clear->draw->display cycle
     void Animate::render(){
@@ -48,14 +52,9 @@
     void Animate::update(){
         sidebar.set_bottom_Bar_info(info,window,Mousein,graphs[j-2]);
         gui.set_graph_info(info);
-        // Translator T;
-        // T.set_graph_info(info);
-        // cout<<endl;
-        // cout<<T.sfml_to_cart(sf::Vector2f(SCREEN_HEIGHT/2,SCREEN_HEIGHT/2)).x;
-        // cout<<",";
-        // cout<<T.sfml_to_cart(sf::Vector2f(SCREEN_HEIGHT/2,SCREEN_HEIGHT/2)).y;
-
-        
+        if(help_on){
+            help =2;
+        }
     }
 
     void Animate::process_events(){
@@ -124,13 +123,23 @@
                         else if(event.key.code == sf::Keyboard::Space){
                             info->set_offset(-info->x_offset.y,-info->y_offset.y);
                         }
-                        else if(event.key.code == sf::Keyboard::P){
+                        else if(event.key.code == sf::Keyboard::O){
                             info->set_scale(1,0);
                             info->offset_recalculate();
                         }
-                        else if(event.key.code == sf::Keyboard::O){
+                        else if(event.key.code == sf::Keyboard::I){
                             info->set_scale(-1,0);
                             info->offset_recalculate();
+                        }
+                        else if(event.key.code == sf::Keyboard::R){
+                            info->reset_scale();
+                            info->offset_recalculate();
+                        }
+                        else if(event.key.code == sf::Keyboard::H){
+                            help_on = !help_on;
+                            if(!help_on){
+                                help = 0;
+                            }
                         }
                     }
                     break;
@@ -152,19 +161,27 @@
                             Mouse_y = Mouse_y-(BUTTON_SIZE);
                             j++;
                         }
-                        if(j>8){
-                            j=8;
+                        if(j>7){
+                            j=7;
                         }
                         else if(j<2){
                             j=2;
                         }
-                    }
-                    
+                    }    
                     else{
                         button_color = 0;
                     }
+                    if(sf::Mouse::getPosition(window).x>(166-40)&&sf::Mouse::getPosition(window).x<(166+40)){
+                        if(sf::Mouse::getPosition(window).y>(166-40)&&sf::Mouse::getPosition(window).y<(166+40)){
+                            help = 1;
+                        }
+                    }
+                    else{
+                        help = 0;
+                    }
                     break;
                  case sf::Event::MouseButtonPressed:
+                    cout<<sf::Mouse::getPosition(window).x<<"|"<<sf::Mouse::getPosition(window).y<<endl;
                     if(sf::Mouse::getPosition(window).x>WORK_PANEL){
                         Mousein = false;
                         button_color = 1;
@@ -174,8 +191,8 @@
                             Mouse_y = Mouse_y-(BUTTON_SIZE);
                             j++;
                         }
-                        if(j>9){
-                            j=9;
+                        if(j>7){
+                            j=7;
                         }
                         else if(j<2){
                             j=2;
@@ -185,12 +202,19 @@
                     else{
                         button_color = 0;
                     }
-                    if(show_graphs[j-2]==true){
-                        show_graphs[j-2] = false;    
+                    if(!Mousein){
+                        if(show_graphs[j-2]==true){
+                            show_graphs[j-2] = false;    
+                        }
+                        else
+                            show_graphs[j-2] = true;
                     }
-                    else
-                        show_graphs[j-2] = true;
-                    
+                    if(sf::Mouse::getPosition(window).x>(166-40)&&sf::Mouse::getPosition(window).x<(166+40)){
+                        if(sf::Mouse::getPosition(window).y>(166-40)&&sf::Mouse::getPosition(window).y<(166+40)){
+                            help_on = !help_on;
+                        }
+                    }
+        
                     break;
                 
                 default:
@@ -201,9 +225,7 @@
     }
 
 void Animate::create_graphs(){
-    for(int i=0;i<6;i++){
 
-    }
 }
 
 
@@ -229,8 +251,6 @@ void Animate::load_graphs(){
             std::getline(inFile,input,'\n');
             graphs[i] = input;
             show_graphs[i] = false;
-            cout<<"we be walking :"<<graphs[i]<<endl;
-            cout<<input<<endl;
         }
     input = "";
     inFile.close();
@@ -250,4 +270,25 @@ void Animate::save_graphs(){
         output_f<<graphs[i]<<endl;
     }
     output_f.close();
+}
+
+void Animate::load_help_screen(){
+    if(!texture.loadFromFile("help_menu.png")){
+        cout<<"help screen failed to load";
+    }
+    sprite.setPosition(sf::Vector2f(250,168));
+    sprite.setTexture(texture);
+    window.draw(sprite);
+} 
+
+sf::Text Animate::name_stamp(){
+    sf::Text name;
+    name.setFont(font);
+    name.setPosition(sf::Vector2f(1700,118));
+    name.setFillColor(sf::Color(67,209,190));
+    name.setCharacterSize(55);
+    name.setString("Powered by CHTN TECH");
+    name.setStyle(sf::Text::Bold);
+    return name;
+
 }
