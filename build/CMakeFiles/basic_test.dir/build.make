@@ -53,10 +53,10 @@ RM = /usr/local/Cellar/cmake/3.24.1/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator
+CMAKE_SOURCE_DIR = /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/99_00_final_project-agentaot
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/build
+CMAKE_BINARY_DIR = /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/99_00_final_project-agentaot/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/basic_test.dir/depend.make
@@ -70,340 +70,340 @@ include CMakeFiles/basic_test.dir/progress.make
 include CMakeFiles/basic_test.dir/flags.make
 
 CMakeFiles/basic_test.dir/_tests/_test_files/basic_test.cpp.o: CMakeFiles/basic_test.dir/flags.make
-CMakeFiles/basic_test.dir/_tests/_test_files/basic_test.cpp.o: /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/_tests/_test_files/basic_test.cpp
+CMakeFiles/basic_test.dir/_tests/_test_files/basic_test.cpp.o: /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/99_00_final_project-agentaot/_tests/_test_files/basic_test.cpp
 CMakeFiles/basic_test.dir/_tests/_test_files/basic_test.cpp.o: CMakeFiles/basic_test.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/basic_test.dir/_tests/_test_files/basic_test.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/basic_test.dir/_tests/_test_files/basic_test.cpp.o -MF CMakeFiles/basic_test.dir/_tests/_test_files/basic_test.cpp.o.d -o CMakeFiles/basic_test.dir/_tests/_test_files/basic_test.cpp.o -c /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/_tests/_test_files/basic_test.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/99_00_final_project-agentaot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/basic_test.dir/_tests/_test_files/basic_test.cpp.o"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/basic_test.dir/_tests/_test_files/basic_test.cpp.o -MF CMakeFiles/basic_test.dir/_tests/_test_files/basic_test.cpp.o.d -o CMakeFiles/basic_test.dir/_tests/_test_files/basic_test.cpp.o -c /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/99_00_final_project-agentaot/_tests/_test_files/basic_test.cpp
 
 CMakeFiles/basic_test.dir/_tests/_test_files/basic_test.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/basic_test.dir/_tests/_test_files/basic_test.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/_tests/_test_files/basic_test.cpp > CMakeFiles/basic_test.dir/_tests/_test_files/basic_test.cpp.i
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/99_00_final_project-agentaot/_tests/_test_files/basic_test.cpp > CMakeFiles/basic_test.dir/_tests/_test_files/basic_test.cpp.i
 
 CMakeFiles/basic_test.dir/_tests/_test_files/basic_test.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/basic_test.dir/_tests/_test_files/basic_test.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/_tests/_test_files/basic_test.cpp -o CMakeFiles/basic_test.dir/_tests/_test_files/basic_test.cpp.s
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/99_00_final_project-agentaot/_tests/_test_files/basic_test.cpp -o CMakeFiles/basic_test.dir/_tests/_test_files/basic_test.cpp.s
 
 CMakeFiles/basic_test.dir/includes/Graphics/animate.cpp.o: CMakeFiles/basic_test.dir/flags.make
-CMakeFiles/basic_test.dir/includes/Graphics/animate.cpp.o: /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/Graphics/animate.cpp
+CMakeFiles/basic_test.dir/includes/Graphics/animate.cpp.o: /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/99_00_final_project-agentaot/includes/Graphics/animate.cpp
 CMakeFiles/basic_test.dir/includes/Graphics/animate.cpp.o: CMakeFiles/basic_test.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/basic_test.dir/includes/Graphics/animate.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/basic_test.dir/includes/Graphics/animate.cpp.o -MF CMakeFiles/basic_test.dir/includes/Graphics/animate.cpp.o.d -o CMakeFiles/basic_test.dir/includes/Graphics/animate.cpp.o -c /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/Graphics/animate.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/99_00_final_project-agentaot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/basic_test.dir/includes/Graphics/animate.cpp.o"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/basic_test.dir/includes/Graphics/animate.cpp.o -MF CMakeFiles/basic_test.dir/includes/Graphics/animate.cpp.o.d -o CMakeFiles/basic_test.dir/includes/Graphics/animate.cpp.o -c /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/99_00_final_project-agentaot/includes/Graphics/animate.cpp
 
 CMakeFiles/basic_test.dir/includes/Graphics/animate.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/basic_test.dir/includes/Graphics/animate.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/Graphics/animate.cpp > CMakeFiles/basic_test.dir/includes/Graphics/animate.cpp.i
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/99_00_final_project-agentaot/includes/Graphics/animate.cpp > CMakeFiles/basic_test.dir/includes/Graphics/animate.cpp.i
 
 CMakeFiles/basic_test.dir/includes/Graphics/animate.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/basic_test.dir/includes/Graphics/animate.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/Graphics/animate.cpp -o CMakeFiles/basic_test.dir/includes/Graphics/animate.cpp.s
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/99_00_final_project-agentaot/includes/Graphics/animate.cpp -o CMakeFiles/basic_test.dir/includes/Graphics/animate.cpp.s
 
 CMakeFiles/basic_test.dir/includes/Graphics/interface.cpp.o: CMakeFiles/basic_test.dir/flags.make
-CMakeFiles/basic_test.dir/includes/Graphics/interface.cpp.o: /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/Graphics/interface.cpp
+CMakeFiles/basic_test.dir/includes/Graphics/interface.cpp.o: /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/99_00_final_project-agentaot/includes/Graphics/interface.cpp
 CMakeFiles/basic_test.dir/includes/Graphics/interface.cpp.o: CMakeFiles/basic_test.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/basic_test.dir/includes/Graphics/interface.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/basic_test.dir/includes/Graphics/interface.cpp.o -MF CMakeFiles/basic_test.dir/includes/Graphics/interface.cpp.o.d -o CMakeFiles/basic_test.dir/includes/Graphics/interface.cpp.o -c /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/Graphics/interface.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/99_00_final_project-agentaot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/basic_test.dir/includes/Graphics/interface.cpp.o"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/basic_test.dir/includes/Graphics/interface.cpp.o -MF CMakeFiles/basic_test.dir/includes/Graphics/interface.cpp.o.d -o CMakeFiles/basic_test.dir/includes/Graphics/interface.cpp.o -c /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/99_00_final_project-agentaot/includes/Graphics/interface.cpp
 
 CMakeFiles/basic_test.dir/includes/Graphics/interface.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/basic_test.dir/includes/Graphics/interface.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/Graphics/interface.cpp > CMakeFiles/basic_test.dir/includes/Graphics/interface.cpp.i
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/99_00_final_project-agentaot/includes/Graphics/interface.cpp > CMakeFiles/basic_test.dir/includes/Graphics/interface.cpp.i
 
 CMakeFiles/basic_test.dir/includes/Graphics/interface.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/basic_test.dir/includes/Graphics/interface.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/Graphics/interface.cpp -o CMakeFiles/basic_test.dir/includes/Graphics/interface.cpp.s
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/99_00_final_project-agentaot/includes/Graphics/interface.cpp -o CMakeFiles/basic_test.dir/includes/Graphics/interface.cpp.s
 
 CMakeFiles/basic_test.dir/includes/Graphics/sidebar.cpp.o: CMakeFiles/basic_test.dir/flags.make
-CMakeFiles/basic_test.dir/includes/Graphics/sidebar.cpp.o: /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/Graphics/sidebar.cpp
+CMakeFiles/basic_test.dir/includes/Graphics/sidebar.cpp.o: /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/99_00_final_project-agentaot/includes/Graphics/sidebar.cpp
 CMakeFiles/basic_test.dir/includes/Graphics/sidebar.cpp.o: CMakeFiles/basic_test.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/basic_test.dir/includes/Graphics/sidebar.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/basic_test.dir/includes/Graphics/sidebar.cpp.o -MF CMakeFiles/basic_test.dir/includes/Graphics/sidebar.cpp.o.d -o CMakeFiles/basic_test.dir/includes/Graphics/sidebar.cpp.o -c /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/Graphics/sidebar.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/99_00_final_project-agentaot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/basic_test.dir/includes/Graphics/sidebar.cpp.o"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/basic_test.dir/includes/Graphics/sidebar.cpp.o -MF CMakeFiles/basic_test.dir/includes/Graphics/sidebar.cpp.o.d -o CMakeFiles/basic_test.dir/includes/Graphics/sidebar.cpp.o -c /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/99_00_final_project-agentaot/includes/Graphics/sidebar.cpp
 
 CMakeFiles/basic_test.dir/includes/Graphics/sidebar.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/basic_test.dir/includes/Graphics/sidebar.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/Graphics/sidebar.cpp > CMakeFiles/basic_test.dir/includes/Graphics/sidebar.cpp.i
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/99_00_final_project-agentaot/includes/Graphics/sidebar.cpp > CMakeFiles/basic_test.dir/includes/Graphics/sidebar.cpp.i
 
 CMakeFiles/basic_test.dir/includes/Graphics/sidebar.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/basic_test.dir/includes/Graphics/sidebar.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/Graphics/sidebar.cpp -o CMakeFiles/basic_test.dir/includes/Graphics/sidebar.cpp.s
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/99_00_final_project-agentaot/includes/Graphics/sidebar.cpp -o CMakeFiles/basic_test.dir/includes/Graphics/sidebar.cpp.s
 
 CMakeFiles/basic_test.dir/includes/Graphics/system.cpp.o: CMakeFiles/basic_test.dir/flags.make
-CMakeFiles/basic_test.dir/includes/Graphics/system.cpp.o: /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/Graphics/system.cpp
+CMakeFiles/basic_test.dir/includes/Graphics/system.cpp.o: /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/99_00_final_project-agentaot/includes/Graphics/system.cpp
 CMakeFiles/basic_test.dir/includes/Graphics/system.cpp.o: CMakeFiles/basic_test.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/basic_test.dir/includes/Graphics/system.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/basic_test.dir/includes/Graphics/system.cpp.o -MF CMakeFiles/basic_test.dir/includes/Graphics/system.cpp.o.d -o CMakeFiles/basic_test.dir/includes/Graphics/system.cpp.o -c /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/Graphics/system.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/99_00_final_project-agentaot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/basic_test.dir/includes/Graphics/system.cpp.o"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/basic_test.dir/includes/Graphics/system.cpp.o -MF CMakeFiles/basic_test.dir/includes/Graphics/system.cpp.o.d -o CMakeFiles/basic_test.dir/includes/Graphics/system.cpp.o -c /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/99_00_final_project-agentaot/includes/Graphics/system.cpp
 
 CMakeFiles/basic_test.dir/includes/Graphics/system.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/basic_test.dir/includes/Graphics/system.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/Graphics/system.cpp > CMakeFiles/basic_test.dir/includes/Graphics/system.cpp.i
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/99_00_final_project-agentaot/includes/Graphics/system.cpp > CMakeFiles/basic_test.dir/includes/Graphics/system.cpp.i
 
 CMakeFiles/basic_test.dir/includes/Graphics/system.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/basic_test.dir/includes/Graphics/system.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/Graphics/system.cpp -o CMakeFiles/basic_test.dir/includes/Graphics/system.cpp.s
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/99_00_final_project-agentaot/includes/Graphics/system.cpp -o CMakeFiles/basic_test.dir/includes/Graphics/system.cpp.s
 
 CMakeFiles/basic_test.dir/includes/Graphics/window.cpp.o: CMakeFiles/basic_test.dir/flags.make
-CMakeFiles/basic_test.dir/includes/Graphics/window.cpp.o: /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/Graphics/window.cpp
+CMakeFiles/basic_test.dir/includes/Graphics/window.cpp.o: /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/99_00_final_project-agentaot/includes/Graphics/window.cpp
 CMakeFiles/basic_test.dir/includes/Graphics/window.cpp.o: CMakeFiles/basic_test.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/basic_test.dir/includes/Graphics/window.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/basic_test.dir/includes/Graphics/window.cpp.o -MF CMakeFiles/basic_test.dir/includes/Graphics/window.cpp.o.d -o CMakeFiles/basic_test.dir/includes/Graphics/window.cpp.o -c /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/Graphics/window.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/99_00_final_project-agentaot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/basic_test.dir/includes/Graphics/window.cpp.o"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/basic_test.dir/includes/Graphics/window.cpp.o -MF CMakeFiles/basic_test.dir/includes/Graphics/window.cpp.o.d -o CMakeFiles/basic_test.dir/includes/Graphics/window.cpp.o -c /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/99_00_final_project-agentaot/includes/Graphics/window.cpp
 
 CMakeFiles/basic_test.dir/includes/Graphics/window.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/basic_test.dir/includes/Graphics/window.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/Graphics/window.cpp > CMakeFiles/basic_test.dir/includes/Graphics/window.cpp.i
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/99_00_final_project-agentaot/includes/Graphics/window.cpp > CMakeFiles/basic_test.dir/includes/Graphics/window.cpp.i
 
 CMakeFiles/basic_test.dir/includes/Graphics/window.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/basic_test.dir/includes/Graphics/window.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/Graphics/window.cpp -o CMakeFiles/basic_test.dir/includes/Graphics/window.cpp.s
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/99_00_final_project-agentaot/includes/Graphics/window.cpp -o CMakeFiles/basic_test.dir/includes/Graphics/window.cpp.s
 
 CMakeFiles/basic_test.dir/includes/data_pkg/graph_info.cpp.o: CMakeFiles/basic_test.dir/flags.make
-CMakeFiles/basic_test.dir/includes/data_pkg/graph_info.cpp.o: /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/data_pkg/graph_info.cpp
+CMakeFiles/basic_test.dir/includes/data_pkg/graph_info.cpp.o: /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/99_00_final_project-agentaot/includes/data_pkg/graph_info.cpp
 CMakeFiles/basic_test.dir/includes/data_pkg/graph_info.cpp.o: CMakeFiles/basic_test.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/basic_test.dir/includes/data_pkg/graph_info.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/basic_test.dir/includes/data_pkg/graph_info.cpp.o -MF CMakeFiles/basic_test.dir/includes/data_pkg/graph_info.cpp.o.d -o CMakeFiles/basic_test.dir/includes/data_pkg/graph_info.cpp.o -c /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/data_pkg/graph_info.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/99_00_final_project-agentaot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/basic_test.dir/includes/data_pkg/graph_info.cpp.o"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/basic_test.dir/includes/data_pkg/graph_info.cpp.o -MF CMakeFiles/basic_test.dir/includes/data_pkg/graph_info.cpp.o.d -o CMakeFiles/basic_test.dir/includes/data_pkg/graph_info.cpp.o -c /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/99_00_final_project-agentaot/includes/data_pkg/graph_info.cpp
 
 CMakeFiles/basic_test.dir/includes/data_pkg/graph_info.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/basic_test.dir/includes/data_pkg/graph_info.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/data_pkg/graph_info.cpp > CMakeFiles/basic_test.dir/includes/data_pkg/graph_info.cpp.i
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/99_00_final_project-agentaot/includes/data_pkg/graph_info.cpp > CMakeFiles/basic_test.dir/includes/data_pkg/graph_info.cpp.i
 
 CMakeFiles/basic_test.dir/includes/data_pkg/graph_info.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/basic_test.dir/includes/data_pkg/graph_info.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/data_pkg/graph_info.cpp -o CMakeFiles/basic_test.dir/includes/data_pkg/graph_info.cpp.s
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/99_00_final_project-agentaot/includes/data_pkg/graph_info.cpp -o CMakeFiles/basic_test.dir/includes/data_pkg/graph_info.cpp.s
 
 CMakeFiles/basic_test.dir/includes/exceptions/dividebyzero.cpp.o: CMakeFiles/basic_test.dir/flags.make
-CMakeFiles/basic_test.dir/includes/exceptions/dividebyzero.cpp.o: /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/exceptions/dividebyzero.cpp
+CMakeFiles/basic_test.dir/includes/exceptions/dividebyzero.cpp.o: /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/99_00_final_project-agentaot/includes/exceptions/dividebyzero.cpp
 CMakeFiles/basic_test.dir/includes/exceptions/dividebyzero.cpp.o: CMakeFiles/basic_test.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/basic_test.dir/includes/exceptions/dividebyzero.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/basic_test.dir/includes/exceptions/dividebyzero.cpp.o -MF CMakeFiles/basic_test.dir/includes/exceptions/dividebyzero.cpp.o.d -o CMakeFiles/basic_test.dir/includes/exceptions/dividebyzero.cpp.o -c /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/exceptions/dividebyzero.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/99_00_final_project-agentaot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/basic_test.dir/includes/exceptions/dividebyzero.cpp.o"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/basic_test.dir/includes/exceptions/dividebyzero.cpp.o -MF CMakeFiles/basic_test.dir/includes/exceptions/dividebyzero.cpp.o.d -o CMakeFiles/basic_test.dir/includes/exceptions/dividebyzero.cpp.o -c /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/99_00_final_project-agentaot/includes/exceptions/dividebyzero.cpp
 
 CMakeFiles/basic_test.dir/includes/exceptions/dividebyzero.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/basic_test.dir/includes/exceptions/dividebyzero.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/exceptions/dividebyzero.cpp > CMakeFiles/basic_test.dir/includes/exceptions/dividebyzero.cpp.i
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/99_00_final_project-agentaot/includes/exceptions/dividebyzero.cpp > CMakeFiles/basic_test.dir/includes/exceptions/dividebyzero.cpp.i
 
 CMakeFiles/basic_test.dir/includes/exceptions/dividebyzero.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/basic_test.dir/includes/exceptions/dividebyzero.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/exceptions/dividebyzero.cpp -o CMakeFiles/basic_test.dir/includes/exceptions/dividebyzero.cpp.s
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/99_00_final_project-agentaot/includes/exceptions/dividebyzero.cpp -o CMakeFiles/basic_test.dir/includes/exceptions/dividebyzero.cpp.s
 
 CMakeFiles/basic_test.dir/includes/exceptions/missingparan.cpp.o: CMakeFiles/basic_test.dir/flags.make
-CMakeFiles/basic_test.dir/includes/exceptions/missingparan.cpp.o: /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/exceptions/missingparan.cpp
+CMakeFiles/basic_test.dir/includes/exceptions/missingparan.cpp.o: /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/99_00_final_project-agentaot/includes/exceptions/missingparan.cpp
 CMakeFiles/basic_test.dir/includes/exceptions/missingparan.cpp.o: CMakeFiles/basic_test.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/basic_test.dir/includes/exceptions/missingparan.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/basic_test.dir/includes/exceptions/missingparan.cpp.o -MF CMakeFiles/basic_test.dir/includes/exceptions/missingparan.cpp.o.d -o CMakeFiles/basic_test.dir/includes/exceptions/missingparan.cpp.o -c /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/exceptions/missingparan.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/99_00_final_project-agentaot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/basic_test.dir/includes/exceptions/missingparan.cpp.o"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/basic_test.dir/includes/exceptions/missingparan.cpp.o -MF CMakeFiles/basic_test.dir/includes/exceptions/missingparan.cpp.o.d -o CMakeFiles/basic_test.dir/includes/exceptions/missingparan.cpp.o -c /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/99_00_final_project-agentaot/includes/exceptions/missingparan.cpp
 
 CMakeFiles/basic_test.dir/includes/exceptions/missingparan.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/basic_test.dir/includes/exceptions/missingparan.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/exceptions/missingparan.cpp > CMakeFiles/basic_test.dir/includes/exceptions/missingparan.cpp.i
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/99_00_final_project-agentaot/includes/exceptions/missingparan.cpp > CMakeFiles/basic_test.dir/includes/exceptions/missingparan.cpp.i
 
 CMakeFiles/basic_test.dir/includes/exceptions/missingparan.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/basic_test.dir/includes/exceptions/missingparan.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/exceptions/missingparan.cpp -o CMakeFiles/basic_test.dir/includes/exceptions/missingparan.cpp.s
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/99_00_final_project-agentaot/includes/exceptions/missingparan.cpp -o CMakeFiles/basic_test.dir/includes/exceptions/missingparan.cpp.s
 
 CMakeFiles/basic_test.dir/includes/node/node.cpp.o: CMakeFiles/basic_test.dir/flags.make
-CMakeFiles/basic_test.dir/includes/node/node.cpp.o: /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/node/node.cpp
+CMakeFiles/basic_test.dir/includes/node/node.cpp.o: /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/99_00_final_project-agentaot/includes/node/node.cpp
 CMakeFiles/basic_test.dir/includes/node/node.cpp.o: CMakeFiles/basic_test.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/basic_test.dir/includes/node/node.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/basic_test.dir/includes/node/node.cpp.o -MF CMakeFiles/basic_test.dir/includes/node/node.cpp.o.d -o CMakeFiles/basic_test.dir/includes/node/node.cpp.o -c /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/node/node.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/99_00_final_project-agentaot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/basic_test.dir/includes/node/node.cpp.o"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/basic_test.dir/includes/node/node.cpp.o -MF CMakeFiles/basic_test.dir/includes/node/node.cpp.o.d -o CMakeFiles/basic_test.dir/includes/node/node.cpp.o -c /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/99_00_final_project-agentaot/includes/node/node.cpp
 
 CMakeFiles/basic_test.dir/includes/node/node.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/basic_test.dir/includes/node/node.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/node/node.cpp > CMakeFiles/basic_test.dir/includes/node/node.cpp.i
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/99_00_final_project-agentaot/includes/node/node.cpp > CMakeFiles/basic_test.dir/includes/node/node.cpp.i
 
 CMakeFiles/basic_test.dir/includes/node/node.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/basic_test.dir/includes/node/node.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/node/node.cpp -o CMakeFiles/basic_test.dir/includes/node/node.cpp.s
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/99_00_final_project-agentaot/includes/node/node.cpp -o CMakeFiles/basic_test.dir/includes/node/node.cpp.s
 
 CMakeFiles/basic_test.dir/includes/plotter/plot.cpp.o: CMakeFiles/basic_test.dir/flags.make
-CMakeFiles/basic_test.dir/includes/plotter/plot.cpp.o: /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/plotter/plot.cpp
+CMakeFiles/basic_test.dir/includes/plotter/plot.cpp.o: /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/99_00_final_project-agentaot/includes/plotter/plot.cpp
 CMakeFiles/basic_test.dir/includes/plotter/plot.cpp.o: CMakeFiles/basic_test.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/basic_test.dir/includes/plotter/plot.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/basic_test.dir/includes/plotter/plot.cpp.o -MF CMakeFiles/basic_test.dir/includes/plotter/plot.cpp.o.d -o CMakeFiles/basic_test.dir/includes/plotter/plot.cpp.o -c /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/plotter/plot.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/99_00_final_project-agentaot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/basic_test.dir/includes/plotter/plot.cpp.o"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/basic_test.dir/includes/plotter/plot.cpp.o -MF CMakeFiles/basic_test.dir/includes/plotter/plot.cpp.o.d -o CMakeFiles/basic_test.dir/includes/plotter/plot.cpp.o -c /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/99_00_final_project-agentaot/includes/plotter/plot.cpp
 
 CMakeFiles/basic_test.dir/includes/plotter/plot.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/basic_test.dir/includes/plotter/plot.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/plotter/plot.cpp > CMakeFiles/basic_test.dir/includes/plotter/plot.cpp.i
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/99_00_final_project-agentaot/includes/plotter/plot.cpp > CMakeFiles/basic_test.dir/includes/plotter/plot.cpp.i
 
 CMakeFiles/basic_test.dir/includes/plotter/plot.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/basic_test.dir/includes/plotter/plot.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/plotter/plot.cpp -o CMakeFiles/basic_test.dir/includes/plotter/plot.cpp.s
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/99_00_final_project-agentaot/includes/plotter/plot.cpp -o CMakeFiles/basic_test.dir/includes/plotter/plot.cpp.s
 
 CMakeFiles/basic_test.dir/includes/plotter/translator.cpp.o: CMakeFiles/basic_test.dir/flags.make
-CMakeFiles/basic_test.dir/includes/plotter/translator.cpp.o: /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/plotter/translator.cpp
+CMakeFiles/basic_test.dir/includes/plotter/translator.cpp.o: /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/99_00_final_project-agentaot/includes/plotter/translator.cpp
 CMakeFiles/basic_test.dir/includes/plotter/translator.cpp.o: CMakeFiles/basic_test.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/basic_test.dir/includes/plotter/translator.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/basic_test.dir/includes/plotter/translator.cpp.o -MF CMakeFiles/basic_test.dir/includes/plotter/translator.cpp.o.d -o CMakeFiles/basic_test.dir/includes/plotter/translator.cpp.o -c /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/plotter/translator.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/99_00_final_project-agentaot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/basic_test.dir/includes/plotter/translator.cpp.o"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/basic_test.dir/includes/plotter/translator.cpp.o -MF CMakeFiles/basic_test.dir/includes/plotter/translator.cpp.o.d -o CMakeFiles/basic_test.dir/includes/plotter/translator.cpp.o -c /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/99_00_final_project-agentaot/includes/plotter/translator.cpp
 
 CMakeFiles/basic_test.dir/includes/plotter/translator.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/basic_test.dir/includes/plotter/translator.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/plotter/translator.cpp > CMakeFiles/basic_test.dir/includes/plotter/translator.cpp.i
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/99_00_final_project-agentaot/includes/plotter/translator.cpp > CMakeFiles/basic_test.dir/includes/plotter/translator.cpp.i
 
 CMakeFiles/basic_test.dir/includes/plotter/translator.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/basic_test.dir/includes/plotter/translator.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/plotter/translator.cpp -o CMakeFiles/basic_test.dir/includes/plotter/translator.cpp.s
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/99_00_final_project-agentaot/includes/plotter/translator.cpp -o CMakeFiles/basic_test.dir/includes/plotter/translator.cpp.s
 
 CMakeFiles/basic_test.dir/includes/rpn/rpn.cpp.o: CMakeFiles/basic_test.dir/flags.make
-CMakeFiles/basic_test.dir/includes/rpn/rpn.cpp.o: /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/rpn/rpn.cpp
+CMakeFiles/basic_test.dir/includes/rpn/rpn.cpp.o: /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/99_00_final_project-agentaot/includes/rpn/rpn.cpp
 CMakeFiles/basic_test.dir/includes/rpn/rpn.cpp.o: CMakeFiles/basic_test.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/basic_test.dir/includes/rpn/rpn.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/basic_test.dir/includes/rpn/rpn.cpp.o -MF CMakeFiles/basic_test.dir/includes/rpn/rpn.cpp.o.d -o CMakeFiles/basic_test.dir/includes/rpn/rpn.cpp.o -c /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/rpn/rpn.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/99_00_final_project-agentaot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/basic_test.dir/includes/rpn/rpn.cpp.o"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/basic_test.dir/includes/rpn/rpn.cpp.o -MF CMakeFiles/basic_test.dir/includes/rpn/rpn.cpp.o.d -o CMakeFiles/basic_test.dir/includes/rpn/rpn.cpp.o -c /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/99_00_final_project-agentaot/includes/rpn/rpn.cpp
 
 CMakeFiles/basic_test.dir/includes/rpn/rpn.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/basic_test.dir/includes/rpn/rpn.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/rpn/rpn.cpp > CMakeFiles/basic_test.dir/includes/rpn/rpn.cpp.i
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/99_00_final_project-agentaot/includes/rpn/rpn.cpp > CMakeFiles/basic_test.dir/includes/rpn/rpn.cpp.i
 
 CMakeFiles/basic_test.dir/includes/rpn/rpn.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/basic_test.dir/includes/rpn/rpn.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/rpn/rpn.cpp -o CMakeFiles/basic_test.dir/includes/rpn/rpn.cpp.s
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/99_00_final_project-agentaot/includes/rpn/rpn.cpp -o CMakeFiles/basic_test.dir/includes/rpn/rpn.cpp.s
 
 CMakeFiles/basic_test.dir/includes/shunting_yard/shunting_yard.cpp.o: CMakeFiles/basic_test.dir/flags.make
-CMakeFiles/basic_test.dir/includes/shunting_yard/shunting_yard.cpp.o: /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/shunting_yard/shunting_yard.cpp
+CMakeFiles/basic_test.dir/includes/shunting_yard/shunting_yard.cpp.o: /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/99_00_final_project-agentaot/includes/shunting_yard/shunting_yard.cpp
 CMakeFiles/basic_test.dir/includes/shunting_yard/shunting_yard.cpp.o: CMakeFiles/basic_test.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/basic_test.dir/includes/shunting_yard/shunting_yard.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/basic_test.dir/includes/shunting_yard/shunting_yard.cpp.o -MF CMakeFiles/basic_test.dir/includes/shunting_yard/shunting_yard.cpp.o.d -o CMakeFiles/basic_test.dir/includes/shunting_yard/shunting_yard.cpp.o -c /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/shunting_yard/shunting_yard.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/99_00_final_project-agentaot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/basic_test.dir/includes/shunting_yard/shunting_yard.cpp.o"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/basic_test.dir/includes/shunting_yard/shunting_yard.cpp.o -MF CMakeFiles/basic_test.dir/includes/shunting_yard/shunting_yard.cpp.o.d -o CMakeFiles/basic_test.dir/includes/shunting_yard/shunting_yard.cpp.o -c /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/99_00_final_project-agentaot/includes/shunting_yard/shunting_yard.cpp
 
 CMakeFiles/basic_test.dir/includes/shunting_yard/shunting_yard.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/basic_test.dir/includes/shunting_yard/shunting_yard.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/shunting_yard/shunting_yard.cpp > CMakeFiles/basic_test.dir/includes/shunting_yard/shunting_yard.cpp.i
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/99_00_final_project-agentaot/includes/shunting_yard/shunting_yard.cpp > CMakeFiles/basic_test.dir/includes/shunting_yard/shunting_yard.cpp.i
 
 CMakeFiles/basic_test.dir/includes/shunting_yard/shunting_yard.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/basic_test.dir/includes/shunting_yard/shunting_yard.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/shunting_yard/shunting_yard.cpp -o CMakeFiles/basic_test.dir/includes/shunting_yard/shunting_yard.cpp.s
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/99_00_final_project-agentaot/includes/shunting_yard/shunting_yard.cpp -o CMakeFiles/basic_test.dir/includes/shunting_yard/shunting_yard.cpp.s
 
 CMakeFiles/basic_test.dir/includes/stub/stub.cpp.o: CMakeFiles/basic_test.dir/flags.make
-CMakeFiles/basic_test.dir/includes/stub/stub.cpp.o: /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/stub/stub.cpp
+CMakeFiles/basic_test.dir/includes/stub/stub.cpp.o: /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/99_00_final_project-agentaot/includes/stub/stub.cpp
 CMakeFiles/basic_test.dir/includes/stub/stub.cpp.o: CMakeFiles/basic_test.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/basic_test.dir/includes/stub/stub.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/basic_test.dir/includes/stub/stub.cpp.o -MF CMakeFiles/basic_test.dir/includes/stub/stub.cpp.o.d -o CMakeFiles/basic_test.dir/includes/stub/stub.cpp.o -c /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/stub/stub.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/99_00_final_project-agentaot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/basic_test.dir/includes/stub/stub.cpp.o"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/basic_test.dir/includes/stub/stub.cpp.o -MF CMakeFiles/basic_test.dir/includes/stub/stub.cpp.o.d -o CMakeFiles/basic_test.dir/includes/stub/stub.cpp.o -c /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/99_00_final_project-agentaot/includes/stub/stub.cpp
 
 CMakeFiles/basic_test.dir/includes/stub/stub.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/basic_test.dir/includes/stub/stub.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/stub/stub.cpp > CMakeFiles/basic_test.dir/includes/stub/stub.cpp.i
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/99_00_final_project-agentaot/includes/stub/stub.cpp > CMakeFiles/basic_test.dir/includes/stub/stub.cpp.i
 
 CMakeFiles/basic_test.dir/includes/stub/stub.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/basic_test.dir/includes/stub/stub.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/stub/stub.cpp -o CMakeFiles/basic_test.dir/includes/stub/stub.cpp.s
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/99_00_final_project-agentaot/includes/stub/stub.cpp -o CMakeFiles/basic_test.dir/includes/stub/stub.cpp.s
 
 CMakeFiles/basic_test.dir/includes/token/alpha.cpp.o: CMakeFiles/basic_test.dir/flags.make
-CMakeFiles/basic_test.dir/includes/token/alpha.cpp.o: /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/token/alpha.cpp
+CMakeFiles/basic_test.dir/includes/token/alpha.cpp.o: /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/99_00_final_project-agentaot/includes/token/alpha.cpp
 CMakeFiles/basic_test.dir/includes/token/alpha.cpp.o: CMakeFiles/basic_test.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/basic_test.dir/includes/token/alpha.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/basic_test.dir/includes/token/alpha.cpp.o -MF CMakeFiles/basic_test.dir/includes/token/alpha.cpp.o.d -o CMakeFiles/basic_test.dir/includes/token/alpha.cpp.o -c /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/token/alpha.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/99_00_final_project-agentaot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/basic_test.dir/includes/token/alpha.cpp.o"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/basic_test.dir/includes/token/alpha.cpp.o -MF CMakeFiles/basic_test.dir/includes/token/alpha.cpp.o.d -o CMakeFiles/basic_test.dir/includes/token/alpha.cpp.o -c /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/99_00_final_project-agentaot/includes/token/alpha.cpp
 
 CMakeFiles/basic_test.dir/includes/token/alpha.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/basic_test.dir/includes/token/alpha.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/token/alpha.cpp > CMakeFiles/basic_test.dir/includes/token/alpha.cpp.i
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/99_00_final_project-agentaot/includes/token/alpha.cpp > CMakeFiles/basic_test.dir/includes/token/alpha.cpp.i
 
 CMakeFiles/basic_test.dir/includes/token/alpha.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/basic_test.dir/includes/token/alpha.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/token/alpha.cpp -o CMakeFiles/basic_test.dir/includes/token/alpha.cpp.s
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/99_00_final_project-agentaot/includes/token/alpha.cpp -o CMakeFiles/basic_test.dir/includes/token/alpha.cpp.s
 
 CMakeFiles/basic_test.dir/includes/token/double.cpp.o: CMakeFiles/basic_test.dir/flags.make
-CMakeFiles/basic_test.dir/includes/token/double.cpp.o: /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/token/double.cpp
+CMakeFiles/basic_test.dir/includes/token/double.cpp.o: /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/99_00_final_project-agentaot/includes/token/double.cpp
 CMakeFiles/basic_test.dir/includes/token/double.cpp.o: CMakeFiles/basic_test.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/basic_test.dir/includes/token/double.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/basic_test.dir/includes/token/double.cpp.o -MF CMakeFiles/basic_test.dir/includes/token/double.cpp.o.d -o CMakeFiles/basic_test.dir/includes/token/double.cpp.o -c /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/token/double.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/99_00_final_project-agentaot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/basic_test.dir/includes/token/double.cpp.o"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/basic_test.dir/includes/token/double.cpp.o -MF CMakeFiles/basic_test.dir/includes/token/double.cpp.o.d -o CMakeFiles/basic_test.dir/includes/token/double.cpp.o -c /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/99_00_final_project-agentaot/includes/token/double.cpp
 
 CMakeFiles/basic_test.dir/includes/token/double.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/basic_test.dir/includes/token/double.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/token/double.cpp > CMakeFiles/basic_test.dir/includes/token/double.cpp.i
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/99_00_final_project-agentaot/includes/token/double.cpp > CMakeFiles/basic_test.dir/includes/token/double.cpp.i
 
 CMakeFiles/basic_test.dir/includes/token/double.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/basic_test.dir/includes/token/double.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/token/double.cpp -o CMakeFiles/basic_test.dir/includes/token/double.cpp.s
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/99_00_final_project-agentaot/includes/token/double.cpp -o CMakeFiles/basic_test.dir/includes/token/double.cpp.s
 
 CMakeFiles/basic_test.dir/includes/token/function.cpp.o: CMakeFiles/basic_test.dir/flags.make
-CMakeFiles/basic_test.dir/includes/token/function.cpp.o: /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/token/function.cpp
+CMakeFiles/basic_test.dir/includes/token/function.cpp.o: /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/99_00_final_project-agentaot/includes/token/function.cpp
 CMakeFiles/basic_test.dir/includes/token/function.cpp.o: CMakeFiles/basic_test.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/basic_test.dir/includes/token/function.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/basic_test.dir/includes/token/function.cpp.o -MF CMakeFiles/basic_test.dir/includes/token/function.cpp.o.d -o CMakeFiles/basic_test.dir/includes/token/function.cpp.o -c /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/token/function.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/99_00_final_project-agentaot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/basic_test.dir/includes/token/function.cpp.o"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/basic_test.dir/includes/token/function.cpp.o -MF CMakeFiles/basic_test.dir/includes/token/function.cpp.o.d -o CMakeFiles/basic_test.dir/includes/token/function.cpp.o -c /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/99_00_final_project-agentaot/includes/token/function.cpp
 
 CMakeFiles/basic_test.dir/includes/token/function.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/basic_test.dir/includes/token/function.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/token/function.cpp > CMakeFiles/basic_test.dir/includes/token/function.cpp.i
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/99_00_final_project-agentaot/includes/token/function.cpp > CMakeFiles/basic_test.dir/includes/token/function.cpp.i
 
 CMakeFiles/basic_test.dir/includes/token/function.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/basic_test.dir/includes/token/function.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/token/function.cpp -o CMakeFiles/basic_test.dir/includes/token/function.cpp.s
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/99_00_final_project-agentaot/includes/token/function.cpp -o CMakeFiles/basic_test.dir/includes/token/function.cpp.s
 
 CMakeFiles/basic_test.dir/includes/token/integer.cpp.o: CMakeFiles/basic_test.dir/flags.make
-CMakeFiles/basic_test.dir/includes/token/integer.cpp.o: /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/token/integer.cpp
+CMakeFiles/basic_test.dir/includes/token/integer.cpp.o: /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/99_00_final_project-agentaot/includes/token/integer.cpp
 CMakeFiles/basic_test.dir/includes/token/integer.cpp.o: CMakeFiles/basic_test.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/basic_test.dir/includes/token/integer.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/basic_test.dir/includes/token/integer.cpp.o -MF CMakeFiles/basic_test.dir/includes/token/integer.cpp.o.d -o CMakeFiles/basic_test.dir/includes/token/integer.cpp.o -c /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/token/integer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/99_00_final_project-agentaot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/basic_test.dir/includes/token/integer.cpp.o"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/basic_test.dir/includes/token/integer.cpp.o -MF CMakeFiles/basic_test.dir/includes/token/integer.cpp.o.d -o CMakeFiles/basic_test.dir/includes/token/integer.cpp.o -c /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/99_00_final_project-agentaot/includes/token/integer.cpp
 
 CMakeFiles/basic_test.dir/includes/token/integer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/basic_test.dir/includes/token/integer.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/token/integer.cpp > CMakeFiles/basic_test.dir/includes/token/integer.cpp.i
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/99_00_final_project-agentaot/includes/token/integer.cpp > CMakeFiles/basic_test.dir/includes/token/integer.cpp.i
 
 CMakeFiles/basic_test.dir/includes/token/integer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/basic_test.dir/includes/token/integer.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/token/integer.cpp -o CMakeFiles/basic_test.dir/includes/token/integer.cpp.s
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/99_00_final_project-agentaot/includes/token/integer.cpp -o CMakeFiles/basic_test.dir/includes/token/integer.cpp.s
 
 CMakeFiles/basic_test.dir/includes/token/leftparen.cpp.o: CMakeFiles/basic_test.dir/flags.make
-CMakeFiles/basic_test.dir/includes/token/leftparen.cpp.o: /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/token/leftparen.cpp
+CMakeFiles/basic_test.dir/includes/token/leftparen.cpp.o: /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/99_00_final_project-agentaot/includes/token/leftparen.cpp
 CMakeFiles/basic_test.dir/includes/token/leftparen.cpp.o: CMakeFiles/basic_test.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/basic_test.dir/includes/token/leftparen.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/basic_test.dir/includes/token/leftparen.cpp.o -MF CMakeFiles/basic_test.dir/includes/token/leftparen.cpp.o.d -o CMakeFiles/basic_test.dir/includes/token/leftparen.cpp.o -c /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/token/leftparen.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/99_00_final_project-agentaot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/basic_test.dir/includes/token/leftparen.cpp.o"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/basic_test.dir/includes/token/leftparen.cpp.o -MF CMakeFiles/basic_test.dir/includes/token/leftparen.cpp.o.d -o CMakeFiles/basic_test.dir/includes/token/leftparen.cpp.o -c /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/99_00_final_project-agentaot/includes/token/leftparen.cpp
 
 CMakeFiles/basic_test.dir/includes/token/leftparen.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/basic_test.dir/includes/token/leftparen.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/token/leftparen.cpp > CMakeFiles/basic_test.dir/includes/token/leftparen.cpp.i
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/99_00_final_project-agentaot/includes/token/leftparen.cpp > CMakeFiles/basic_test.dir/includes/token/leftparen.cpp.i
 
 CMakeFiles/basic_test.dir/includes/token/leftparen.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/basic_test.dir/includes/token/leftparen.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/token/leftparen.cpp -o CMakeFiles/basic_test.dir/includes/token/leftparen.cpp.s
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/99_00_final_project-agentaot/includes/token/leftparen.cpp -o CMakeFiles/basic_test.dir/includes/token/leftparen.cpp.s
 
 CMakeFiles/basic_test.dir/includes/token/operator.cpp.o: CMakeFiles/basic_test.dir/flags.make
-CMakeFiles/basic_test.dir/includes/token/operator.cpp.o: /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/token/operator.cpp
+CMakeFiles/basic_test.dir/includes/token/operator.cpp.o: /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/99_00_final_project-agentaot/includes/token/operator.cpp
 CMakeFiles/basic_test.dir/includes/token/operator.cpp.o: CMakeFiles/basic_test.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/basic_test.dir/includes/token/operator.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/basic_test.dir/includes/token/operator.cpp.o -MF CMakeFiles/basic_test.dir/includes/token/operator.cpp.o.d -o CMakeFiles/basic_test.dir/includes/token/operator.cpp.o -c /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/token/operator.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/99_00_final_project-agentaot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/basic_test.dir/includes/token/operator.cpp.o"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/basic_test.dir/includes/token/operator.cpp.o -MF CMakeFiles/basic_test.dir/includes/token/operator.cpp.o.d -o CMakeFiles/basic_test.dir/includes/token/operator.cpp.o -c /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/99_00_final_project-agentaot/includes/token/operator.cpp
 
 CMakeFiles/basic_test.dir/includes/token/operator.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/basic_test.dir/includes/token/operator.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/token/operator.cpp > CMakeFiles/basic_test.dir/includes/token/operator.cpp.i
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/99_00_final_project-agentaot/includes/token/operator.cpp > CMakeFiles/basic_test.dir/includes/token/operator.cpp.i
 
 CMakeFiles/basic_test.dir/includes/token/operator.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/basic_test.dir/includes/token/operator.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/token/operator.cpp -o CMakeFiles/basic_test.dir/includes/token/operator.cpp.s
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/99_00_final_project-agentaot/includes/token/operator.cpp -o CMakeFiles/basic_test.dir/includes/token/operator.cpp.s
 
 CMakeFiles/basic_test.dir/includes/token/rightparen.cpp.o: CMakeFiles/basic_test.dir/flags.make
-CMakeFiles/basic_test.dir/includes/token/rightparen.cpp.o: /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/token/rightparen.cpp
+CMakeFiles/basic_test.dir/includes/token/rightparen.cpp.o: /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/99_00_final_project-agentaot/includes/token/rightparen.cpp
 CMakeFiles/basic_test.dir/includes/token/rightparen.cpp.o: CMakeFiles/basic_test.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/basic_test.dir/includes/token/rightparen.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/basic_test.dir/includes/token/rightparen.cpp.o -MF CMakeFiles/basic_test.dir/includes/token/rightparen.cpp.o.d -o CMakeFiles/basic_test.dir/includes/token/rightparen.cpp.o -c /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/token/rightparen.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/99_00_final_project-agentaot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/basic_test.dir/includes/token/rightparen.cpp.o"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/basic_test.dir/includes/token/rightparen.cpp.o -MF CMakeFiles/basic_test.dir/includes/token/rightparen.cpp.o.d -o CMakeFiles/basic_test.dir/includes/token/rightparen.cpp.o -c /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/99_00_final_project-agentaot/includes/token/rightparen.cpp
 
 CMakeFiles/basic_test.dir/includes/token/rightparen.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/basic_test.dir/includes/token/rightparen.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/token/rightparen.cpp > CMakeFiles/basic_test.dir/includes/token/rightparen.cpp.i
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/99_00_final_project-agentaot/includes/token/rightparen.cpp > CMakeFiles/basic_test.dir/includes/token/rightparen.cpp.i
 
 CMakeFiles/basic_test.dir/includes/token/rightparen.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/basic_test.dir/includes/token/rightparen.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/token/rightparen.cpp -o CMakeFiles/basic_test.dir/includes/token/rightparen.cpp.s
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/99_00_final_project-agentaot/includes/token/rightparen.cpp -o CMakeFiles/basic_test.dir/includes/token/rightparen.cpp.s
 
 CMakeFiles/basic_test.dir/includes/token/token.cpp.o: CMakeFiles/basic_test.dir/flags.make
-CMakeFiles/basic_test.dir/includes/token/token.cpp.o: /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/token/token.cpp
+CMakeFiles/basic_test.dir/includes/token/token.cpp.o: /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/99_00_final_project-agentaot/includes/token/token.cpp
 CMakeFiles/basic_test.dir/includes/token/token.cpp.o: CMakeFiles/basic_test.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/basic_test.dir/includes/token/token.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/basic_test.dir/includes/token/token.cpp.o -MF CMakeFiles/basic_test.dir/includes/token/token.cpp.o.d -o CMakeFiles/basic_test.dir/includes/token/token.cpp.o -c /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/token/token.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/99_00_final_project-agentaot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/basic_test.dir/includes/token/token.cpp.o"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/basic_test.dir/includes/token/token.cpp.o -MF CMakeFiles/basic_test.dir/includes/token/token.cpp.o.d -o CMakeFiles/basic_test.dir/includes/token/token.cpp.o -c /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/99_00_final_project-agentaot/includes/token/token.cpp
 
 CMakeFiles/basic_test.dir/includes/token/token.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/basic_test.dir/includes/token/token.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/token/token.cpp > CMakeFiles/basic_test.dir/includes/token/token.cpp.i
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/99_00_final_project-agentaot/includes/token/token.cpp > CMakeFiles/basic_test.dir/includes/token/token.cpp.i
 
 CMakeFiles/basic_test.dir/includes/token/token.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/basic_test.dir/includes/token/token.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/token/token.cpp -o CMakeFiles/basic_test.dir/includes/token/token.cpp.s
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/99_00_final_project-agentaot/includes/token/token.cpp -o CMakeFiles/basic_test.dir/includes/token/token.cpp.s
 
 CMakeFiles/basic_test.dir/includes/tokenizer/tokenizer.cpp.o: CMakeFiles/basic_test.dir/flags.make
-CMakeFiles/basic_test.dir/includes/tokenizer/tokenizer.cpp.o: /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/tokenizer/tokenizer.cpp
+CMakeFiles/basic_test.dir/includes/tokenizer/tokenizer.cpp.o: /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/99_00_final_project-agentaot/includes/tokenizer/tokenizer.cpp
 CMakeFiles/basic_test.dir/includes/tokenizer/tokenizer.cpp.o: CMakeFiles/basic_test.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/basic_test.dir/includes/tokenizer/tokenizer.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/basic_test.dir/includes/tokenizer/tokenizer.cpp.o -MF CMakeFiles/basic_test.dir/includes/tokenizer/tokenizer.cpp.o.d -o CMakeFiles/basic_test.dir/includes/tokenizer/tokenizer.cpp.o -c /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/tokenizer/tokenizer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/99_00_final_project-agentaot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/basic_test.dir/includes/tokenizer/tokenizer.cpp.o"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/basic_test.dir/includes/tokenizer/tokenizer.cpp.o -MF CMakeFiles/basic_test.dir/includes/tokenizer/tokenizer.cpp.o.d -o CMakeFiles/basic_test.dir/includes/tokenizer/tokenizer.cpp.o -c /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/99_00_final_project-agentaot/includes/tokenizer/tokenizer.cpp
 
 CMakeFiles/basic_test.dir/includes/tokenizer/tokenizer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/basic_test.dir/includes/tokenizer/tokenizer.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/tokenizer/tokenizer.cpp > CMakeFiles/basic_test.dir/includes/tokenizer/tokenizer.cpp.i
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/99_00_final_project-agentaot/includes/tokenizer/tokenizer.cpp > CMakeFiles/basic_test.dir/includes/tokenizer/tokenizer.cpp.i
 
 CMakeFiles/basic_test.dir/includes/tokenizer/tokenizer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/basic_test.dir/includes/tokenizer/tokenizer.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/tokenizer/tokenizer.cpp -o CMakeFiles/basic_test.dir/includes/tokenizer/tokenizer.cpp.s
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/99_00_final_project-agentaot/includes/tokenizer/tokenizer.cpp -o CMakeFiles/basic_test.dir/includes/tokenizer/tokenizer.cpp.s
 
 # Object files for target basic_test
 basic_test_OBJECTS = \
@@ -460,12 +460,12 @@ bin/basic_test: CMakeFiles/basic_test.dir/includes/token/rightparen.cpp.o
 bin/basic_test: CMakeFiles/basic_test.dir/includes/token/token.cpp.o
 bin/basic_test: CMakeFiles/basic_test.dir/includes/tokenizer/tokenizer.cpp.o
 bin/basic_test: CMakeFiles/basic_test.dir/build.make
-bin/basic_test: lib/libgtestd.a
+bin/basic_test: lib/libgtest.a
 bin/basic_test: /usr/local/lib/libsfml-graphics.2.5.1.dylib
 bin/basic_test: /usr/local/lib/libsfml-window.2.5.1.dylib
 bin/basic_test: /usr/local/lib/libsfml-system.2.5.1.dylib
 bin/basic_test: CMakeFiles/basic_test.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Linking CXX executable bin/basic_test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/99_00_final_project-agentaot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Linking CXX executable bin/basic_test"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/basic_test.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -477,6 +477,6 @@ CMakeFiles/basic_test.dir/clean:
 .PHONY : CMakeFiles/basic_test.dir/clean
 
 CMakeFiles/basic_test.dir/depend:
-	cd /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/build /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/build /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/build/CMakeFiles/basic_test.dir/DependInfo.cmake --color=$(COLOR)
+	cd /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/99_00_final_project-agentaot/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/99_00_final_project-agentaot /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/99_00_final_project-agentaot /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/99_00_final_project-agentaot/build /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/99_00_final_project-agentaot/build /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/99_00_final_project-agentaot/build/CMakeFiles/basic_test.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/basic_test.dir/depend
 

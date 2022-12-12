@@ -3,7 +3,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "lib/libgtest_maind.a"
+			"path" : "lib/libgtest_main.a"
 		}
 	],
 	"backtrace" : 3,
@@ -96,7 +96,7 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "-g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk -mmacosx-version-min=11.6"
+					"fragment" : " -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk -mmacosx-version-min=11.6"
 				},
 				{
 					"fragment" : "-Wall -Wshadow -Werror -Wconversion -DGTEST_HAS_PTHREAD=1 -fexceptions -W -Wpointer-arith -Wreturn-type -Wcast-qual -Wwrite-strings -Wswitch -Wunused-parameter -Wcast-align -Wchar-subscripts -Winline -Wredundant-decls"
@@ -109,17 +109,17 @@
 			[
 				{
 					"backtrace" : 8,
-					"path" : "/Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/SFML_INCLUDE_DIR"
+					"path" : "/Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/99_00_final_project-agentaot/SFML_INCLUDE_DIR"
 				},
 				{
 					"backtrace" : 9,
 					"isSystem" : true,
-					"path" : "/Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/build/_deps/googletest-src/googletest/include"
+					"path" : "/Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/99_00_final_project-agentaot/build/_deps/googletest-src/googletest/include"
 				},
 				{
 					"backtrace" : 9,
 					"isSystem" : true,
-					"path" : "/Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/build/_deps/googletest-src/googletest"
+					"path" : "/Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/99_00_final_project-agentaot/build/_deps/googletest-src/googletest"
 				}
 			],
 			"language" : "CXX",
@@ -160,7 +160,7 @@
 		}
 	},
 	"name" : "gtest_main",
-	"nameOnDisk" : "libgtest_maind.a",
+	"nameOnDisk" : "libgtest_main.a",
 	"paths" : 
 	{
 		"build" : "_deps/googletest-build/googletest",

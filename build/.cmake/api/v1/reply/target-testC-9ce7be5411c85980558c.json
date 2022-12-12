@@ -2,7 +2,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "bin/main"
+			"path" : "bin/testC"
 		}
 	],
 	"backtrace" : 1,
@@ -27,7 +27,7 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 61,
+				"line" : 77,
 				"parent" : 0
 			},
 			{
@@ -39,7 +39,7 @@
 			{
 				"command" : 2,
 				"file" : 0,
-				"line" : 86,
+				"line" : 83,
 				"parent" : 0
 			},
 			{
@@ -56,7 +56,7 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "-g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk -mmacosx-version-min=11.6"
+					"fragment" : " -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk -mmacosx-version-min=11.6"
 				},
 				{
 					"fragment" : "-std=gnu++11"
@@ -66,17 +66,17 @@
 			[
 				{
 					"backtrace" : 4,
-					"path" : "/Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/SFML_INCLUDE_DIR"
+					"path" : "/Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/99_00_final_project-agentaot/SFML_INCLUDE_DIR"
 				},
 				{
 					"backtrace" : 3,
 					"isSystem" : true,
-					"path" : "/Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/build/_deps/googletest-src/googletest/include"
+					"path" : "/Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/99_00_final_project-agentaot/build/_deps/googletest-src/googletest/include"
 				},
 				{
 					"backtrace" : 3,
 					"isSystem" : true,
-					"path" : "/Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/build/_deps/googletest-src/googletest"
+					"path" : "/Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/99_00_final_project-agentaot/build/_deps/googletest-src/googletest"
 				},
 				{
 					"backtrace" : 3,
@@ -129,31 +129,27 @@
 			"id" : "gtest::@1ea2dfc0605fe3ab2a3f"
 		}
 	],
-	"id" : "main::@6890427a1f51a3e7e1df",
+	"id" : "testC::@6890427a1f51a3e7e1df",
 	"link" : 
 	{
 		"commandFragments" : 
 		[
-			{
-				"fragment" : "-g",
-				"role" : "flags"
-			},
 			{
 				"fragment" : "",
 				"role" : "flags"
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "-L/Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/SFML_LIBRARY_DIR",
+				"fragment" : "-L/Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/99_00_final_project-agentaot/SFML_LIBRARY_DIR",
 				"role" : "libraryPath"
 			},
 			{
-				"fragment" : "-Wl,-rpath,/Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/my_graphic_calculator/SFML_LIBRARY_DIR -Wl,-rpath,/usr/local/lib",
+				"fragment" : "-Wl,-rpath,/Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/99_00_final_project-agentaot/SFML_LIBRARY_DIR -Wl,-rpath,/usr/local/lib",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 3,
-				"fragment" : "lib/libgtestd.a",
+				"fragment" : "lib/libgtest.a",
 				"role" : "libraries"
 			},
 			{
@@ -174,8 +170,8 @@
 		],
 		"language" : "CXX"
 	},
-	"name" : "main",
-	"nameOnDisk" : "main",
+	"name" : "testC",
+	"nameOnDisk" : "testC",
 	"paths" : 
 	{
 		"build" : ".",
@@ -219,7 +215,7 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "main.cpp",
+			"path" : "_tests/_test_files/testC.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
