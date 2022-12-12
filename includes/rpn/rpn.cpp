@@ -33,8 +33,14 @@ Stack<double> RPN::type_process(Stack<double> hold){
             case OPERATOR:{
                 double i = hold.pop();
                 double a = i;
-                i = hold.pop();
-                double b = i;
+                double b;
+                if(hold.empty()){
+                    b = 0;
+                }
+                else{
+                    i = hold.pop();
+                    b = i;    
+                }
                 double result = op_process(b,a);
                 i = result;
                 hold.push(i);
@@ -67,6 +73,9 @@ double RPN::op_process(double a, double b){
             return result; 
         case EXPONENT:
             result = pow(a,b);
+            return result;
+        case NEGATIVE:
+            result = -1*a;
             return result;
     }
 }
