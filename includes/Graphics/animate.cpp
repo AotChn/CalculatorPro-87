@@ -11,7 +11,7 @@
             text.setFont(font);
             text.setStyle(sf::Text::Bold);
             text.setCharacterSize(60);
-            font.loadFromFile("Roboto-Thin.ttf");
+            font.loadFromFile("fonts/Roboto-Thin.ttf");
 
             process_events();
             update();
@@ -273,7 +273,7 @@ void Animate::save_graphs(){
 }
 
 void Animate::load_help_screen(){
-    if(!texture.loadFromFile("help_menu.png")){
+    if(!texture.loadFromFile("sprites/help_menu.png")){
         cout<<"help screen failed to load";
     }
     sprite.setPosition(sf::Vector2f(250,168));

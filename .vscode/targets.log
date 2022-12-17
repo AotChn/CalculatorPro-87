@@ -6,8 +6,11 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # PARTICULAR PURPOSE.
 
 # This program built for i386-apple-darwin11.3.0
+ 
+make: *** No rule to make target `all'.  Stop.
 
-# Make data base, printed on Sun Dec 11 16:45:55 2022
+
+# Make data base, printed on Sat Dec 17 01:35:21 2022
 
 # Variables
 
@@ -22,7 +25,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # automatic
 @F = $(notdir $@)
 # makefile
-CURDIR := /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/99_00_final_project-agentaot
+CURDIR := /Users/Aot/Desktop/code/C++/CS03A_Barkeshli/GC/my_graphic_calculator
 # makefile
 SHELL = /bin/sh
 # environment
@@ -38,17 +41,19 @@ VSCODE_CWD = /
 # environment
 PATH = /usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/share/dotnet:/opt/X11/bin:~/.dotnet/tools:/Library/Apple/usr/bin:/Library/Frameworks/Mono.framework/Versions/Current/Commands
 # environment
+LaunchInstanceID = C96B2F03-DEB8-4FA6-91D0-EBC5CA2B5964
+# environment
 ELECTRON_RUN_AS_NODE = 1
 # default
 .FEATURES := target-specific order-only second-expansion else-if archives jobserver check-symlink
 # environment
-SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.XFjcCN2f5w/Listeners
+SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.5ogxEGL1aT/Listeners
 # automatic
 %F = $(notdir $%)
 # environment
-DISPLAY = /private/tmp/com.apple.launchd.9bRid7zBNt/org.macosforge.xquartz:0
+DISPLAY = /private/tmp/com.apple.launchd.7sZcIPrCSK/org.macosforge.xquartz:0
 # environment
-PWD = /Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/99_00_final_project-agentaot
+PWD = /Users/Aot/Desktop/code/C++/CS03A_Barkeshli/GC/my_graphic_calculator
 # environment
 ORIGINAL_XDG_CURRENT_DESKTOP = undefined
 # environment
@@ -117,6 +122,8 @@ MAKEFILES :=
 <F = $(notdir $<)
 # environment
 LC_ALL = C
+# environment
+SECURITYSESSIONID = 186ab
 # automatic
 ^F = $(notdir $^)
 # default
@@ -128,9 +135,9 @@ MAKELEVEL := 0
 # environment
 LANG = C
 # environment
-VSCODE_PID = 96645
+VSCODE_PID = 2478
 # variable set hash-table stats:
-# Load=59/1024=6%, Rehash=0, Collisions=1/80=1%
+# Load=61/1024=6%, Rehash=0, Collisions=1/82=1%
 
 # Pattern-specific Variable Values
 
@@ -138,9 +145,9 @@ VSCODE_PID = 96645
 
 # Directories
 
-# . (device 16777227, inode 2146249556): 20 files, no impossibilities.
+# . (device 16777227, inode 2167843202): 23 files, no impossibilities.
 
-# 20 files, no impossibilities in 1 directories.
+# 23 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -212,8 +219,6 @@ GNUmakefile:
 # strcache size: total = 0 / max = 0 / min = 4096 / avg = 0
 # strcache free: total = 0 / max = 0 / min = 4096 / avg = 0
 
-# Finished Make data base on Sun Dec 11 16:45:55 2022
+# Finished Make data base on Sat Dec 17 01:35:21 2022
 
  
-make: *** No rule to make target `all'.  Stop.
-

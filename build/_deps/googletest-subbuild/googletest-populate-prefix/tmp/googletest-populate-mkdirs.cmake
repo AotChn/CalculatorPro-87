@@ -4,19 +4,19 @@
 cmake_minimum_required(VERSION 3.5)
 
 file(MAKE_DIRECTORY
-  "/Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/99_00_final_project-agentaot/build/_deps/googletest-src"
-  "/Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/99_00_final_project-agentaot/build/_deps/googletest-build"
-  "/Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/99_00_final_project-agentaot/build/_deps/googletest-subbuild/googletest-populate-prefix"
-  "/Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/99_00_final_project-agentaot/build/_deps/googletest-subbuild/googletest-populate-prefix/tmp"
-  "/Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/99_00_final_project-agentaot/build/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp"
-  "/Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/99_00_final_project-agentaot/build/_deps/googletest-subbuild/googletest-populate-prefix/src"
-  "/Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/99_00_final_project-agentaot/build/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp"
+  "/Users/Aot/Desktop/code/C++/CS03A_Barkeshli/GC/my_graphic_calculator/build/_deps/googletest-src"
+  "/Users/Aot/Desktop/code/C++/CS03A_Barkeshli/GC/my_graphic_calculator/build/_deps/googletest-build"
+  "/Users/Aot/Desktop/code/C++/CS03A_Barkeshli/GC/my_graphic_calculator/build/_deps/googletest-subbuild/googletest-populate-prefix"
+  "/Users/Aot/Desktop/code/C++/CS03A_Barkeshli/GC/my_graphic_calculator/build/_deps/googletest-subbuild/googletest-populate-prefix/tmp"
+  "/Users/Aot/Desktop/code/C++/CS03A_Barkeshli/GC/my_graphic_calculator/build/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp"
+  "/Users/Aot/Desktop/code/C++/CS03A_Barkeshli/GC/my_graphic_calculator/build/_deps/googletest-subbuild/googletest-populate-prefix/src"
+  "/Users/Aot/Desktop/code/C++/CS03A_Barkeshli/GC/my_graphic_calculator/build/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp"
 )
 
 set(configSubDirs )
 foreach(subDir IN LISTS configSubDirs)
-    file(MAKE_DIRECTORY "/Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/99_00_final_project-agentaot/build/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/${subDir}")
+    file(MAKE_DIRECTORY "/Users/Aot/Desktop/code/C++/CS03A_Barkeshli/GC/my_graphic_calculator/build/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/${subDir}")
 endforeach()
 if(cfgdir)
-  file(MAKE_DIRECTORY "/Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/99_00_final_project-agentaot/build/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp${cfgdir}") # cfgdir has leading slash
+  file(MAKE_DIRECTORY "/Users/Aot/Desktop/code/C++/CS03A_Barkeshli/GC/my_graphic_calculator/build/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp${cfgdir}") # cfgdir has leading slash
 endif()

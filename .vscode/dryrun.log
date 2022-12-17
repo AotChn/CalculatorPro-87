@@ -1,6 +1,6 @@
 make --dry-run --always-make --keep-going --print-directory
-make: Entering directory `/Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/99_00_final_project-agentaot'
-make: Leaving directory `/Users/Aot/Desktop/CODE_MASTER/C++/CS03A_Barkeshli/GC/99_00_final_project-agentaot'
+make: Entering directory `/Users/Aot/Desktop/code/C++/CS03A_Barkeshli/GC/my_graphic_calculator'
+make: Leaving directory `/Users/Aot/Desktop/code/C++/CS03A_Barkeshli/GC/my_graphic_calculator'
  
 make: *** No targets specified and no makefile found.  Stop.
 

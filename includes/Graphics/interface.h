@@ -36,7 +36,7 @@ void set_axis_labels(sf::RenderWindow& window){
     sf::Font font;
     double posY;
     double posX;
-    font.loadFromFile("Roboto-Thin.ttf");
+    font.loadFromFile("fonts/Roboto-Thin.ttf");
     double SDI = info->window_size.x/info->intervals;
     label.setCharacterSize(30);
     label.setFillColor(sf::Color(255,255,255,255));

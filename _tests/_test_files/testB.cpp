@@ -25,7 +25,6 @@ using namespace std;
 #include "../../includes/plotter/translator.h"
 
 //++++++++++ ------------------------------------------------------>[]
-#include "../../RPN2/rpn2.h"
 
 
 void title(string name){

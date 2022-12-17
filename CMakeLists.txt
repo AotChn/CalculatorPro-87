@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.5 FATAL_ERROR)
-project(barkeshli_s22)
+project(my_graphic_calc)
 
 
 #. . . . . . . . . . . . . . . . . . . .

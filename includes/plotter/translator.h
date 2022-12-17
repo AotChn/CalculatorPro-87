@@ -31,15 +31,15 @@ public:
    sf::Vector2f cart_to_sfml(sf::Vector2f coords);
    sf::Vector2f sfml_to_cart(sf::Vector2f coords);
    
-   void set_graph_info(Graph_info * Info);
    void set_dx();
    void set_delta_x();
    void set_delta_y();
    void set_domain(double min, double max);
+   void set_graph_info(Graph_info * Info);
 
    double get_SDI(); //screen domain interval
-   double get_dx(){return dx;}
-   double get_dy(){return dy;}
+   double get_dx(){return dx;} //split screen evenly (x-axis) by domain
+   double get_dy(){return dy;} ////split screen evenly (y-axis) by domain
 
    void print();
 
