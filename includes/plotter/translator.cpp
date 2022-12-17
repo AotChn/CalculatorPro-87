@@ -18,11 +18,12 @@ void Translator::set_delta_y(){
     dy = (info->window_size.y/(info->Screen_domain.y-info->Screen_domain.x));
 }
 
+
 double Translator::get_SDI(){
     return (info->window_size.x/(info->Screen_domain.y-info->Screen_domain.x));
 }
 
-
+//converts cartesian coordinates to sfml coorindates
 sf::Vector2f Translator::cart_to_sfml(sf::Vector2f coords){
     set_delta_x();
     set_delta_y();
@@ -31,6 +32,7 @@ sf::Vector2f Translator::cart_to_sfml(sf::Vector2f coords){
     return sfml_point;
 }
 
+//converts sfml coordinates to cartesian coordinates
 sf::Vector2f Translator::sfml_to_cart(sf::Vector2f coords){
     set_delta_x();
     set_delta_y();
@@ -40,6 +42,7 @@ sf::Vector2f Translator::sfml_to_cart(sf::Vector2f coords){
     return cart_point;
 }
 
+//debug function
 void Translator::print(){
     cout<<"SFML_PT.x = "<<sfml_point.x<<"|"<<"SFML_PT.y = "<<sfml_point.y<<endl;
     cout<<"Offset = "<<offset<<endl;

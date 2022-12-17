@@ -6,7 +6,7 @@ RPN::RPN(){
 
 RPN::RPN(Queue<Token*> postfix){;
     _postfix = postfix;
-    _instan = 3;
+    _instan = 0;
 }
 
 double RPN::rpn_process(){
@@ -74,7 +74,7 @@ double RPN::op_process(double a, double b){
         case EXPONENT:
             result = pow(a,b);
             return result;
-        case NEGATIVE:
+        case NEGATIVE: //prob change to function
             result = -1*a;
             return result;
     }
@@ -131,6 +131,7 @@ void RPN::Print(RPN Print_this,ostream &outs){
 double RPN::operator ()(){
     return this->rpn_process();
 }
+
 double RPN::operator ()(double value){
     _instan = value;
     return this->rpn_process();

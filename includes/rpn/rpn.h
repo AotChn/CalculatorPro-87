@@ -30,19 +30,23 @@
 class RPN
 {
 public:
+    //CTOR
     RPN();
     RPN(Queue<Token*> postfix);
     
+    //process
     double rpn_process();
-    Stack<double> type_process(Stack<double> hold);
     double op_process(double a, double b);
+    Stack<double> type_process(Stack<double> hold);
     Stack<double> funct_process(Stack<double> hold);
 
+    //mutators
     void set_input(Queue<Token*> postfix);
     void set_instan(double x);
     
     void Print(RPN Print_this,ostream &outs=cout);
 
+    //activate all processes
     double operator ()();
     double operator ()(double value);
 
@@ -56,7 +60,4 @@ private:
     
 #endif // RPN_H
 
-/*NOTES 
-rework rpn because it is quite messy
-*/
 

@@ -33,7 +33,7 @@ public:
     sf::Vector2f operator()();
 
     //Process
-    void create_plot_map(); //creates vector of cartesian coords in pair form 
+    void create_plot_map(); //creates vector of cartesian coords in sf::Vector2f form 
 
     //Mutators
     void set_info(Graph_info * Info); 
