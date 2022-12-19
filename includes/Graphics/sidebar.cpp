@@ -4,13 +4,13 @@ Sidebar::Sidebar()
 }
 
 Sidebar::Sidebar(float left, float width) : _left(left), _width(width){
-    cout << "Sidebar CTOR: TOP" << endl;
+   // cout << "Sidebar CTOR: TOP" << endl;
 
     // set up the sidebar rectangle:
     rect.setFillColor(sf::Color(50,50,50,255)); //(192,192,192)); //silver
     rect.setPosition(sf::Vector2f(left,0));
     rect.setSize(sf::Vector2f(width, SCREEN_HEIGHT));
-    cout << "Sidebar CTOR: about to load font." << endl;
+   // cout << "Sidebar CTOR: about to load font." << endl;
 
     bottomBar.setFillColor(sf::Color(89,157,255,255));
     bottomBar.setPosition(sf::Vector2f(0,SCREEN_HEIGHT-45));

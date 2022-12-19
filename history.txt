@@ -1,6 +1,6 @@
 sinx*x
 x^2
-3^x
+!NOT VALID EXPRESSION!
 sinx^sinx
-lnx
-sin(sin(x^3))
+x
+x10+10
