@@ -38,9 +38,15 @@ arrow-keys | pan screen
 h | help screen
 r | reset graph
 
+## Bugs/issues
+- minor memory leak 
 
-
-
+## Work-in-Progress Features
+- polar coordinate support
+- intellegent input tokenizer 
+- 3d visualization
+- Mouse zoom/pan
+- deleting graph
 
 
 </br></br>
