@@ -35,7 +35,6 @@
 
     //draws to be drawn on screen
     void Animate::Draw(){
-        window.draw(name_stamp());
         system.draw_axis(window);
         sidebar.draw(window);
         window.draw(sidebar.create_button(button_color,highlight_pos));
@@ -56,6 +55,7 @@
             window.draw(input_box());
             window.draw(input_text(input));
         }
+        window.draw(name_stamp());
     }
 
     //clear->draw->display cycle
