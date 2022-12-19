@@ -28,8 +28,7 @@ Sidebar::Sidebar(float left, float width) : _left(left), _width(width){
     }
     ////- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-    cout << "Sidebar CTOR: loaded font." << endl;
-
+    // cout << "Sidebar CTOR: loaded font." << endl;
     //. . . . . text / font problems: . . . . . . . .
     // initializing text object in this way caused problems
     // (hangs!)
@@ -40,7 +39,7 @@ Sidebar::Sidebar(float left, float width) : _left(left), _width(width){
     // sb_text = sf::Text("Initial String for myTextLabel", font);
     //
     //. . . . . . . . . . . . . . . . . . . . . . . . .
-    cout << "Sidebar CTOR: Text object initialized." << endl;
+    // cout << "Sidebar CTOR: Text object initialized." << endl;
     sb_text.setFont(font);
     sb_text.setCharacterSize(20);
     sb_text.setStyle(sf::Text::Bold);
@@ -66,7 +65,7 @@ Sidebar::Sidebar(float left, float width) : _left(left), _width(width){
     for (int i = 0; i < 30; i++){
         items.push_back("");
     }
-    cout << "Sidebar: CTOR: Exit." << endl;
+    // cout << "Sidebar: CTOR: Exit." << endl;
 }
 
 void Sidebar::draw(sf::RenderWindow &window){

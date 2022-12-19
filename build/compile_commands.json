@@ -36,16 +36,6 @@
 },
 {
   "directory": "/Users/Aot/Desktop/code/C++/CS03A_Barkeshli/GC/my_graphic_calculator/build",
-  "command": "/usr/bin/clang++  -I/Users/Aot/Desktop/code/C++/CS03A_Barkeshli/GC/my_graphic_calculator/SFML_INCLUDE_DIR -isystem /Users/Aot/Desktop/code/C++/CS03A_Barkeshli/GC/my_graphic_calculator/build/_deps/googletest-src/googletest/include -isystem /Users/Aot/Desktop/code/C++/CS03A_Barkeshli/GC/my_graphic_calculator/build/_deps/googletest-src/googletest -isystem /usr/local/include -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk -mmacosx-version-min=11.6 -std=gnu++11 -o CMakeFiles/main.dir/includes/exceptions/dividebyzero.cpp.o -c /Users/Aot/Desktop/code/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/exceptions/dividebyzero.cpp",
-  "file": "/Users/Aot/Desktop/code/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/exceptions/dividebyzero.cpp"
-},
-{
-  "directory": "/Users/Aot/Desktop/code/C++/CS03A_Barkeshli/GC/my_graphic_calculator/build",
-  "command": "/usr/bin/clang++  -I/Users/Aot/Desktop/code/C++/CS03A_Barkeshli/GC/my_graphic_calculator/SFML_INCLUDE_DIR -isystem /Users/Aot/Desktop/code/C++/CS03A_Barkeshli/GC/my_graphic_calculator/build/_deps/googletest-src/googletest/include -isystem /Users/Aot/Desktop/code/C++/CS03A_Barkeshli/GC/my_graphic_calculator/build/_deps/googletest-src/googletest -isystem /usr/local/include -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk -mmacosx-version-min=11.6 -std=gnu++11 -o CMakeFiles/main.dir/includes/exceptions/missingparan.cpp.o -c /Users/Aot/Desktop/code/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/exceptions/missingparan.cpp",
-  "file": "/Users/Aot/Desktop/code/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/exceptions/missingparan.cpp"
-},
-{
-  "directory": "/Users/Aot/Desktop/code/C++/CS03A_Barkeshli/GC/my_graphic_calculator/build",
   "command": "/usr/bin/clang++  -I/Users/Aot/Desktop/code/C++/CS03A_Barkeshli/GC/my_graphic_calculator/SFML_INCLUDE_DIR -isystem /Users/Aot/Desktop/code/C++/CS03A_Barkeshli/GC/my_graphic_calculator/build/_deps/googletest-src/googletest/include -isystem /Users/Aot/Desktop/code/C++/CS03A_Barkeshli/GC/my_graphic_calculator/build/_deps/googletest-src/googletest -isystem /usr/local/include -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk -mmacosx-version-min=11.6 -std=gnu++11 -o CMakeFiles/main.dir/includes/node/node.cpp.o -c /Users/Aot/Desktop/code/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/node/node.cpp",
   "file": "/Users/Aot/Desktop/code/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/node/node.cpp"
 },
@@ -153,16 +143,6 @@
   "directory": "/Users/Aot/Desktop/code/C++/CS03A_Barkeshli/GC/my_graphic_calculator/build",
   "command": "/usr/bin/clang++  -I/Users/Aot/Desktop/code/C++/CS03A_Barkeshli/GC/my_graphic_calculator/SFML_INCLUDE_DIR -isystem /Users/Aot/Desktop/code/C++/CS03A_Barkeshli/GC/my_graphic_calculator/build/_deps/googletest-src/googletest/include -isystem /Users/Aot/Desktop/code/C++/CS03A_Barkeshli/GC/my_graphic_calculator/build/_deps/googletest-src/googletest -isystem /usr/local/include -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk -mmacosx-version-min=11.6 -std=gnu++11 -o CMakeFiles/basic_test.dir/includes/data_pkg/graph_info.cpp.o -c /Users/Aot/Desktop/code/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/data_pkg/graph_info.cpp",
   "file": "/Users/Aot/Desktop/code/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/data_pkg/graph_info.cpp"
-},
-{
-  "directory": "/Users/Aot/Desktop/code/C++/CS03A_Barkeshli/GC/my_graphic_calculator/build",
-  "command": "/usr/bin/clang++  -I/Users/Aot/Desktop/code/C++/CS03A_Barkeshli/GC/my_graphic_calculator/SFML_INCLUDE_DIR -isystem /Users/Aot/Desktop/code/C++/CS03A_Barkeshli/GC/my_graphic_calculator/build/_deps/googletest-src/googletest/include -isystem /Users/Aot/Desktop/code/C++/CS03A_Barkeshli/GC/my_graphic_calculator/build/_deps/googletest-src/googletest -isystem /usr/local/include -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk -mmacosx-version-min=11.6 -std=gnu++11 -o CMakeFiles/basic_test.dir/includes/exceptions/dividebyzero.cpp.o -c /Users/Aot/Desktop/code/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/exceptions/dividebyzero.cpp",
-  "file": "/Users/Aot/Desktop/code/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/exceptions/dividebyzero.cpp"
-},
-{
-  "directory": "/Users/Aot/Desktop/code/C++/CS03A_Barkeshli/GC/my_graphic_calculator/build",
-  "command": "/usr/bin/clang++  -I/Users/Aot/Desktop/code/C++/CS03A_Barkeshli/GC/my_graphic_calculator/SFML_INCLUDE_DIR -isystem /Users/Aot/Desktop/code/C++/CS03A_Barkeshli/GC/my_graphic_calculator/build/_deps/googletest-src/googletest/include -isystem /Users/Aot/Desktop/code/C++/CS03A_Barkeshli/GC/my_graphic_calculator/build/_deps/googletest-src/googletest -isystem /usr/local/include -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk -mmacosx-version-min=11.6 -std=gnu++11 -o CMakeFiles/basic_test.dir/includes/exceptions/missingparan.cpp.o -c /Users/Aot/Desktop/code/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/exceptions/missingparan.cpp",
-  "file": "/Users/Aot/Desktop/code/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/exceptions/missingparan.cpp"
 },
 {
   "directory": "/Users/Aot/Desktop/code/C++/CS03A_Barkeshli/GC/my_graphic_calculator/build",
@@ -276,16 +256,6 @@
 },
 {
   "directory": "/Users/Aot/Desktop/code/C++/CS03A_Barkeshli/GC/my_graphic_calculator/build",
-  "command": "/usr/bin/clang++  -I/Users/Aot/Desktop/code/C++/CS03A_Barkeshli/GC/my_graphic_calculator/SFML_INCLUDE_DIR -isystem /Users/Aot/Desktop/code/C++/CS03A_Barkeshli/GC/my_graphic_calculator/build/_deps/googletest-src/googletest/include -isystem /Users/Aot/Desktop/code/C++/CS03A_Barkeshli/GC/my_graphic_calculator/build/_deps/googletest-src/googletest -isystem /usr/local/include -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk -mmacosx-version-min=11.6 -std=gnu++11 -o CMakeFiles/testB.dir/includes/exceptions/dividebyzero.cpp.o -c /Users/Aot/Desktop/code/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/exceptions/dividebyzero.cpp",
-  "file": "/Users/Aot/Desktop/code/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/exceptions/dividebyzero.cpp"
-},
-{
-  "directory": "/Users/Aot/Desktop/code/C++/CS03A_Barkeshli/GC/my_graphic_calculator/build",
-  "command": "/usr/bin/clang++  -I/Users/Aot/Desktop/code/C++/CS03A_Barkeshli/GC/my_graphic_calculator/SFML_INCLUDE_DIR -isystem /Users/Aot/Desktop/code/C++/CS03A_Barkeshli/GC/my_graphic_calculator/build/_deps/googletest-src/googletest/include -isystem /Users/Aot/Desktop/code/C++/CS03A_Barkeshli/GC/my_graphic_calculator/build/_deps/googletest-src/googletest -isystem /usr/local/include -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk -mmacosx-version-min=11.6 -std=gnu++11 -o CMakeFiles/testB.dir/includes/exceptions/missingparan.cpp.o -c /Users/Aot/Desktop/code/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/exceptions/missingparan.cpp",
-  "file": "/Users/Aot/Desktop/code/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/exceptions/missingparan.cpp"
-},
-{
-  "directory": "/Users/Aot/Desktop/code/C++/CS03A_Barkeshli/GC/my_graphic_calculator/build",
   "command": "/usr/bin/clang++  -I/Users/Aot/Desktop/code/C++/CS03A_Barkeshli/GC/my_graphic_calculator/SFML_INCLUDE_DIR -isystem /Users/Aot/Desktop/code/C++/CS03A_Barkeshli/GC/my_graphic_calculator/build/_deps/googletest-src/googletest/include -isystem /Users/Aot/Desktop/code/C++/CS03A_Barkeshli/GC/my_graphic_calculator/build/_deps/googletest-src/googletest -isystem /usr/local/include -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk -mmacosx-version-min=11.6 -std=gnu++11 -o CMakeFiles/testB.dir/includes/node/node.cpp.o -c /Users/Aot/Desktop/code/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/node/node.cpp",
   "file": "/Users/Aot/Desktop/code/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/node/node.cpp"
 },
@@ -393,16 +363,6 @@
   "directory": "/Users/Aot/Desktop/code/C++/CS03A_Barkeshli/GC/my_graphic_calculator/build",
   "command": "/usr/bin/clang++  -I/Users/Aot/Desktop/code/C++/CS03A_Barkeshli/GC/my_graphic_calculator/SFML_INCLUDE_DIR -isystem /Users/Aot/Desktop/code/C++/CS03A_Barkeshli/GC/my_graphic_calculator/build/_deps/googletest-src/googletest/include -isystem /Users/Aot/Desktop/code/C++/CS03A_Barkeshli/GC/my_graphic_calculator/build/_deps/googletest-src/googletest -isystem /usr/local/include -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk -mmacosx-version-min=11.6 -std=gnu++11 -o CMakeFiles/testC.dir/includes/data_pkg/graph_info.cpp.o -c /Users/Aot/Desktop/code/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/data_pkg/graph_info.cpp",
   "file": "/Users/Aot/Desktop/code/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/data_pkg/graph_info.cpp"
-},
-{
-  "directory": "/Users/Aot/Desktop/code/C++/CS03A_Barkeshli/GC/my_graphic_calculator/build",
-  "command": "/usr/bin/clang++  -I/Users/Aot/Desktop/code/C++/CS03A_Barkeshli/GC/my_graphic_calculator/SFML_INCLUDE_DIR -isystem /Users/Aot/Desktop/code/C++/CS03A_Barkeshli/GC/my_graphic_calculator/build/_deps/googletest-src/googletest/include -isystem /Users/Aot/Desktop/code/C++/CS03A_Barkeshli/GC/my_graphic_calculator/build/_deps/googletest-src/googletest -isystem /usr/local/include -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk -mmacosx-version-min=11.6 -std=gnu++11 -o CMakeFiles/testC.dir/includes/exceptions/dividebyzero.cpp.o -c /Users/Aot/Desktop/code/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/exceptions/dividebyzero.cpp",
-  "file": "/Users/Aot/Desktop/code/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/exceptions/dividebyzero.cpp"
-},
-{
-  "directory": "/Users/Aot/Desktop/code/C++/CS03A_Barkeshli/GC/my_graphic_calculator/build",
-  "command": "/usr/bin/clang++  -I/Users/Aot/Desktop/code/C++/CS03A_Barkeshli/GC/my_graphic_calculator/SFML_INCLUDE_DIR -isystem /Users/Aot/Desktop/code/C++/CS03A_Barkeshli/GC/my_graphic_calculator/build/_deps/googletest-src/googletest/include -isystem /Users/Aot/Desktop/code/C++/CS03A_Barkeshli/GC/my_graphic_calculator/build/_deps/googletest-src/googletest -isystem /usr/local/include -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk -mmacosx-version-min=11.6 -std=gnu++11 -o CMakeFiles/testC.dir/includes/exceptions/missingparan.cpp.o -c /Users/Aot/Desktop/code/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/exceptions/missingparan.cpp",
-  "file": "/Users/Aot/Desktop/code/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/exceptions/missingparan.cpp"
 },
 {
   "directory": "/Users/Aot/Desktop/code/C++/CS03A_Barkeshli/GC/my_graphic_calculator/build",

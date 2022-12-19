@@ -2170,10 +2170,6 @@ CMakeFiles/main.dir/includes/data_pkg/graph_info.cpp.o: /Users/Aot/Desktop/code/
   /Users/Aot/Desktop/code/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/token/token.h \
   /Users/Aot/Desktop/code/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/Graphics/constants.h
 
-CMakeFiles/main.dir/includes/exceptions/dividebyzero.cpp.o: /Users/Aot/Desktop/code/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/exceptions/dividebyzero.cpp
-
-CMakeFiles/main.dir/includes/exceptions/missingparan.cpp.o: /Users/Aot/Desktop/code/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/exceptions/missingparan.cpp
-
 CMakeFiles/main.dir/includes/node/node.cpp.o: /Users/Aot/Desktop/code/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/node/node.cpp \
   /Users/Aot/Desktop/code/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/node/node.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/iostream \
@@ -7121,8 +7117,6 @@ CMakeFiles/main.dir/main.cpp.o: /Users/Aot/Desktop/code/C++/CS03A_Barkeshli/GC/m
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk/usr/include/sys/_types/_off_t.h:
 
-/Users/Aot/Desktop/code/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/exceptions/dividebyzero.cpp:
-
 /usr/local/include/SFML/Window/GlResource.hpp:
 
 /Library/Developer/CommandLineTools/usr/lib/clang/13.0.0/include/__stddef_max_align_t.h:
@@ -7250,8 +7244,6 @@ CMakeFiles/main.dir/main.cpp.o: /Users/Aot/Desktop/code/C++/CS03A_Barkeshli/GC/m
 /Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk/usr/include/machine/_types.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk/usr/include/sys/_symbol_aliasing.h:
-
-/Users/Aot/Desktop/code/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/exceptions/missingparan.cpp:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk/usr/include/sched.h:
 

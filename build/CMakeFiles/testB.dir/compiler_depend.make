@@ -2599,10 +2599,6 @@ CMakeFiles/testB.dir/includes/data_pkg/graph_info.cpp.o: /Users/Aot/Desktop/code
   /Users/Aot/Desktop/code/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/token/token.h \
   /Users/Aot/Desktop/code/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/Graphics/constants.h
 
-CMakeFiles/testB.dir/includes/exceptions/dividebyzero.cpp.o: /Users/Aot/Desktop/code/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/exceptions/dividebyzero.cpp
-
-CMakeFiles/testB.dir/includes/exceptions/missingparan.cpp.o: /Users/Aot/Desktop/code/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/exceptions/missingparan.cpp
-
 CMakeFiles/testB.dir/includes/node/node.cpp.o: /Users/Aot/Desktop/code/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/node/node.cpp \
   /Users/Aot/Desktop/code/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/node/node.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/iostream \
@@ -6661,10 +6657,6 @@ CMakeFiles/testB.dir/includes/tokenizer/tokenizer.cpp.o: /Users/Aot/Desktop/code
 /Users/Aot/Desktop/code/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/shunting_yard/shunting_yard.cpp:
 
 /Users/Aot/Desktop/code/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/node/node.cpp:
-
-/Users/Aot/Desktop/code/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/exceptions/missingparan.cpp:
-
-/Users/Aot/Desktop/code/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/exceptions/dividebyzero.cpp:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/limits.h:
 
