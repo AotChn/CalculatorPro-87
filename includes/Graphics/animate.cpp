@@ -1,18 +1,18 @@
 #include "animate.h"
     
+
+
+
+
     //run application 
     void Animate::run(){
-        graph.Eq = "";
+        cout<<"Calc Pro-87 starting "<<endl;
+        cout<<"Preparing to load saved graphs[0%]"<<endl;
         load_graphs();
+        cout<<"Graphs Loaded [Check]"<<endl;
+        cout<<"Preprocesses complete [100%]"<<endl;
         take_input = false;
         while(window.isOpen()){
-            text.setFillColor(sf::Color::Red);
-            text.setPosition(sf::Vector2f(30,SCREEN_HEIGHT/6+30));
-            text.setFont(font);
-            text.setStyle(sf::Text::Bold);
-            text.setCharacterSize(60);
-            font.loadFromFile("fonts/Roboto-Thin.ttf");
-
             process_events();
             update();
             render();

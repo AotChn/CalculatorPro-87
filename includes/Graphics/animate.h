@@ -32,10 +32,21 @@ class Animate{
         bool take_input = false;
         info = &graph;
         system.set_graph_info(info);
+        graph.Eq = "";
         button_color = 0;
         input = "";
         Mousein = false;
+        take_input = false;
         j = 2;
+        text.setFillColor(sf::Color::Red);
+        text.setPosition(sf::Vector2f(30,SCREEN_HEIGHT/6+30));
+        text.setFont(font);
+        text.setStyle(sf::Text::Bold);
+        text.setCharacterSize(60);
+        if(!font.loadFromFile("fonts/Roboto-Thin.ttf")){
+            cout<<"animate font CTOR: Font failed to load"<<endl;
+            exit(-1);
+        }
     }
     
     void run();
