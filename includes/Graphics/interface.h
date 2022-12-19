@@ -18,8 +18,8 @@
 using namespace std;
 
 
-class Interface
-{
+class Interface{
+    
 public:
     Interface(){}
 
@@ -120,15 +120,10 @@ void set_help_button(sf::RenderWindow& window, sf::Font font, int state){
     help_label.setOrigin(help_label.getLocalBounds().width/2,help_label.getLocalBounds().height/2);
     help_label.setPosition(sf::Vector2f(166,166));
     window.draw(help_label);
-
-
-}
-
-void show_help_page(sf::RenderWindow& window, sf::Font font){
-
 }
 
 private:
     Graph_info * info;
 };
+
 #endif // SIDEBAR_H

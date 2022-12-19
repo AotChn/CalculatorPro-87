@@ -11,7 +11,7 @@ void System::set_graph_info(Graph_info * Info){
     info = Info;
 }
 
-void System::Draw_axis(sf::RenderWindow& window){
+void System::draw_axis(sf::RenderWindow& window){
     Translator T(info);
     Plot P;
     P.set_info(info);
