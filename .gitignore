@@ -35,5 +35,4 @@
 .vscode/
 build/
 blank.txt
-
-
+.DS_Store
