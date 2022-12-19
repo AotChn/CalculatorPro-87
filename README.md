@@ -1,4 +1,4 @@
 
 this is my graphic calcualtor <https://youtu.be/eBFUJsNR7U0>
 
-<img src="[/path/to/img.jpg](https://github.com/AotChn/my_graphic_calculator/blob/main/Screen%20Shot%202022-12-11%20at%2011.49.34%20PM.png)" alt="Alt text" title="my image">
+<img width="1362" alt="Screen Shot 2022-12-11 at 11 49 34 PM" src="https://user-images.githubusercontent.com/37425542/208334892-ccdbbc07-87e4-4e0d-a8e9-100d7b27fe64.png">
