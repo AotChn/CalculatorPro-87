@@ -39,23 +39,22 @@ plot [2],
 
 # TODO LIST:
 
-</br>
 fix memory leak in tokenizer, shuntingyard;
 when we pop() the token* we are not actually deleting the items
 - must find a way to delete those items 
-</br>
+
 adjust screen size when the user resizes screen 
 - must update everything everytime user does that
-</br>
+
 fix negative operator
 - right now unary negative is an operator that takes 2 arguments in rpn
 - perhaps switch unary negative into a function 
-</br>
+
 fix graph zoom as we go out past factor of 24 or zoom in past factor of 7
 - must find ratio of pan displacement as zoom in/out
-</br>
+
 implement mouse zoom in/out
 - use mouse position to find displacement of graph and create a zoom off the new origin aka(mouse pos)
-</br>
+
 
 ### last update by Aot Chanthorn Dec 18, 2022 .
