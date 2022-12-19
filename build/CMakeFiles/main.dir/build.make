@@ -139,24 +139,10 @@ CMakeFiles/main.dir/includes/Graphics/system.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/includes/Graphics/system.cpp.s"
 	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Aot/Desktop/code/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/Graphics/system.cpp -o CMakeFiles/main.dir/includes/Graphics/system.cpp.s
 
-CMakeFiles/main.dir/includes/Graphics/window.cpp.o: CMakeFiles/main.dir/flags.make
-CMakeFiles/main.dir/includes/Graphics/window.cpp.o: /Users/Aot/Desktop/code/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/Graphics/window.cpp
-CMakeFiles/main.dir/includes/Graphics/window.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Aot/Desktop/code/C++/CS03A_Barkeshli/GC/my_graphic_calculator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/main.dir/includes/Graphics/window.cpp.o"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/includes/Graphics/window.cpp.o -MF CMakeFiles/main.dir/includes/Graphics/window.cpp.o.d -o CMakeFiles/main.dir/includes/Graphics/window.cpp.o -c /Users/Aot/Desktop/code/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/Graphics/window.cpp
-
-CMakeFiles/main.dir/includes/Graphics/window.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/includes/Graphics/window.cpp.i"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/Aot/Desktop/code/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/Graphics/window.cpp > CMakeFiles/main.dir/includes/Graphics/window.cpp.i
-
-CMakeFiles/main.dir/includes/Graphics/window.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/includes/Graphics/window.cpp.s"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Aot/Desktop/code/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/Graphics/window.cpp -o CMakeFiles/main.dir/includes/Graphics/window.cpp.s
-
 CMakeFiles/main.dir/includes/data_pkg/graph_info.cpp.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/includes/data_pkg/graph_info.cpp.o: /Users/Aot/Desktop/code/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/data_pkg/graph_info.cpp
 CMakeFiles/main.dir/includes/data_pkg/graph_info.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Aot/Desktop/code/C++/CS03A_Barkeshli/GC/my_graphic_calculator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/main.dir/includes/data_pkg/graph_info.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Aot/Desktop/code/C++/CS03A_Barkeshli/GC/my_graphic_calculator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/main.dir/includes/data_pkg/graph_info.cpp.o"
 	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/includes/data_pkg/graph_info.cpp.o -MF CMakeFiles/main.dir/includes/data_pkg/graph_info.cpp.o.d -o CMakeFiles/main.dir/includes/data_pkg/graph_info.cpp.o -c /Users/Aot/Desktop/code/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/data_pkg/graph_info.cpp
 
 CMakeFiles/main.dir/includes/data_pkg/graph_info.cpp.i: cmake_force
@@ -170,7 +156,7 @@ CMakeFiles/main.dir/includes/data_pkg/graph_info.cpp.s: cmake_force
 CMakeFiles/main.dir/includes/node/node.cpp.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/includes/node/node.cpp.o: /Users/Aot/Desktop/code/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/node/node.cpp
 CMakeFiles/main.dir/includes/node/node.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Aot/Desktop/code/C++/CS03A_Barkeshli/GC/my_graphic_calculator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/main.dir/includes/node/node.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Aot/Desktop/code/C++/CS03A_Barkeshli/GC/my_graphic_calculator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/main.dir/includes/node/node.cpp.o"
 	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/includes/node/node.cpp.o -MF CMakeFiles/main.dir/includes/node/node.cpp.o.d -o CMakeFiles/main.dir/includes/node/node.cpp.o -c /Users/Aot/Desktop/code/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/node/node.cpp
 
 CMakeFiles/main.dir/includes/node/node.cpp.i: cmake_force
@@ -184,7 +170,7 @@ CMakeFiles/main.dir/includes/node/node.cpp.s: cmake_force
 CMakeFiles/main.dir/includes/plotter/plot.cpp.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/includes/plotter/plot.cpp.o: /Users/Aot/Desktop/code/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/plotter/plot.cpp
 CMakeFiles/main.dir/includes/plotter/plot.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Aot/Desktop/code/C++/CS03A_Barkeshli/GC/my_graphic_calculator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/main.dir/includes/plotter/plot.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Aot/Desktop/code/C++/CS03A_Barkeshli/GC/my_graphic_calculator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/main.dir/includes/plotter/plot.cpp.o"
 	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/includes/plotter/plot.cpp.o -MF CMakeFiles/main.dir/includes/plotter/plot.cpp.o.d -o CMakeFiles/main.dir/includes/plotter/plot.cpp.o -c /Users/Aot/Desktop/code/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/plotter/plot.cpp
 
 CMakeFiles/main.dir/includes/plotter/plot.cpp.i: cmake_force
@@ -198,7 +184,7 @@ CMakeFiles/main.dir/includes/plotter/plot.cpp.s: cmake_force
 CMakeFiles/main.dir/includes/plotter/translator.cpp.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/includes/plotter/translator.cpp.o: /Users/Aot/Desktop/code/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/plotter/translator.cpp
 CMakeFiles/main.dir/includes/plotter/translator.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Aot/Desktop/code/C++/CS03A_Barkeshli/GC/my_graphic_calculator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/main.dir/includes/plotter/translator.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Aot/Desktop/code/C++/CS03A_Barkeshli/GC/my_graphic_calculator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/main.dir/includes/plotter/translator.cpp.o"
 	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/includes/plotter/translator.cpp.o -MF CMakeFiles/main.dir/includes/plotter/translator.cpp.o.d -o CMakeFiles/main.dir/includes/plotter/translator.cpp.o -c /Users/Aot/Desktop/code/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/plotter/translator.cpp
 
 CMakeFiles/main.dir/includes/plotter/translator.cpp.i: cmake_force
@@ -212,7 +198,7 @@ CMakeFiles/main.dir/includes/plotter/translator.cpp.s: cmake_force
 CMakeFiles/main.dir/includes/rpn/rpn.cpp.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/includes/rpn/rpn.cpp.o: /Users/Aot/Desktop/code/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/rpn/rpn.cpp
 CMakeFiles/main.dir/includes/rpn/rpn.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Aot/Desktop/code/C++/CS03A_Barkeshli/GC/my_graphic_calculator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/main.dir/includes/rpn/rpn.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Aot/Desktop/code/C++/CS03A_Barkeshli/GC/my_graphic_calculator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/main.dir/includes/rpn/rpn.cpp.o"
 	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/includes/rpn/rpn.cpp.o -MF CMakeFiles/main.dir/includes/rpn/rpn.cpp.o.d -o CMakeFiles/main.dir/includes/rpn/rpn.cpp.o -c /Users/Aot/Desktop/code/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/rpn/rpn.cpp
 
 CMakeFiles/main.dir/includes/rpn/rpn.cpp.i: cmake_force
@@ -226,7 +212,7 @@ CMakeFiles/main.dir/includes/rpn/rpn.cpp.s: cmake_force
 CMakeFiles/main.dir/includes/shunting_yard/shunting_yard.cpp.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/includes/shunting_yard/shunting_yard.cpp.o: /Users/Aot/Desktop/code/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/shunting_yard/shunting_yard.cpp
 CMakeFiles/main.dir/includes/shunting_yard/shunting_yard.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Aot/Desktop/code/C++/CS03A_Barkeshli/GC/my_graphic_calculator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/main.dir/includes/shunting_yard/shunting_yard.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Aot/Desktop/code/C++/CS03A_Barkeshli/GC/my_graphic_calculator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/main.dir/includes/shunting_yard/shunting_yard.cpp.o"
 	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/includes/shunting_yard/shunting_yard.cpp.o -MF CMakeFiles/main.dir/includes/shunting_yard/shunting_yard.cpp.o.d -o CMakeFiles/main.dir/includes/shunting_yard/shunting_yard.cpp.o -c /Users/Aot/Desktop/code/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/shunting_yard/shunting_yard.cpp
 
 CMakeFiles/main.dir/includes/shunting_yard/shunting_yard.cpp.i: cmake_force
@@ -237,24 +223,10 @@ CMakeFiles/main.dir/includes/shunting_yard/shunting_yard.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/includes/shunting_yard/shunting_yard.cpp.s"
 	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Aot/Desktop/code/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/shunting_yard/shunting_yard.cpp -o CMakeFiles/main.dir/includes/shunting_yard/shunting_yard.cpp.s
 
-CMakeFiles/main.dir/includes/stub/stub.cpp.o: CMakeFiles/main.dir/flags.make
-CMakeFiles/main.dir/includes/stub/stub.cpp.o: /Users/Aot/Desktop/code/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/stub/stub.cpp
-CMakeFiles/main.dir/includes/stub/stub.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Aot/Desktop/code/C++/CS03A_Barkeshli/GC/my_graphic_calculator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/main.dir/includes/stub/stub.cpp.o"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/includes/stub/stub.cpp.o -MF CMakeFiles/main.dir/includes/stub/stub.cpp.o.d -o CMakeFiles/main.dir/includes/stub/stub.cpp.o -c /Users/Aot/Desktop/code/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/stub/stub.cpp
-
-CMakeFiles/main.dir/includes/stub/stub.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/includes/stub/stub.cpp.i"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/Aot/Desktop/code/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/stub/stub.cpp > CMakeFiles/main.dir/includes/stub/stub.cpp.i
-
-CMakeFiles/main.dir/includes/stub/stub.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/includes/stub/stub.cpp.s"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Aot/Desktop/code/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/stub/stub.cpp -o CMakeFiles/main.dir/includes/stub/stub.cpp.s
-
 CMakeFiles/main.dir/includes/token/alpha.cpp.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/includes/token/alpha.cpp.o: /Users/Aot/Desktop/code/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/token/alpha.cpp
 CMakeFiles/main.dir/includes/token/alpha.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Aot/Desktop/code/C++/CS03A_Barkeshli/GC/my_graphic_calculator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/main.dir/includes/token/alpha.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Aot/Desktop/code/C++/CS03A_Barkeshli/GC/my_graphic_calculator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/main.dir/includes/token/alpha.cpp.o"
 	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/includes/token/alpha.cpp.o -MF CMakeFiles/main.dir/includes/token/alpha.cpp.o.d -o CMakeFiles/main.dir/includes/token/alpha.cpp.o -c /Users/Aot/Desktop/code/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/token/alpha.cpp
 
 CMakeFiles/main.dir/includes/token/alpha.cpp.i: cmake_force
@@ -268,7 +240,7 @@ CMakeFiles/main.dir/includes/token/alpha.cpp.s: cmake_force
 CMakeFiles/main.dir/includes/token/double.cpp.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/includes/token/double.cpp.o: /Users/Aot/Desktop/code/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/token/double.cpp
 CMakeFiles/main.dir/includes/token/double.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Aot/Desktop/code/C++/CS03A_Barkeshli/GC/my_graphic_calculator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/main.dir/includes/token/double.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Aot/Desktop/code/C++/CS03A_Barkeshli/GC/my_graphic_calculator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/main.dir/includes/token/double.cpp.o"
 	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/includes/token/double.cpp.o -MF CMakeFiles/main.dir/includes/token/double.cpp.o.d -o CMakeFiles/main.dir/includes/token/double.cpp.o -c /Users/Aot/Desktop/code/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/token/double.cpp
 
 CMakeFiles/main.dir/includes/token/double.cpp.i: cmake_force
@@ -282,7 +254,7 @@ CMakeFiles/main.dir/includes/token/double.cpp.s: cmake_force
 CMakeFiles/main.dir/includes/token/function.cpp.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/includes/token/function.cpp.o: /Users/Aot/Desktop/code/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/token/function.cpp
 CMakeFiles/main.dir/includes/token/function.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Aot/Desktop/code/C++/CS03A_Barkeshli/GC/my_graphic_calculator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/main.dir/includes/token/function.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Aot/Desktop/code/C++/CS03A_Barkeshli/GC/my_graphic_calculator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/main.dir/includes/token/function.cpp.o"
 	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/includes/token/function.cpp.o -MF CMakeFiles/main.dir/includes/token/function.cpp.o.d -o CMakeFiles/main.dir/includes/token/function.cpp.o -c /Users/Aot/Desktop/code/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/token/function.cpp
 
 CMakeFiles/main.dir/includes/token/function.cpp.i: cmake_force
@@ -296,7 +268,7 @@ CMakeFiles/main.dir/includes/token/function.cpp.s: cmake_force
 CMakeFiles/main.dir/includes/token/integer.cpp.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/includes/token/integer.cpp.o: /Users/Aot/Desktop/code/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/token/integer.cpp
 CMakeFiles/main.dir/includes/token/integer.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Aot/Desktop/code/C++/CS03A_Barkeshli/GC/my_graphic_calculator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/main.dir/includes/token/integer.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Aot/Desktop/code/C++/CS03A_Barkeshli/GC/my_graphic_calculator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/main.dir/includes/token/integer.cpp.o"
 	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/includes/token/integer.cpp.o -MF CMakeFiles/main.dir/includes/token/integer.cpp.o.d -o CMakeFiles/main.dir/includes/token/integer.cpp.o -c /Users/Aot/Desktop/code/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/token/integer.cpp
 
 CMakeFiles/main.dir/includes/token/integer.cpp.i: cmake_force
@@ -310,7 +282,7 @@ CMakeFiles/main.dir/includes/token/integer.cpp.s: cmake_force
 CMakeFiles/main.dir/includes/token/leftparen.cpp.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/includes/token/leftparen.cpp.o: /Users/Aot/Desktop/code/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/token/leftparen.cpp
 CMakeFiles/main.dir/includes/token/leftparen.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Aot/Desktop/code/C++/CS03A_Barkeshli/GC/my_graphic_calculator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/main.dir/includes/token/leftparen.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Aot/Desktop/code/C++/CS03A_Barkeshli/GC/my_graphic_calculator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/main.dir/includes/token/leftparen.cpp.o"
 	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/includes/token/leftparen.cpp.o -MF CMakeFiles/main.dir/includes/token/leftparen.cpp.o.d -o CMakeFiles/main.dir/includes/token/leftparen.cpp.o -c /Users/Aot/Desktop/code/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/token/leftparen.cpp
 
 CMakeFiles/main.dir/includes/token/leftparen.cpp.i: cmake_force
@@ -324,7 +296,7 @@ CMakeFiles/main.dir/includes/token/leftparen.cpp.s: cmake_force
 CMakeFiles/main.dir/includes/token/operator.cpp.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/includes/token/operator.cpp.o: /Users/Aot/Desktop/code/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/token/operator.cpp
 CMakeFiles/main.dir/includes/token/operator.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Aot/Desktop/code/C++/CS03A_Barkeshli/GC/my_graphic_calculator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/main.dir/includes/token/operator.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Aot/Desktop/code/C++/CS03A_Barkeshli/GC/my_graphic_calculator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/main.dir/includes/token/operator.cpp.o"
 	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/includes/token/operator.cpp.o -MF CMakeFiles/main.dir/includes/token/operator.cpp.o.d -o CMakeFiles/main.dir/includes/token/operator.cpp.o -c /Users/Aot/Desktop/code/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/token/operator.cpp
 
 CMakeFiles/main.dir/includes/token/operator.cpp.i: cmake_force
@@ -338,7 +310,7 @@ CMakeFiles/main.dir/includes/token/operator.cpp.s: cmake_force
 CMakeFiles/main.dir/includes/token/rightparen.cpp.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/includes/token/rightparen.cpp.o: /Users/Aot/Desktop/code/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/token/rightparen.cpp
 CMakeFiles/main.dir/includes/token/rightparen.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Aot/Desktop/code/C++/CS03A_Barkeshli/GC/my_graphic_calculator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/main.dir/includes/token/rightparen.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Aot/Desktop/code/C++/CS03A_Barkeshli/GC/my_graphic_calculator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/main.dir/includes/token/rightparen.cpp.o"
 	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/includes/token/rightparen.cpp.o -MF CMakeFiles/main.dir/includes/token/rightparen.cpp.o.d -o CMakeFiles/main.dir/includes/token/rightparen.cpp.o -c /Users/Aot/Desktop/code/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/token/rightparen.cpp
 
 CMakeFiles/main.dir/includes/token/rightparen.cpp.i: cmake_force
@@ -352,7 +324,7 @@ CMakeFiles/main.dir/includes/token/rightparen.cpp.s: cmake_force
 CMakeFiles/main.dir/includes/token/token.cpp.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/includes/token/token.cpp.o: /Users/Aot/Desktop/code/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/token/token.cpp
 CMakeFiles/main.dir/includes/token/token.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Aot/Desktop/code/C++/CS03A_Barkeshli/GC/my_graphic_calculator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/main.dir/includes/token/token.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Aot/Desktop/code/C++/CS03A_Barkeshli/GC/my_graphic_calculator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/main.dir/includes/token/token.cpp.o"
 	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/includes/token/token.cpp.o -MF CMakeFiles/main.dir/includes/token/token.cpp.o.d -o CMakeFiles/main.dir/includes/token/token.cpp.o -c /Users/Aot/Desktop/code/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/token/token.cpp
 
 CMakeFiles/main.dir/includes/token/token.cpp.i: cmake_force
@@ -366,7 +338,7 @@ CMakeFiles/main.dir/includes/token/token.cpp.s: cmake_force
 CMakeFiles/main.dir/includes/tokenizer/tokenizer.cpp.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/includes/tokenizer/tokenizer.cpp.o: /Users/Aot/Desktop/code/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/tokenizer/tokenizer.cpp
 CMakeFiles/main.dir/includes/tokenizer/tokenizer.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Aot/Desktop/code/C++/CS03A_Barkeshli/GC/my_graphic_calculator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/main.dir/includes/tokenizer/tokenizer.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Aot/Desktop/code/C++/CS03A_Barkeshli/GC/my_graphic_calculator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/main.dir/includes/tokenizer/tokenizer.cpp.o"
 	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/includes/tokenizer/tokenizer.cpp.o -MF CMakeFiles/main.dir/includes/tokenizer/tokenizer.cpp.o.d -o CMakeFiles/main.dir/includes/tokenizer/tokenizer.cpp.o -c /Users/Aot/Desktop/code/C++/CS03A_Barkeshli/GC/my_graphic_calculator/includes/tokenizer/tokenizer.cpp
 
 CMakeFiles/main.dir/includes/tokenizer/tokenizer.cpp.i: cmake_force
@@ -384,14 +356,12 @@ main_OBJECTS = \
 "CMakeFiles/main.dir/includes/Graphics/interface.cpp.o" \
 "CMakeFiles/main.dir/includes/Graphics/sidebar.cpp.o" \
 "CMakeFiles/main.dir/includes/Graphics/system.cpp.o" \
-"CMakeFiles/main.dir/includes/Graphics/window.cpp.o" \
 "CMakeFiles/main.dir/includes/data_pkg/graph_info.cpp.o" \
 "CMakeFiles/main.dir/includes/node/node.cpp.o" \
 "CMakeFiles/main.dir/includes/plotter/plot.cpp.o" \
 "CMakeFiles/main.dir/includes/plotter/translator.cpp.o" \
 "CMakeFiles/main.dir/includes/rpn/rpn.cpp.o" \
 "CMakeFiles/main.dir/includes/shunting_yard/shunting_yard.cpp.o" \
-"CMakeFiles/main.dir/includes/stub/stub.cpp.o" \
 "CMakeFiles/main.dir/includes/token/alpha.cpp.o" \
 "CMakeFiles/main.dir/includes/token/double.cpp.o" \
 "CMakeFiles/main.dir/includes/token/function.cpp.o" \
@@ -410,14 +380,12 @@ bin/main: CMakeFiles/main.dir/includes/Graphics/animate.cpp.o
 bin/main: CMakeFiles/main.dir/includes/Graphics/interface.cpp.o
 bin/main: CMakeFiles/main.dir/includes/Graphics/sidebar.cpp.o
 bin/main: CMakeFiles/main.dir/includes/Graphics/system.cpp.o
-bin/main: CMakeFiles/main.dir/includes/Graphics/window.cpp.o
 bin/main: CMakeFiles/main.dir/includes/data_pkg/graph_info.cpp.o
 bin/main: CMakeFiles/main.dir/includes/node/node.cpp.o
 bin/main: CMakeFiles/main.dir/includes/plotter/plot.cpp.o
 bin/main: CMakeFiles/main.dir/includes/plotter/translator.cpp.o
 bin/main: CMakeFiles/main.dir/includes/rpn/rpn.cpp.o
 bin/main: CMakeFiles/main.dir/includes/shunting_yard/shunting_yard.cpp.o
-bin/main: CMakeFiles/main.dir/includes/stub/stub.cpp.o
 bin/main: CMakeFiles/main.dir/includes/token/alpha.cpp.o
 bin/main: CMakeFiles/main.dir/includes/token/double.cpp.o
 bin/main: CMakeFiles/main.dir/includes/token/function.cpp.o
@@ -433,7 +401,7 @@ bin/main: /usr/local/lib/libsfml-graphics.2.5.1.dylib
 bin/main: /usr/local/lib/libsfml-window.2.5.1.dylib
 bin/main: /usr/local/lib/libsfml-system.2.5.1.dylib
 bin/main: CMakeFiles/main.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/Aot/Desktop/code/C++/CS03A_Barkeshli/GC/my_graphic_calculator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Linking CXX executable bin/main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/Aot/Desktop/code/C++/CS03A_Barkeshli/GC/my_graphic_calculator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Linking CXX executable bin/main"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/main.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

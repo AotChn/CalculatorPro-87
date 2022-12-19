@@ -16,7 +16,6 @@
 #include "includes/token/function.h"
 #include "includes/queue/MyQueue.h"
 #include "includes/token/constants.h"
-#include "includes/Graphics/window.h"
 #include "includes/Graphics/animate.h"
 #include "includes/Graphics/system.h"
 #include "includes/Graphics/sidebar.h"
@@ -25,15 +24,14 @@
 #include "includes/linked_list_functions/linked_list_functions.h"
 
 //++++++++++ ------------------------------------------------------>[]
-using namespace std;
 
 int main(int argv, char** argc) {
-    cout << "\n\n"<< endl;
+    std::cout << "\n\n"<< endl;
 
    Animate calculator;
    calculator.run();
 
-    cout << "\n\n\n=====================" << endl;
+    std::cout << "\n\n\n=====================" << endl;
     return 0;
 }
 

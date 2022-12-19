@@ -1,6 +1,6 @@
 sinx*x
 x^2
-!NOT VALID EXPRESSION!
-sinx^sinx
-x
+x+4
+x/2
+x*3
 x10+10

@@ -479,39 +479,6 @@ includes/Graphics/system.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/testC.dir/build.make CMakeFiles/testC.dir/includes/Graphics/system.cpp.s
 .PHONY : includes/Graphics/system.cpp.s
 
-includes/Graphics/window.o: includes/Graphics/window.cpp.o
-.PHONY : includes/Graphics/window.o
-
-# target to build an object file
-includes/Graphics/window.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/includes/Graphics/window.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/basic_test.dir/build.make CMakeFiles/basic_test.dir/includes/Graphics/window.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/testB.dir/build.make CMakeFiles/testB.dir/includes/Graphics/window.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/testC.dir/build.make CMakeFiles/testC.dir/includes/Graphics/window.cpp.o
-.PHONY : includes/Graphics/window.cpp.o
-
-includes/Graphics/window.i: includes/Graphics/window.cpp.i
-.PHONY : includes/Graphics/window.i
-
-# target to preprocess a source file
-includes/Graphics/window.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/includes/Graphics/window.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/basic_test.dir/build.make CMakeFiles/basic_test.dir/includes/Graphics/window.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/testB.dir/build.make CMakeFiles/testB.dir/includes/Graphics/window.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/testC.dir/build.make CMakeFiles/testC.dir/includes/Graphics/window.cpp.i
-.PHONY : includes/Graphics/window.cpp.i
-
-includes/Graphics/window.s: includes/Graphics/window.cpp.s
-.PHONY : includes/Graphics/window.s
-
-# target to generate assembly for a file
-includes/Graphics/window.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/includes/Graphics/window.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/basic_test.dir/build.make CMakeFiles/basic_test.dir/includes/Graphics/window.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/testB.dir/build.make CMakeFiles/testB.dir/includes/Graphics/window.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/testC.dir/build.make CMakeFiles/testC.dir/includes/Graphics/window.cpp.s
-.PHONY : includes/Graphics/window.cpp.s
-
 includes/data_pkg/graph_info.o: includes/data_pkg/graph_info.cpp.o
 .PHONY : includes/data_pkg/graph_info.o
 
@@ -709,39 +676,6 @@ includes/shunting_yard/shunting_yard.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/testB.dir/build.make CMakeFiles/testB.dir/includes/shunting_yard/shunting_yard.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/testC.dir/build.make CMakeFiles/testC.dir/includes/shunting_yard/shunting_yard.cpp.s
 .PHONY : includes/shunting_yard/shunting_yard.cpp.s
-
-includes/stub/stub.o: includes/stub/stub.cpp.o
-.PHONY : includes/stub/stub.o
-
-# target to build an object file
-includes/stub/stub.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/includes/stub/stub.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/basic_test.dir/build.make CMakeFiles/basic_test.dir/includes/stub/stub.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/testB.dir/build.make CMakeFiles/testB.dir/includes/stub/stub.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/testC.dir/build.make CMakeFiles/testC.dir/includes/stub/stub.cpp.o
-.PHONY : includes/stub/stub.cpp.o
-
-includes/stub/stub.i: includes/stub/stub.cpp.i
-.PHONY : includes/stub/stub.i
-
-# target to preprocess a source file
-includes/stub/stub.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/includes/stub/stub.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/basic_test.dir/build.make CMakeFiles/basic_test.dir/includes/stub/stub.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/testB.dir/build.make CMakeFiles/testB.dir/includes/stub/stub.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/testC.dir/build.make CMakeFiles/testC.dir/includes/stub/stub.cpp.i
-.PHONY : includes/stub/stub.cpp.i
-
-includes/stub/stub.s: includes/stub/stub.cpp.s
-.PHONY : includes/stub/stub.s
-
-# target to generate assembly for a file
-includes/stub/stub.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/includes/stub/stub.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/basic_test.dir/build.make CMakeFiles/basic_test.dir/includes/stub/stub.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/testB.dir/build.make CMakeFiles/testB.dir/includes/stub/stub.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/testC.dir/build.make CMakeFiles/testC.dir/includes/stub/stub.cpp.s
-.PHONY : includes/stub/stub.cpp.s
 
 includes/token/alpha.o: includes/token/alpha.cpp.o
 .PHONY : includes/token/alpha.o
@@ -1106,9 +1040,6 @@ help:
 	@echo "... includes/Graphics/system.o"
 	@echo "... includes/Graphics/system.i"
 	@echo "... includes/Graphics/system.s"
-	@echo "... includes/Graphics/window.o"
-	@echo "... includes/Graphics/window.i"
-	@echo "... includes/Graphics/window.s"
 	@echo "... includes/data_pkg/graph_info.o"
 	@echo "... includes/data_pkg/graph_info.i"
 	@echo "... includes/data_pkg/graph_info.s"
@@ -1127,9 +1058,6 @@ help:
 	@echo "... includes/shunting_yard/shunting_yard.o"
 	@echo "... includes/shunting_yard/shunting_yard.i"
 	@echo "... includes/shunting_yard/shunting_yard.s"
-	@echo "... includes/stub/stub.o"
-	@echo "... includes/stub/stub.i"
-	@echo "... includes/stub/stub.s"
 	@echo "... includes/token/alpha.o"
 	@echo "... includes/token/alpha.i"
 	@echo "... includes/token/alpha.s"

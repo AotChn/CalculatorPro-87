@@ -29,8 +29,8 @@ CMAKE_BUILD_TYPE:STRING=Debug
 //Enable/Disable color output during build.
 CMAKE_COLOR_MAKEFILE:BOOL=ON
 
-//No help, variable specified on the command line.
-CMAKE_CXX_COMPILER:FILEPATH=/usr/bin/clang++
+//CXX compiler
+CMAKE_CXX_COMPILER:STRING=/usr/bin/clang++
 
 //Flags used by the CXX compiler during all build types.
 CMAKE_CXX_FLAGS:STRING=
@@ -47,8 +47,8 @@ CMAKE_CXX_FLAGS_RELEASE:STRING=-O3 -DNDEBUG
 //Flags used by the CXX compiler during RELWITHDEBINFO builds.
 CMAKE_CXX_FLAGS_RELWITHDEBINFO:STRING=-O2 -g -DNDEBUG
 
-//No help, variable specified on the command line.
-CMAKE_C_COMPILER:FILEPATH=/usr/bin/clang
+//C compiler
+CMAKE_C_COMPILER:STRING=/usr/bin/clang
 
 //Flags used by the C compiler during all build types.
 CMAKE_C_FLAGS:STRING=
@@ -304,15 +304,6 @@ SFML_DIR:PATH=/usr/local/lib/cmake/SFML
 
 //Path to a file.
 SFML_DOC_DIR:PATH=SFML_DOC_DIR-NOTFOUND
-
-//Value Computed by CMake
-barkeshli_s22_BINARY_DIR:STATIC=/Users/Aot/Desktop/code/C++/CS03A_Barkeshli/GC/my_graphic_calculator/build
-
-//Value Computed by CMake
-barkeshli_s22_IS_TOP_LEVEL:STATIC=ON
-
-//Value Computed by CMake
-barkeshli_s22_SOURCE_DIR:STATIC=/Users/Aot/Desktop/code/C++/CS03A_Barkeshli/GC/my_graphic_calculator
 
 //Value Computed by CMake
 gmock_BINARY_DIR:STATIC=/Users/Aot/Desktop/code/C++/CS03A_Barkeshli/GC/my_graphic_calculator/build/_deps/googletest-build/googlemock

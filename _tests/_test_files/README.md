@@ -10,13 +10,13 @@ add_entry [1]
 array_functions [1]
 
 DATA WRAPPERS 
-function_data []
-graph_info []
-tk_data []
+function_data [2]
+graph_info [2]
+tk_data [2]
 
 GRAPHICS 
 animate []
-sidebar []
+sidebar [2]
 system []
 window []
 
