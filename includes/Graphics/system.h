@@ -2,9 +2,9 @@
  * AUTHOR:      Aot Chanthorn
  * PROJECT:  GRAPHIC CALCULATOR
  * ------------------------------------------------------------------------- *
- * File: array_functions.h
- *  templated low level functions to manipulate 1D arrays 
- *  search - copy - re/allocate - print
+ * File: system.h
+ *  Uses plotter.h and translate.h to create cartesian points and translate to sfml 
+ *  draws the curves of the graphs and also sets the axis
  * ************************************************************************* */
 
 #ifndef AOTS_SYSTEM_H

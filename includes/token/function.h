@@ -1,3 +1,12 @@
+/* ************************************************************************* *
+ * AUTHOR:      Aot Chanthorn
+ * PROJECT:  GRAPHIC CALCULATOR
+ * ------------------------------------------------------------------------- *
+ * File: function.h
+ * handles function tokens
+ * sin, tan, cos, etc.
+ * ************************************************************************* */
+
 #ifndef FUNCTION_H
 #define FUNCTION_H
 #include <string>

@@ -4,7 +4,7 @@
  * ------------------------------------------------------------------------- *
  * File: function_data.h
  *  data wrapper class for function tokens
- *  funct name, def, id
+ *  funct name, def, id NOT USED
  * ************************************************************************* */
 
 #ifndef FUNCT_DATA_H

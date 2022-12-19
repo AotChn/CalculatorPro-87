@@ -1,3 +1,13 @@
+/* ************************************************************************* *
+ * AUTHOR:      Aot Chanthorn
+ * PROJECT:  GRAPHIC CALCULATOR
+ * ------------------------------------------------------------------------- *
+ * File: alpha.h
+ * handles alphabetical tokens
+ * a b c etc. 
+ * should convert all alphas to x since we only handle 1 variable instaniations
+ * ************************************************************************* */
+
 #ifndef ALPHA_H
 #define ALPHA_H
 #include <string>

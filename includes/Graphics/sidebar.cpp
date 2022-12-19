@@ -44,6 +44,7 @@ Sidebar::Sidebar(float left, float width) : _left(left), _width(width){
 
 }
 
+//draws all renderables 
 void Sidebar::draw(sf::RenderWindow &window){
     const double VERTICAL_LINE_SPACING = 5.0;
     const double LEFT_MARGIN = 10.0;

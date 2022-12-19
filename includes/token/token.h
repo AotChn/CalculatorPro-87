@@ -1,3 +1,13 @@
+/* ************************************************************************* *
+ * AUTHOR:      Aot Chanthorn
+ * PROJECT:  GRAPHIC CALCULATOR
+ * ------------------------------------------------------------------------- *
+ * File: token.h
+ * parent class to child token classes
+ * main virtual functions TYPE and print
+ * has iterator
+ * ************************************************************************* */
+
 #ifndef TOKEN_H
 #define TOKEN_H
 

@@ -1,3 +1,12 @@
+/* ************************************************************************* *
+ * AUTHOR:      Aot Chanthorn
+ * PROJECT:  GRAPHIC CALCULATOR
+ * ------------------------------------------------------------------------- *
+ * File: integer.h
+ * handles integer tokens
+ * 1, 2, 3, etc.
+ * ************************************************************************* */
+
 #ifndef INTEGER_H
 #define INTEGER_H
 #include <string>

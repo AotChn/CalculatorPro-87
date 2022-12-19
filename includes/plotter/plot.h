@@ -4,7 +4,7 @@
  * ------------------------------------------------------------------------- *
  * File: plot.h
  *  create an array of carteasian coordinates
- *  given graph info --> uses rpn to calculate y
+ *  given graph info --> uses rpn.h to calculate y
  * ************************************************************************* */
 
 #ifndef PLOT_H

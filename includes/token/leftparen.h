@@ -1,3 +1,12 @@
+/* ************************************************************************* *
+ * AUTHOR:      Aot Chanthorn
+ * PROJECT:  GRAPHIC CALCULATOR
+ * ------------------------------------------------------------------------- *
+ * File: leftparen.h
+ * handles left parenthesis tokens
+ * (
+ * ************************************************************************* */
+
 #ifndef LEFTPAREN_H
 #define LEFTPAREN_H
 #include <string>

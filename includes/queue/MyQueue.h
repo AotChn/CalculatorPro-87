@@ -3,7 +3,7 @@
  * PROJECT:  GRAPHIC CALCULATOR
  * ------------------------------------------------------------------------- *
  * File: MyQueue.h
- *  Queue built using linked list 
+ *  Queue Class built using linked list 
  *  
  * ************************************************************************* */
 

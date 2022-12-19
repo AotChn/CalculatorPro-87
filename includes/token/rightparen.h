@@ -1,3 +1,11 @@
+/* ************************************************************************* *
+ * AUTHOR:      Aot Chanthorn
+ * PROJECT:  GRAPHIC CALCULATOR
+ * ------------------------------------------------------------------------- *
+ * File: rightparen.h
+ * handles right parenthesis tokens
+ * ************************************************************************* */
+
 #ifndef RIGHTPAREN_H
 #define RIGHTPAREN_H
 #include <string>

@@ -4,6 +4,7 @@
  * ------------------------------------------------------------------------- *
  * File: translator.h
  *   Translate cartesian coordinates to sfml coordinates
+ *  Or translate sfml to cartesian coords by doing the inverse
  *  will support linear transformations 
  * ************************************************************************* */
 

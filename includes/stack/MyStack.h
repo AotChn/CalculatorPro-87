@@ -3,7 +3,7 @@
  * PROJECT:  GRAPHIC CALCULATOR
  * ------------------------------------------------------------------------- *
  * File: MyStack.h
- * Stack built using linked list 
+ * Stack class built using linked list 
  * 
  * ************************************************************************* */
 

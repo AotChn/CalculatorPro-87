@@ -4,7 +4,7 @@
  * ------------------------------------------------------------------------- *
  * File: interface.h
  *  handles all interface elements 
- * 
+ * handles highlight pos and color for interface
  * ************************************************************************* */
 
 #ifndef INTERFACE_H

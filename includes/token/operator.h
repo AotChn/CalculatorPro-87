@@ -1,3 +1,12 @@
+/* ************************************************************************* *
+ * AUTHOR:      Aot Chanthorn
+ * PROJECT:  GRAPHIC CALCULATOR
+ * ------------------------------------------------------------------------- *
+ * File: operator.h
+ * handles operator tokens
+ * -, +, * etc.
+ * ************************************************************************* */
+
 #ifndef OPERATOR_H
 #define OPERATOR_H
 #include <string>
