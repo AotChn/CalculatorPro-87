@@ -1,4 +1,46 @@
+# Calcualtor Pro-87
 
-this is my graphic calcualtor <https://youtu.be/eBFUJsNR7U0>
+## Overview
 
-<img width="1362" alt="calc84_interface.png" src="https://user-images.githubusercontent.com/37425542/208334892-ccdbbc07-87e4-4e0d-a8e9-100d7b27fe64.png">
+**Graphical Calculator built using SFML** capable of saving and plotting up to six equations 
+
+<https://youtu.be/eBFUJsNR7U0>
+
+<img width="1362" alt="calcultorp87" src="https://user-images.githubusercontent.com/37425542/208339046-71674548-66f8-42e9-9285-209fbdfcd929.png">
+
+## Supported Features
+
+**1 varible support** - cartesian plotting 
+
+Operator | Definition 
+------------ | -------------
++| Addition
+\- | Subtraction 
+\* | Multiplication 
+/ | Division 
+^ | Exponential
+sin( ) | Sine 
+cos( ) | Cosine 
+tan( ) | Tangent 
+arcsin( ) | ArcSine 
+arccos( ) | ArcCosine 
+arctan( ) | ArcTangent
+ln() | Logrithmnic
+
+## Key-Shortcuts
+
+Key | Function
+------------ | -------------
+Tab| Addition
+i | zoom in 
+o | zoom out
+arrow-keys | pan screen
+h | help screen
+r | reset graph
+
+
+
+
+
+
+</br></br>
