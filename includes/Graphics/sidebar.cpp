@@ -4,13 +4,11 @@ Sidebar::Sidebar()
 }
 
 Sidebar::Sidebar(float left, float width) : _left(left), _width(width){
-   // cout << "Sidebar CTOR: TOP" << endl;
-
-    // set up the sidebar rectangle:
-    rect.setFillColor(sf::Color(50,50,50,255)); //(192,192,192)); //silver
+    
+    rect.setFillColor(sf::Color(50,50,50,255)); 
     rect.setPosition(sf::Vector2f(left,0));
     rect.setSize(sf::Vector2f(width, SCREEN_HEIGHT));
-   // cout << "Sidebar CTOR: about to load font." << endl;
+
 
     bottomBar.setFillColor(sf::Color(89,157,255,255));
     bottomBar.setPosition(sf::Vector2f(0,SCREEN_HEIGHT-45));
@@ -24,22 +22,9 @@ Sidebar::Sidebar(float left, float width) : _left(left), _width(width){
     if (!font.loadFromFile("fonts/Roboto-Thin.ttf")){
         cout << "Sidebar() CTOR: Font failed to load" << endl;
         cin.get();
-       // exit(-1);
+        exit(-1);
     }
-    ////- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-    // cout << "Sidebar CTOR: loaded font." << endl;
-    //. . . . . text / font problems: . . . . . . . .
-    // initializing text object in this way caused problems
-    // (hangs!)
-    // only when sb_text was a private member and worked fine
-    // when it was a public member. Probably not releavant,
-    // but still strange!
-    //
-    // sb_text = sf::Text("Initial String for myTextLabel", font);
-    //
-    //. . . . . . . . . . . . . . . . . . . . . . . . .
-    // cout << "Sidebar CTOR: Text object initialized." << endl;
     sb_text.setFont(font);
     sb_text.setCharacterSize(20);
     sb_text.setStyle(sf::Text::Bold);
@@ -57,15 +42,6 @@ Sidebar::Sidebar(float left, float width) : _left(left), _width(width){
     current_coord.setFillColor(sf::Color::Black);
     current_coord.setPosition(sf::Vector2f(600, SCREEN_HEIGHT-(bottomBar.getSize().y/2)-15));
 
-    ////this is how you would position text on screen:
-    // sb_text.setPosition(sf::Vector2f(10, SCREEN_HEIGHT-sb_text.getLocalBounds().height-5));
-
-    items.push_back("sidebar sample text");
-    // Fill the items vector with empty strings so that we can use [] to read them:
-    for (int i = 0; i < 30; i++){
-        items.push_back("");
-    }
-    // cout << "Sidebar: CTOR: Exit." << endl;
 }
 
 void Sidebar::draw(sf::RenderWindow &window){
@@ -75,22 +51,17 @@ void Sidebar::draw(sf::RenderWindow &window){
     window.draw(bottomBar);
     window.draw(current_eq);
     window.draw(current_coord);
-
-    
 }
 
-string &Sidebar::operator[](int index){
-    return items[index];
-}
-
+//current cartesian coords and eq display
 void Sidebar::set_bottom_Bar_info(Graph_info* info, sf::RenderWindow& window, bool Mousein, std::string input){
+    //we do not want to flood the bottom bar with mass text if user inputs large string
     if(strlen((input.c_str()))>20){
         current_eq.setString("y = "+(input).substr(0,20)+"...");
     }
     else{
         current_eq.setString("y = "+(input).substr(0,20));
     }
-    
     if(Mousein){
         Translator T;
         T.set_graph_info(info);
@@ -101,9 +72,10 @@ void Sidebar::set_bottom_Bar_info(Graph_info* info, sf::RenderWindow& window, bo
     }
 }
 
-sf::RectangleShape Sidebar::create_button(int i,int j){
+//interface highlight box
+sf::RectangleShape Sidebar::create_button(int i,int activate){
     sf::RectangleShape box1;
-    if(j == 0){
+    if(activate == 0){
         box1.setFillColor(sf::Color(66,68,77,0));
     }
     else if(i==1){
@@ -112,7 +84,7 @@ sf::RectangleShape Sidebar::create_button(int i,int j){
     else{
          box1.setFillColor(sf::Color(66,68,77,100));
     }
-    box1.setPosition(sf::Vector2f(_left,(SCREEN_HEIGHT/10*j)));
+    box1.setPosition(sf::Vector2f(_left,(SCREEN_HEIGHT/10*activate)));
     box1.setSize(sf::Vector2f(_width,SCREEN_HEIGHT/10));
     return box1;
 }
