@@ -1,8 +1,22 @@
 #include "animate.h"
     
-
-
-
+    Animate::Animate() : sidebar(WORK_PANEL, SIDE_BAR)
+    {
+        window.create(sf::VideoMode(SCREEN_WIDTH,SCREEN_HEIGHT),"Calculator Pro-87");
+        window.setFramerateLimit(60);
+        if(!font.loadFromFile("fonts/Roboto-Thin.ttf")){
+            cout<<"animate font CTOR: Font failed to load"<<endl;
+            exit(-1);
+        }
+        info = &graph;
+        system.set_graph_info(info);
+        graph.Eq = "";
+        input = "";
+        button_color = 0;
+        highlight_pos = 2;
+        Mousein = false;
+        help_on = false;
+    }
 
     //run application 
     void Animate::run(){
@@ -19,14 +33,12 @@
         }
     }
 
+    //draws to be drawn on screen
     void Animate::Draw(){
-        system.Draw_axis(window);
+        window.draw(name_stamp());
+        system.draw_axis(window);
         sidebar.draw(window);
-        if(take_input){
-            window.draw(input_box());
-        }
-        window.draw(text);
-        window.draw(sidebar.create_button(button_color,j));
+        window.draw(sidebar.create_button(button_color,highlight_pos));
         for(int i=0;i<6;i++){
             window.draw(sidebar.show_equation(graphs[i],i,show_graphs[i],0));
             if(show_graphs[i]){
@@ -40,8 +52,12 @@
         if(help_on){
             load_help_screen();
         }
-        window.draw(name_stamp());
+        if(take_input){
+            window.draw(input_box());
+            window.draw(input_text(input));
+        }
     }
+
     //clear->draw->display cycle
     void Animate::render(){
         window.clear(sf::Color(20, 20, 20,255));
@@ -49,8 +65,9 @@
         window.display();
     }
 
+    //any updates 
     void Animate::update(){
-        sidebar.set_bottom_Bar_info(info,window,Mousein,graphs[j-2]);
+        sidebar.set_bottom_Bar_info(info,window,Mousein,graphs[highlight_pos-2]);
         gui.set_graph_info(info);
         if(help_on){
             help =2;
@@ -70,19 +87,15 @@
                     }
                     else if(event.text.unicode == '\t'){
                         take_input = !take_input;
-                        if(j<2){
-                            j = 2;
+                        if(highlight_pos<2){
+                            highlight_pos = 2;
                         }
-                        if(!take_input){
-                            text.setString(input);
-                        }   
                     }
                     else if(event.text.unicode == '\n'){
                         if(take_input==true){
-                        graphs[j-2] = input;
-                        show_graphs[j-2] = true;   
+                        graphs[highlight_pos-2] = input;
+                        show_graphs[highlight_pos-2] = true;   
                         input = "";
-                        text.setString("");
                         save_graphs();
                         take_input = false;
                         }
@@ -92,18 +105,6 @@
                             input += event.text.unicode;
                         }
                     }
-                    if(take_input){
-                        if(strlen(input.c_str())>45){
-                            text.setString(input.substr(strlen(input.c_str())-45,45));
-                        }
-                        else{
-                            text.setString(input);
-                        }
-                    }
-                    else{
-                        text.setString("");
-                    }
-                   // cout<<input<<endl;
                 }
                 break;
                 case sf::Event::KeyPressed:
@@ -143,29 +144,29 @@
                         }
                     }
                     break;
-                case sf::Event::Resized:
-                    graph.set_window(window.getSize().x,window.getSize().y);
-                    cout<<window.getSize().x<<"|";
-                    cout<<window.getView().getSize().x<<"|";
-                    cout<<window.getSize().y<<"|";
-                    cout<<window.getView().getSize().y<<endl;
-                    break;
+                // case sf::Event::Resized:
+                //     graph.set_window(window.getSize().x,window.getSize().y);
+                //     cout<<window.getSize().x<<"|";
+                //     cout<<window.getView().getSize().x<<"|";
+                //     cout<<window.getSize().y<<"|";
+                //     cout<<window.getView().getSize().y<<endl;
+                //     break;
                 case sf::Event::MouseMoved:
                     Mousein = true;
                     if(sf::Mouse::getPosition(window).x>WORK_PANEL){
                         Mousein = false;
                         button_color = 1;
-                        j = -1;
+                        highlight_pos = -1;
                         int Mouse_y = (sf::Mouse::getPosition(window).y);
                         while(Mouse_y>0){
                             Mouse_y = Mouse_y-(BUTTON_SIZE);
-                            j++;
+                            highlight_pos++;
                         }
-                        if(j>7){
-                            j=7;
+                        if(highlight_pos>7){
+                            highlight_pos=7;
                         }
-                        else if(j<2){
-                            j=2;
+                        else if(highlight_pos<2){
+                            highlight_pos=2;
                         }
                     }    
                     else{
@@ -185,17 +186,17 @@
                     if(sf::Mouse::getPosition(window).x>WORK_PANEL){
                         Mousein = false;
                         button_color = 1;
-                        j = -1;
+                        highlight_pos = -1;
                         int Mouse_y = (sf::Mouse::getPosition(window).y);
                         while(Mouse_y>0){
                             Mouse_y = Mouse_y-(BUTTON_SIZE);
-                            j++;
+                            highlight_pos++;
                         }
-                        if(j>7){
-                            j=7;
+                        if(highlight_pos>7){
+                            highlight_pos=7;
                         }
-                        else if(j<2){
-                            j=2;
+                        else if(highlight_pos<2){
+                            highlight_pos=2;
                         }
                     }
                     
@@ -203,11 +204,11 @@
                         button_color = 0;
                     }
                     if(!Mousein){
-                        if(show_graphs[j-2]==true){
-                            show_graphs[j-2] = false;    
+                        if(show_graphs[highlight_pos-2]==true){
+                            show_graphs[highlight_pos-2] = false;    
                         }
                         else
-                            show_graphs[j-2] = true;
+                            show_graphs[highlight_pos-2] = true;
                     }
                     if(sf::Mouse::getPosition(window).x>(166-40)&&sf::Mouse::getPosition(window).x<(166+40)){
                         if(sf::Mouse::getPosition(window).y>(166-40)&&sf::Mouse::getPosition(window).y<(166+40)){
@@ -224,44 +225,29 @@
         }
     }
 
-void Animate::create_graphs(){
 
-}
-
-
- sf::RectangleShape Animate::input_box(){
-    sf::RectangleShape input_box;
-    input_box.setFillColor(sf::Color(0,240,0,50));
-    input_box.setPosition(sf::Vector2f(0,(SCREEN_HEIGHT/6)));
-    input_box.setSize(sf::Vector2f(WORK_PANEL,(SCREEN_HEIGHT/6)));
-    return input_box;
-}
-
+//load previously saved graphs
 void Animate::load_graphs(){
     ifstream inFile;
     ofstream output_f;
     inFile.open("history.txt");
-   // output_f.open("Custom_function.tet");
-// Test for failure here…
     if(inFile.fail()){
         cout<< "Output file opening failed \n";
         exit(1);
     }
-        for(int i = 0;i<6;i++){
-            std::getline(inFile,input,'\n');
-            graphs[i] = input;
-            show_graphs[i] = false;
-        }
+    for(int i = 0;i<6;i++){
+        std::getline(inFile,input,'\n');
+        graphs[i] = input;
+        show_graphs[i] = false;
+    }
     input = "";
     inFile.close();
-
 }
 
+//save graph to txt file when new graph is updated
 void Animate::save_graphs(){
     ofstream output_f;
     output_f.open("history.txt",std::ofstream::trunc);
-   // output_f.open("Custom_function.tet");
-// Test for failure here…
     if(output_f.fail()){
         cout<< "Output file opening failed \n";
         exit(1);
@@ -272,6 +258,7 @@ void Animate::save_graphs(){
     output_f.close();
 }
 
+//load help screen sprite
 void Animate::load_help_screen(){
     if(!texture.loadFromFile("sprites/help_menu.png")){
         cout<<"help screen failed to load";
@@ -281,6 +268,7 @@ void Animate::load_help_screen(){
     window.draw(sprite);
 } 
 
+//places logo
 sf::Text Animate::name_stamp(){
     sf::Text name;
     name.setFont(font);
@@ -289,6 +277,31 @@ sf::Text Animate::name_stamp(){
     name.setCharacterSize(55);
     name.setString("Powered by CHTN TECH");
     name.setStyle(sf::Text::Bold);
-    return name;
 
+    return name;
+}
+
+//text input box echo input
+sf::Text Animate::input_text(std::string input){
+    sf::Text input_text;
+    if(strlen(input.c_str()) > 45){
+        input = input.substr(strlen(input.c_str()) - 45, 45);
+    }
+    input_text.setString(input);
+    input_text.setFillColor(sf::Color::Red);
+    input_text.setPosition(sf::Vector2f(30,SCREEN_HEIGHT/6+30));
+    input_text.setFont(font);
+    input_text.setStyle(sf::Text::Bold);
+    input_text.setCharacterSize(60);
+
+    return input_text;
+}
+
+//input box for user string input
+ sf::RectangleShape Animate::input_box(){
+    sf::RectangleShape input_box;
+    input_box.setFillColor(sf::Color(0,240,0,50));
+    input_box.setPosition(sf::Vector2f(0,(SCREEN_HEIGHT/6)));
+    input_box.setSize(sf::Vector2f(WORK_PANEL,(SCREEN_HEIGHT/6)));
+    return input_box;
 }

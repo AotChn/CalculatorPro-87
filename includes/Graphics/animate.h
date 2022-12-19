@@ -10,81 +10,74 @@
 #ifndef AOTS_ANIMATE_H
 #define AOTS_ANIMATE_H
 #include <SFML/Graphics.hpp>
-#include "system.h"
-#include "sidebar.h"
-#include <string>
-#include "constants.h"
-#include "../vector/vector_class.h"
-#include "interface.cpp"
 #include <fstream>
 #include <iostream>
+#include <string>
+
+#include "system.h"
+#include "sidebar.h"
+#include "constants.h"
+#include "interface.cpp"
+#include "../vector/vector_class.h"
 #include "../array_functions/array_functions.h"
-// #include "sidebar.h"
 
 class Animate{
 
     public:
 
-    Animate() : sidebar(WORK_PANEL, SIDE_BAR)
-    {
-        window.create(sf::VideoMode(SCREEN_WIDTH,SCREEN_HEIGHT),"Calculator Pro-87");
-        window.setFramerateLimit(60);
-        bool take_input = false;
-        info = &graph;
-        system.set_graph_info(info);
-        graph.Eq = "";
-        button_color = 0;
-        input = "";
-        Mousein = false;
-        take_input = false;
-        j = 2;
-        text.setFillColor(sf::Color::Red);
-        text.setPosition(sf::Vector2f(30,SCREEN_HEIGHT/6+30));
-        text.setFont(font);
-        text.setStyle(sf::Text::Bold);
-        text.setCharacterSize(60);
-        if(!font.loadFromFile("fonts/Roboto-Thin.ttf")){
-            cout<<"animate font CTOR: Font failed to load"<<endl;
-            exit(-1);
-        }
-    }
+    Animate();
     
+    //processes what to put on screen
     void run();
     void Draw();
     void render();
     void update();
     void process_events();
-    void create_graphs();
+
+    //history
     void load_graphs();
     void save_graphs();
-    sf::RectangleShape input_box();
+
+
+    sf::RectangleShape input_box(); 
     void load_help_screen();
     sf::Text name_stamp();
+    sf::Text input_text(std::string input);
 
     private:
-    Interface gui;
-    System system;
-    Sidebar sidebar;
+
     sf::RenderWindow window;
-    sf::Text text;
-    sf::Font font;
-    std::string input;
-    Graph_info* info;
-    Graph_info graph;
-    bool take_input;
-    int button_color;
-    int j;
-    int help;
-    bool Mousein;
-    bool help_on;
     sf::Vector2f mouse_pos;
-    std::string graphs[7];
-    bool show_graphs[7];
+    sf::Font font;
+
+    //handles user interactions (non text-inputs)
+    Interface gui;
+    Sidebar sidebar;
+    int highlight_pos;
+    int button_color;
+    bool Mousein;
+
+    //handles graph creation
+    System system;
+    Graph_info graph;
+    Graph_info* info;
+    
+    //handles user text-inputs
+    std::string input;
+    bool take_input;
+
+    //handles help screen
     sf::Sprite sprite;
     sf::Texture texture;
-    int state;
-    
+    int help;
+    bool help_on;
+
+    //handles graph to be shown
+    bool show_graphs[7];
+    std::string graphs[7];
+
 };
+
 //clear -> draw -> display cycle  is the way to draw stuff
 //no other good way to do it 
 
