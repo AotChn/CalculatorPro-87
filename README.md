@@ -1,4 +1,4 @@
-# Calcualtor Pro-87
+# Calculator Pro-87
 
 ## Overview
 
