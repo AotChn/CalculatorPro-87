@@ -59,10 +59,10 @@ int tokenizer::Num(std::string key){
 int tokenizer::Oper(std::string key){
     if(debug){cout<<"PASSED OPER->";}
     _cur_ST = OPER;
-    if(_prev_ST==OPER){
+    if(str_vect_cmp(OPERATORS_,key)){
+        if(_prev_ST==OPER){
         return INV;
-    }
-    else if(str_vect_cmp(OPERATORS_,key)){
+        }
         if(key=="("){
             return LP;
         }
