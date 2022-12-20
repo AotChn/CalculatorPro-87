@@ -31,7 +31,7 @@ ln() | Logrithmnic
 
 Key | Function
 ------------ | -------------
-Tab| Addition
+Tab| input new function
 i | zoom in 
 o | zoom out
 arrow-keys | pan screen
