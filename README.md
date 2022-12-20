@@ -38,6 +38,16 @@ arrow-keys | pan screen
 h | help screen
 r | reset graph
 
+## Call in `Main()`
+
+```C++
+int main() {
+   Animate calculator;
+   calculator.run();
+   return 0;
+}
+```
+
 ## Bugs/issues
 - minor memory leak 
 
